@@ -112,7 +112,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/orTXT"
-            android:background="#1A0000000" />
+            android:background="#1A000000" />
 
     </RelativeLayout>
 
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/sign_in_with_google"
-            android:textColor="#E60000000"
+            android:textColor="#E6000000"
             android:textStyle="bold" />
     </RelativeLayout>
     <LinearLayout
