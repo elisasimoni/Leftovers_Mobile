@@ -33,6 +33,25 @@
     <string name="sign_up2">sign up</string>
     <string name="todo2" />
     <string name="todo">todo3</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="last_name">Last Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up3">sign up</string>
+    <string name="sign_upCapital">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in2">Sign in</string>
+    <string name="email_address">Email Address</string>
+    <string name="mail_example">test@gmail.com</string>
+    <string name="send_code_OTP">Please enter your code that we have sent to your phone</string>
+    <string name="todo4">TODO</string>
+    <string name="_39_3922519238">+39 3922519238</string>
+    <string name="verify">Verify</string>
+    <string name="didn_t_receive_otp">Didn\'t receive OTP?</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />
