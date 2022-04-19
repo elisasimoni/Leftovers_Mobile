@@ -38,11 +38,11 @@ class OTPVerification : AppCompatActivity() {
 
         otpEmail.text = getEmail
         otpMobile.text = getMobile
-
+/*
         otpE1.addTextChangedListener(textWatcher)
         otpE2.addTextChangedListener(textWatcher)
         otpE3.addTextChangedListener(textWatcher)
-        otpE4.addTextChangedListener(textWatcher)
+        otpE4.addTextChangedListener(textWatcher)*/
         //BY DEFAULT OPEN KEYBOARD AT OPE1
 
         showKeyboard(otpE1)
@@ -95,19 +95,39 @@ class OTPVerification : AppCompatActivity() {
 
     }
 
+}
+/*
     private val textWatcher = object : TextWatcher {
         override fun afterTextChanged(s: Editable) {
+            if(s.length > 0){
+                if(selectedETPosition == 0){
+                    selectedETPosition = 1
+                    showKeyboard(otpET2)
+                }
+                else if(selectedETPosition == 1){
+                    selectedETPosition = 2
+                    showKeyboard(otpET3)
+                }
+                else if(selectedETPosition == 2){
+                    selectedETPosition = 3
+                    showKeyboard(otpET4)
+                }
+
+
+                }
+            }
+
         }
 
-        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+        fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
         }
 
-        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+        fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
 
         }
-    }
-
-    public fun oneKeyUp(
+    }*/
+/*
+    fun oneKeyUp(
         E1: EditText,
         E2: EditText,
         E3: EditText,
@@ -115,25 +135,27 @@ class OTPVerification : AppCompatActivity() {
         keyCode: Int,
         event: KeyEvent,
         setpo: Int
-    ) {
+    ): Boolean {
         var setp = setpo
         if (keyCode == KeyEvent.KEYCODE_DEL) {
             if (setp == 3) {
-                setp = 2;
-                showKeyboard(E2)
+                setp = 2
+                showKeyboard(E3)
             } else if (setp == 2) {
-                E2.setText("")
-                E3.requestFocus()
-            } else if (setp == 3) {
-                E3.setText("")
-                E4.requestFocus()
-            } else if (setp == 4) {
-                E4.setText("")
-                E4.requestFocus()
+                setp = 1
+                showKeyboard(E2)
+            } else if (setp == 1) {
+                setp = 0
+                showKeyboard(E1)
             }
+            return true
         }
+        else{
+
+        }
+        return super.onKeyUp(keyCode, event)
     }
-}
+}*/
 
 
 
