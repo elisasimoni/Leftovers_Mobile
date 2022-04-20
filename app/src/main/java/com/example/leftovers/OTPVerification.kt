@@ -1,4 +1,4 @@
-package activities
+package com.example.leftovers
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -14,7 +14,6 @@ import android.widget.EditText
 import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
-import com.example.leftovers.R
 
 class OTPVerification : AppCompatActivity() {
 
@@ -25,12 +24,13 @@ class OTPVerification : AppCompatActivity() {
     private var otpE2 = findViewById<EditText>(R.id.otpET2)
     private var otpE3 = findViewById<EditText>(R.id.otpET3)
     private var otpE4 = findViewById<EditText>(R.id.otpET4)
+    private var resendButton: TextView = findViewById(R.id.resendOTP)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp_verification)
 
-        val resendButton: TextView = findViewById(R.id.resendOTP)
+
         val verifyButton: TextView = findViewById(R.id.verifyBtn)
         val otpEmail = findViewById<TextView>(R.id.otpEMAIL)
         val otpMobile = findViewById<TextView>(R.id.mobile_number_text)
@@ -44,13 +44,13 @@ class OTPVerification : AppCompatActivity() {
         otpE2.addTextChangedListener(textWatcher)
         otpE3.addTextChangedListener(textWatcher)
         otpE4.addTextChangedListener(textWatcher)
-        //BY DEFAULT OPEN KEYBOARD AT OPE1
+
 
         showKeyboard(otpE1)
-        startCountDown(resendEnable, resendButton, resendTime)
+        startCountDown()
         resendButton.setOnClickListener {
             if (resendEnable) {
-                startCountDown(resendEnable, resendButton, resendTime)
+                startCountDown()
             }
         }
         verifyButton.setOnClickListener {
@@ -75,15 +75,17 @@ class OTPVerification : AppCompatActivity() {
     }
 
 
-    private fun startCountDown(resendEnable: Boolean, resendButton: TextView, resendTime: Int) {
+    private fun startCountDown() {
 
         resendButton.setTextColor(Color.parseColor("#BDBDBD"))
 
         object : CountDownTimer((resendTime * 1000).toLong(), 1000) {
+
             @SuppressLint("SetTextI18n")
             override fun onTick(millisUntilFinished: Long) {
                 resendButton.text = "Resend OTP in " + millisUntilFinished / 1000 + "s"
             }
+
 
             @SuppressLint("SetTextI18n")
             override fun onFinish() {
@@ -99,19 +101,21 @@ class OTPVerification : AppCompatActivity() {
 
     private val textWatcher = object : TextWatcher {
         override fun afterTextChanged(s: Editable) {
-            if(s.length > 0){
+            if(s.isNotEmpty()){
 
-                if(selectedETPosition == 0){
-                    selectedETPosition = 1
-                    showKeyboard(otpE2)
-                }
-                else if(selectedETPosition == 1){
-                    selectedETPosition = 2
-                    showKeyboard(otpE3)
-                }
-                else if(selectedETPosition == 2){
-                    selectedETPosition = 3
-                    showKeyboard(otpE4)
+                when (selectedETPosition) {
+                    0 -> {
+                        selectedETPosition = 1
+                        showKeyboard(otpE2)
+                    }
+                    1 -> {
+                        selectedETPosition = 2
+                        showKeyboard(otpE3)
+                    }
+                    2 -> {
+                        selectedETPosition = 3
+                        showKeyboard(otpE4)
+                    }
                 }
 
 
@@ -145,7 +149,7 @@ class OTPVerification : AppCompatActivity() {
             return true
         }
         else{
-
+                //
         }
         return super.onKeyUp(keyCode, event)
     }

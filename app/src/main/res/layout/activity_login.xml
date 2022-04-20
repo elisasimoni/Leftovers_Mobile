@@ -12,7 +12,8 @@
         android:text="@string/sign_in"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +76,9 @@
         android:layout_gravity="end"
         android:text="@string/forgot_password"
         android:layout_marginTop="20dp"
-        android:textColor="@color/primary"/>
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_marginRight="25dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in_button"
@@ -105,6 +108,7 @@
             android:textSize="12sp"
             android:textColor="#80000000"
             android:layout_centerInParent="true"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -113,6 +117,17 @@
             android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/orTXT"
             android:background="#1A000000" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/orTXT"
+            android:background="#1A000000" />
+
+
+
 
     </RelativeLayout>
 
@@ -143,6 +158,7 @@
             android:textStyle="bold" />
     </RelativeLayout>
     <LinearLayout
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -159,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="@string/sign_up2"
-            android:textColor="@color/primary"
+            android:textColor="@color/purple_700"
             android:textStyle="bold"/>
 
     </LinearLayout>

@@ -1,4 +1,4 @@
-package activities
+package com.example.leftovers
 
 
 import android.content.Intent
@@ -8,7 +8,6 @@ import android.text.InputType
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.leftovers.R
 
 class LoginActivity : AppCompatActivity() {
 

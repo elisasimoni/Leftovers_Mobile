@@ -6,8 +6,9 @@
 
     <ImageView
         android:layout_width="283dp"
-        android:layout_height="307dp"
+        android:layout_height="242dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/todo4"
         android:src="@drawable/sms_otp" />
@@ -19,7 +20,8 @@
         android:text="@string/otp_verification"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
     <TextView
         android:id="@+id/otp_verification_text"
         android:layout_gravity="center"
@@ -158,7 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="@string/resend_code"
-            android:textColor="@color/primary"
+            android:textColor="@color/purple_700"
             android:textStyle="bold"/>
 
     </LinearLayout>
