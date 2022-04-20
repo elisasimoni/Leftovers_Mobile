@@ -53,6 +53,7 @@
     <string name="didn_t_receive_otp">Didn\'t receive OTP?</string>
     <string name="resend_code">Resend Code</string>
     <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="buttonProva">Button</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />

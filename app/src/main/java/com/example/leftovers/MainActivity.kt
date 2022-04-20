@@ -2,8 +2,10 @@
 
 package com.example.leftovers
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONArray
@@ -13,8 +15,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    }
 
+        val button = findViewById<Button>(R.id.button)
+
+        button.setOnClickListener{
+            changeLogin()
+        }
+
+    }
+    private fun changeLogin(){
+        startActivity(Intent(this,LoginActivity::class.java))
+    }
+/*
     fun read_json() {
 
         val arr = arrayListOf<String>()
@@ -38,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-    }
+    }*/
 
 }
 

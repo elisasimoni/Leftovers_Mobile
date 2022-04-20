@@ -17,11 +17,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-       val usernameET = findViewById<EditText>(R.id.usernameET)
+       //val usernameET = findViewById<EditText>(R.id.usernameET)
        val passwordET = findViewById<EditText>(R.id.passwordET)
         val signUnBtn = findViewById<TextView>(R.id.signUpBtn)
-        val passwordIcon = findViewById<ImageView>(R.id.password_icon)
-        passwordIcon.setOnClickListener {
+        //val passwordIcon = findViewById<ImageView>(R.id.password_icon)
+        /*passwordIcon.setOnClickListener {
            // passwordShowing = !passwordShowing
             if(passwordShowing){
                passwordShowing = false
@@ -34,11 +34,12 @@ class LoginActivity : AppCompatActivity() {
                passwordIcon.setImageResource(R.drawable.password_hide)
            }
             passwordET.setSelection(passwordET.text.length)
-        }
+        }*/
 
         signUnBtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
+
         }
     }
 }

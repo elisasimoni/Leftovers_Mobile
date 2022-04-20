@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
     android:orientation="vertical"
-    >
+    tools:context=".RegisterActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
         >
         <EditText
             android:id="@+id/passwordET"
-            android:layout_toStartOf="@id/password_icon"
+            android:layout_toStartOf="@id/mobileET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -91,17 +91,18 @@
             android:textSize="16sp"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:autofillHints="" />
+            android:autofillHints=""
+            tools:ignore="NotSibling" />
 
-        <ImageView
+      <!--  <ImageView
             android:id="@+id/password_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
             android:padding="10dp"
-            android:src="@drawable/password_hide"
-            android:contentDescription="@string/todo" />
+            android:src="@drawable/password_hide" />-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -114,7 +115,7 @@
         >
         <EditText
             android:id="@+id/confirm_passwordET"
-            android:layout_toStartOf="@id/confirm_password_icon"
+            android:layout_toStartOf="@id/mobileET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -124,17 +125,18 @@
             android:textSize="16sp"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:autofillHints="" />
-
+            android:autofillHints=""
+            tools:ignore="NotSibling,UnknownId" />
+<!--
         <ImageView
             android:id="@+id/confirm_password_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
             android:padding="10dp"
-            android:src="@drawable/password_hide"
-            android:contentDescription="@string/todo" />
+            android:src="@drawable/password_hide" />-->
     </RelativeLayout>
 
 

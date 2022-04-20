@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,21 +23,24 @@
         android:layout_marginTop="5dp"
 
         />
+
     <EditText
         android:id="@+id/usernameET"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/round_black"
         android:hint="@string/username"
-        android:maxLines="1"
         android:inputType="text"
-        android:textSize="16sp"
+        android:maxLines="1"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:autofillHints="" />
+        android:textColorHint="#546E7A"
+        android:textSize="16sp"
+        android:importantForAutofill="no"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -47,7 +51,7 @@
         >
         <EditText
             android:id="@+id/passwordET"
-            android:layout_toStartOf="@id/password_icon"
+            android:layout_toStartOf="@id/usernameET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -57,8 +61,9 @@
             android:textSize="16sp"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:autofillHints="" />
-
+            android:importantForAutofill="no"
+            tools:ignore="NotSibling" />
+<!--
             <ImageView
                 android:id="@+id/password_icon"
                 android:layout_width="40dp"
@@ -67,8 +72,9 @@
                 android:layout_centerVertical="true"
                 android:padding="10dp"
                 android:src="@drawable/password_hide"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/todo" />-->
     </RelativeLayout>
+
     <TextView
         android:id="@+id/password_forgot"
         android:layout_width="wrap_content"
@@ -78,7 +84,7 @@
         android:layout_marginTop="20dp"
         android:textColor="@color/purple_700"
         android:textStyle="bold"
-        android:layout_marginRight="25dp"/>
+        android:layout_marginEnd="25dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in_button"
@@ -133,21 +139,21 @@
 
     <RelativeLayout
         android:id="@+id/google_sign_in"
-        android:layout_width="match_parent"
+        android:layout_width="374dp"
         android:layout_height="55dp"
-        android:background="@drawable/round_black"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_black">
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/google_icon"
-            android:contentDescription="@string/todo2">
-        </ImageView>
+            android:contentDescription="@string/todo2"
+            android:src="@drawable/google_icon"/>
 
         <TextView
             android:layout_width="wrap_content"

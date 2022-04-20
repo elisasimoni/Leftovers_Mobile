@@ -19,12 +19,12 @@ class RegisterActivity : AppCompatActivity() {
         val mobile = findViewById<EditText>(R.id.mobileET)
         val password = findViewById<EditText>(R.id.passwordET)
         val confirmPassword = findViewById<EditText>(R.id.confirm_passwordET)
-        val passwordIcon= findViewById<ImageView>(R.id.password_icon)
-        val confirmPasswordIcon= findViewById<ImageView>(R.id.confirm_password_icon)
+        //val passwordIcon= findViewById<ImageView>(R.id.password_icon)
+        //val confirmPasswordIcon= findViewById<ImageView>(R.id.confirm_password_icon)
 
         val signUpButton = findViewById<AppCompatButton>(R.id.sign_up_button)
-        val signInButton = findViewById<AppCompatButton>(R.id.sign_in_button)
-
+        //val signInButton = findViewById<AppCompatButton>(R.id.sign_in_button)
+/*
         passwordIcon.setOnClickListener {
 
             if(passwordShowing){
@@ -52,21 +52,23 @@ class RegisterActivity : AppCompatActivity() {
                 confirmPasswordIcon.setImageResource(R.drawable.password_hide)
             }
             confirmPassword.setSelection(confirmPassword.text.length)
-        }
+        }*/
         signUpButton.setOnClickListener {
 
 
-            Intent(this, OTPVerification::class.java).also {
+            val intent = Intent(this, OTPVerification::class.java).also {
                 //OTP Verification
                 intent.putExtra("mobile", mobile.text.toString())
                 intent.putExtra("email", email.text.toString())
-                startActivity(it)
+                startActivity(intent)
+
             }
 
+
         }
-        signInButton.setOnClickListener {
+       /* signInButton.setOnClickListener {
             finish()
-        }
+        }*/
     }
 }
 
