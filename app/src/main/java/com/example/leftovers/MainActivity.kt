@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
     private fun changeLogin(){
         startActivity(Intent(this,LoginActivity::class.java))
     }
+    private fun startAnimation(){
+
+    }
 /*
     fun read_json() {
 

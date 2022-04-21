@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
@@ -19,7 +20,8 @@ class LoginActivity : AppCompatActivity() {
 
        //val usernameET = findViewById<EditText>(R.id.usernameET)
        val passwordET = findViewById<EditText>(R.id.passwordET)
-        val signUnBtn = findViewById<TextView>(R.id.signUpBtn)
+        val signUpBtn = findViewById<TextView>(R.id.signUpBtn)
+        val signInBtn = findViewById<Button>(R.id.sign_in_button)
         //val passwordIcon = findViewById<ImageView>(R.id.password_icon)
         /*passwordIcon.setOnClickListener {
            // passwordShowing = !passwordShowing
@@ -36,10 +38,15 @@ class LoginActivity : AppCompatActivity() {
             passwordET.setSelection(passwordET.text.length)
         }*/
 
-        signUnBtn.setOnClickListener {
+        signUpBtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
 
+        }
+
+        signInBtn.setOnClickListener{
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent)
         }
     }
 }

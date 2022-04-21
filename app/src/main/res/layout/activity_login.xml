@@ -49,19 +49,21 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         >
+
         <EditText
             android:id="@+id/passwordET"
-            android:layout_toStartOf="@id/usernameET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@id/usernameET"
             android:background="@android:color/transparent"
             android:hint="@string/password"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:textSize="16sp"
+            android:importantForAutofill="no"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp"
             tools:ignore="NotSibling" />
 <!--
             <ImageView
@@ -86,7 +88,7 @@
         android:textStyle="bold"
         android:layout_marginEnd="25dp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="55dp"

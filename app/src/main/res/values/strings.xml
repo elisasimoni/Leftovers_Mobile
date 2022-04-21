@@ -54,6 +54,12 @@
     <string name="resend_code">Resend Code</string>
     <string name="otp_verification">OTP VERIFICATION</string>
     <string name="buttonProva">Button</string>
+    <string name="start">Start</string>
+    <string name="textview">TextView</string>
+    <string name="content_description_search" />
+    <string name="search" />
+    <string name="more" />
+    <string name="content_description_more" />
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />
