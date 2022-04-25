@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 
 class LoginActivity : AppCompatActivity() {
 
@@ -18,10 +19,10 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-       //val usernameET = findViewById<EditText>(R.id.usernameET)
-       val passwordET = findViewById<EditText>(R.id.passwordET)
-        val signUpBtn = findViewById<TextView>(R.id.signUpBtn)
-        val signInBtn = findViewById<Button>(R.id.sign_in_button)
+       val usernameET = findViewById<EditText>(R.id.edit_email)
+       val passwordET = findViewById<EditText>(R.id.edit_password)
+        val signInBtn = findViewById<CardView>(R.id.btn_login)
+        val signUpBtn = findViewById<TextView>(R.id.signdont)
         //val passwordIcon = findViewById<ImageView>(R.id.password_icon)
         /*passwordIcon.setOnClickListener {
            // passwordShowing = !passwordShowing

@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val button = findViewById<Button>(R.id.button)
+        //read_json()
+       val button = findViewById<Button>(R.id.button)
 
         button.setOnClickListener{
             changeLogin()
@@ -26,10 +27,8 @@ class MainActivity : AppCompatActivity() {
     private fun changeLogin(){
         startActivity(Intent(this,LoginActivity::class.java))
     }
-    private fun startAnimation(){
 
-    }
-/*
+
     fun read_json() {
 
         val arr = arrayListOf<String>()
@@ -53,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-    }*/
+    }
 
 }
 
