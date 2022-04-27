@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import org.json.JSONArray
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //read_json()
-       val button = findViewById<Button>(R.id.button)
+       val button = findViewById<CardView>(R.id.button)
 
         button.setOnClickListener{
             changeLogin()
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this,LoginActivity::class.java))
     }
 
-
+/*
     fun read_json() {
 
         val arr = arrayListOf<String>()
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-    }
+    }*/
 
 }
 

@@ -13,12 +13,12 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        val email = findViewById<EditText>(R.id.edit_email)
-        val password = findViewById<EditText>(R.id.edit_password)
-        val confirmPassword = findViewById<EditText>(R.id.edit_confirm)
+        val email = findViewById<CardView>(R.id.edit_email)
+        val password = findViewById<CardView>(R.id.edit_password)
+        val confirmPassword = findViewById<CardView>(R.id.edit_confirm)
 
         val signUpButton = findViewById<CardView>(R.id.btn_signup)
-        //val signInButton = findViewById<AppCompatButton>(R.id.sign_in_button)
+
 
 
 

@@ -10,29 +10,30 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="148dp"
-        android:layout_height="138dp"
+        android:layout_height="137dp"
         android:layout_gravity="center"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="144dp"
-        android:src="@drawable/leftover_round"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/logo_round"
 
+        android:src="@drawable/round_logo_transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/emailText"
-        android:layout_width="329dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="38dp"
-        android:drawableRight="@drawable/ic_email"
-        android:drawableTint="#7C000000"
+        android:layout_width="305dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/alata"
-        android:text="Email"
+        android:text="@string/email"
         android:textColor="#7C000000"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_email"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
@@ -51,24 +52,27 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            tools:ignore="LabelFor,RtlSymmetry"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/passwordText"
-        android:layout_width="329dp"
-        android:layout_height="23dp"
+        android:layout_width="307dp"
+        android:layout_height="24dp"
         android:layout_marginTop="15dp"
-        android:drawableRight="@drawable/ic_lock"
-        android:drawableTint="#7C000000"
         android:fontFamily="@font/alata"
-        android:textStyle="bold"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="#7C000000"
         android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_lock"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_email" />
@@ -88,10 +92,13 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            tools:ignore="LabelFor,RtlSymmetry" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -99,21 +106,20 @@
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginStart="40dp"
-        android:layout_marginRight="168dp"
+        android:layout_marginTop="24dp"
         app:cardBackgroundColor="@color/purple_700"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="508dp">
+        app:layout_constraintTop_toBottomOf="@+id/edit_password">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/alata"
-            android:text="Sign in"
+            android:text="@string/sign_in"
             android:textAlignment="center"
             android:textColor="#7C000000"
             android:textSize="20sp"
@@ -136,7 +142,8 @@
             android:layout_width="35dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
-            android:src="@drawable/dragonfruit_icon" />
+            android:src="@drawable/dragonfruit_icon"
+            android:contentDescription="@string/dragonfruit_logo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -154,7 +161,8 @@
             android:layout_width="34dp"
             android:layout_height="33dp"
             android:layout_gravity="center"
-            android:src="@drawable/hamburger_icon" />
+            android:src="@drawable/hamburger_icon"
+            android:contentDescription="@string/hamburger_logo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -172,7 +180,8 @@
             android:layout_width="39dp"
             android:layout_height="42dp"
             android:layout_gravity="center"
-            android:src="@drawable/salad" />
+            android:src="@drawable/salad"
+            android:contentDescription="@string/salad_logo" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -181,7 +190,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/alata"
-        android:text="Don't have an account?"
+        android:text="@string/don_t_have_an_account_"
         android:textColor="#7C000000"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -195,9 +204,9 @@
         android:layout_width="91dp"
         android:layout_height="27dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="116dp"
+        android:layout_marginEnd="96dp"
         android:fontFamily="@font/alata"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="#1A2C1A"
         android:textSize="15sp"
         android:textStyle="bold"

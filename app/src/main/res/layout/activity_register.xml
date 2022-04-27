@@ -9,30 +9,30 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="148dp"
-        android:layout_height="138dp"
+        android:layout_width="146dp"
+        android:layout_height="136dp"
         android:layout_gravity="center"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="124dp"
-        android:src="@drawable/leftover_round"
-
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/logo_round"
+        android:src="@drawable/round_logo_transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/usernameText"
-        android:layout_width="328dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:drawableRight="@drawable/ic_username"
-        android:drawableTint="#7C000000"
+        android:layout_width="307dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/alata"
-        android:text="Username"
+        android:text="@string/username"
         android:textColor="#7C000000"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_username"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:ignore="MissingConstraints" />
@@ -52,25 +52,29 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            android:autofillHints="username"
+            android:inputType="textPersonName"
+             />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/emailText"
-        android:layout_width="329dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="15dp"
-        android:drawableRight="@drawable/ic_email"
-        android:drawableTint="#7C000000"
+        android:layout_width="310dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/alata"
-        android:text="Email"
+        android:text="@string/email"
         android:textColor="#7C000000"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:drawableEndCompat="@drawable/ic_email"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_username" />
 
@@ -89,25 +93,28 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            android:autofillHints=""
+            android:inputType="textEmailAddress" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/passwordText"
-        android:layout_width="329dp"
+        android:layout_width="309dp"
         android:layout_height="23dp"
-        android:layout_marginTop="15dp"
-        android:drawableRight="@drawable/ic_lock"
-        android:drawableTint="#7C000000"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/alata"
-        android:textStyle="bold"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="#7C000000"
         android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_lock"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_email" />
 
@@ -126,24 +133,26 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            android:autofillHints="password"
+            android:inputType="textPassword" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/confirmText"
-        android:layout_width="331dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="15dp"
-        android:drawableRight="@drawable/ic_lock"
-        android:drawableTint="#7C000000"
+        android:layout_width="314dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/alata"
-        android:text="Confirm password"
+        android:text="@string/confirm_password"
         android:textColor="#7C000000"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:drawableEndCompat="@drawable/ic_lock"
+        app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_password" />
@@ -162,18 +171,20 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:fontFamily="@font/roboto_thin"
-            android:paddingLeft="10dp"
-            android:textSize="14sp"
+            android:autofillHints="password"
             android:background="#fff"
-            android:cursorVisible="false" />
+            android:cursorVisible="false"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textSize="14sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/btn_signup"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:layout_marginRight="40dp"
         app:cardBackgroundColor="@color/purple_700"
         app:cardCornerRadius="25dp"
@@ -186,11 +197,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/alata"
-            android:textStyle="bold"
-            android:text="Sign up"
+            android:text="@string/sign_up"
             android:textAlignment="center"
             android:textColor="#7C000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -209,7 +220,8 @@
             android:layout_width="35dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
-            android:src="@drawable/dragonfruit_icon" />
+            android:src="@drawable/dragonfruit_icon"
+            android:contentDescription="@string/dragonfruit_logo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -227,7 +239,8 @@
             android:layout_width="34dp"
             android:layout_height="33dp"
             android:layout_gravity="center"
-            android:src="@drawable/hamburger_icon" />
+            android:src="@drawable/hamburger_icon"
+            android:contentDescription="@string/hamburger_logo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -245,7 +258,8 @@
             android:layout_width="39dp"
             android:layout_height="42dp"
             android:layout_gravity="center"
-            android:src="@drawable/salad" />
+            android:src="@drawable/salad"
+            android:contentDescription="@string/salad_logo" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

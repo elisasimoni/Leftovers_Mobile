@@ -24,9 +24,7 @@
     <string name="text_title">Android Tutorials Hub</string>
     <string name="already_a_member_login">Already a member? Login</string>
     <string name="please_login_to_your_account">Please login to your account</string>
-    <string name="username">Username</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="password">Password</string>
     <string name="sign_in">Sign in</string>
     <string name="or">OR</string>
     <string name="sign_in_with_google">Sign in with Google</string>
@@ -37,9 +35,7 @@
     <string name="create_a_new_account">Create a new account</string>
     <string name="last_name">Last Name</string>
     <string name="full_name">Full Name</string>
-    <string name="email">Email</string>
     <string name="mobile_number">Mobile Number</string>
-    <string name="confirm_password">Confirm password</string>
     <string name="sign_up3">sign up</string>
     <string name="sign_upCapital">Sign Up</string>
     <string name="already_have_an_account">Already have an account?</string>
@@ -60,6 +56,18 @@
     <string name="search" />
     <string name="more" />
     <string name="content_description_more" />
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="logo_round">logo_round</string>
+    <string name="hamburger_logo">hamburger_logo</string>
+    <string name="salad_logo">salad_logo</string>
+    <string name="don_t_have_an_account_">Don\'t have an account?</string>
+    <string name="dragonfruit_logo">dragonfruit_logo</string>
+    <string name="george_bernard_shaw">George Bernard Shaw</string>
+    <string name="quote">“Nessun amore è più sincero dell\'amore per il cibo”</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />
