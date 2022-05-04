@@ -23,7 +23,7 @@
         android:layout_height="34dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="Choose the ingredients"
+        android:text="@string/choose_the_ingredients"
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/dropdown_menu"
@@ -38,7 +38,7 @@
         android:layout_width="263dp"
         android:layout_height="39dp"
         android:layout_marginTop="28dp"
-        android:text="Search a recipe"
+        android:text="@string/search_a_recipe"
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"

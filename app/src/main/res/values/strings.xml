@@ -69,6 +69,8 @@
     <string name="george_bernard_shaw">George Bernard Shaw</string>
     <string name="quote">“Nessun amore è più sincero dell\'amore per il cibo”</string>
     <string name="ingredienti">Scegli gli ingredienti</string>
+    <string name="choose_the_ingredients">Choose the ingredients</string>
+    <string name="search_a_recipe">Search a recipe</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />

@@ -1,4 +1,4 @@
-[
+{"food":[
   {
     "id": 1,
     "name": "Angelica",
@@ -24799,4 +24799,4 @@
     "export_to_foodb": true,
     "public_id": "FOOD00992"
   }
-]
+]}
