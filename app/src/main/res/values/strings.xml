@@ -68,6 +68,7 @@
     <string name="dragonfruit_logo">dragonfruit_logo</string>
     <string name="george_bernard_shaw">George Bernard Shaw</string>
     <string name="quote">“Nessun amore è più sincero dell\'amore per il cibo”</string>
+    <string name="ingredienti">Scegli gli ingredienti</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />
