@@ -14,6 +14,14 @@
 
     </androidx.core.widget.NestedScrollView>
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp"
+        />
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
