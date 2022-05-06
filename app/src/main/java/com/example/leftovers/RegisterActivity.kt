@@ -12,18 +12,23 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
+        val username = findViewById<CardView>(R.id.edit_username)
         val email = findViewById<CardView>(R.id.edit_email)
         val password = findViewById<CardView>(R.id.edit_password)
         val confirmPassword = findViewById<CardView>(R.id.edit_confirm)
 
         val signUpButton = findViewById<CardView>(R.id.btn_signup)
 
+        if(password == confirmPassword) {
+            //insert(1, username, email, password)
+        }
 
 
 
 
 
     }
+
+
 }
 

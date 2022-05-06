@@ -19,7 +19,7 @@ class HomePageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
-        handleUsername("Welcome, Gianni")
+        handleUsername("Welcome, Elisa")
 
         viewPager2 = findViewById(R.id.viewPage)
 

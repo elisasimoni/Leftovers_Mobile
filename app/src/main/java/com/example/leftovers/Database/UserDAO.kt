@@ -1,12 +1,13 @@
 package com.example.leftovers
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface UserDAO {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertUsers(vararg users: User)
+
     @Query("SELECT * FROM user")
     fun getAll(): List<User>
 
