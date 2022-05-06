@@ -73,6 +73,7 @@
     <string name="search_a_recipe">Search a recipe</string>
     <string name="todo5">TODO</string>
     <string name="welcome">Welcome,</string>
+    <string name="user">user</string>
     <item name="textViewEmail" type="id" />
     <item name="textViewPassword" type="id" />
     <item name="json_list" type="id" />

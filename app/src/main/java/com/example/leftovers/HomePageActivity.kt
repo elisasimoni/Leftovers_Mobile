@@ -1,31 +1,29 @@
 package com.example.leftovers
 
 //import android.widget.Button
-import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import org.w3c.dom.Text
 
 
 class HomePageActivity : AppCompatActivity() {
-    private var text = findViewById<TextView>(R.id.usernameWelcome)
+
     private lateinit var viewPager2: ViewPager2
     private var sliderHandler = Handler()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
+        handleUsername("Welcome, Gianni")
 
         viewPager2 = findViewById(R.id.viewPage)
 
-        val sliderItems:MutableList<SliderRecipe> = ArrayList()
+        val sliderItems: MutableList<SliderRecipe> = ArrayList()
         sliderItems.add(SliderRecipe(R.drawable.smothie))
         sliderItems.add(SliderRecipe(R.drawable.banana_bread))
         sliderItems.add(SliderRecipe(R.drawable.teriyaki))
@@ -39,18 +37,19 @@ class HomePageActivity : AppCompatActivity() {
 
         val compositePageTransformer = CompositePageTransformer()
         compositePageTransformer.addTransformer(MarginPageTransformer(30))
-        compositePageTransformer.addTransformer{ page, position -> val r = 1 - kotlin.math.abs(
-            position
-        )
+        compositePageTransformer.addTransformer { page, position ->
+            val r = 1 - kotlin.math.abs(
+                position
+            )
             page.scaleY = 0.85f + r * 0.25f
         }
 
         viewPager2.setPageTransformer(compositePageTransformer)
-        viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
+        viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 sliderHandler.removeCallbacks(sliderRunnable)
-                sliderHandler.postDelayed(sliderRunnable,3000)
+                sliderHandler.postDelayed(sliderRunnable, 3000)
             }
 
         })
@@ -59,7 +58,7 @@ class HomePageActivity : AppCompatActivity() {
         //val plusRecipeBtn = findViewById<Button>(R.id.plusButton)
 
         //plusRecipeBtn.setOnClickListener(){
-          //  goToRecipe()
+        //  goToRecipe()
         //}
 
 /*
@@ -87,12 +86,11 @@ class HomePageActivity : AppCompatActivity() {
         viewPager2.currentItem = viewPager2.currentItem + 1
     }
 
-    public fun handleUsername(username : TextView){
-        text.text = username.toString()
+    private fun handleUsername(username: String) {
+        var text = findViewById<TextView>(R.id.usernameWelcome)
+        text.text = username
 
     }
-
-
 
 
     override fun onPause() {
@@ -104,8 +102,9 @@ class HomePageActivity : AppCompatActivity() {
         super.onResume()
         sliderHandler.postDelayed(sliderRunnable, 3000)
     }
-    private fun goToRecipe(){
-        val intent = Intent(this,RecipeCreatorActivity::class.java)
+
+    private fun goToRecipe() {
+        val intent = Intent(this, RecipeCreatorActivity::class.java)
         startActivity(intent)
 
     }
