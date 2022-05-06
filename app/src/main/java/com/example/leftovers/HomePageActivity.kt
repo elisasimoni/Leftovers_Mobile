@@ -1,25 +1,29 @@
 package com.example.leftovers
 
+//import android.widget.Button
+import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Button
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import org.w3c.dom.Text
 
 
 class HomePageActivity : AppCompatActivity() {
-
+    private var text = findViewById<TextView>(R.id.usernameWelcome)
     private lateinit var viewPager2: ViewPager2
     private var sliderHandler = Handler()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
 
-        viewPager2 = findViewById(R.id.imageSlider)
+        viewPager2 = findViewById(R.id.viewPage)
 
         val sliderItems:MutableList<SliderRecipe> = ArrayList()
         sliderItems.add(SliderRecipe(R.drawable.smothie))
@@ -52,11 +56,11 @@ class HomePageActivity : AppCompatActivity() {
         })
 
 
-        val plusRecipeBtn = findViewById<Button>(R.id.plusButton)
+        //val plusRecipeBtn = findViewById<Button>(R.id.plusButton)
 
-        plusRecipeBtn.setOnClickListener(){
-            goToRecipe()
-        }
+        //plusRecipeBtn.setOnClickListener(){
+          //  goToRecipe()
+        //}
 
 /*
         bottomAppBar.setNavigationOnClickListener {
@@ -82,6 +86,14 @@ class HomePageActivity : AppCompatActivity() {
     private val sliderRunnable = Runnable {
         viewPager2.currentItem = viewPager2.currentItem + 1
     }
+
+    public fun handleUsername(username : TextView){
+        text.text = username.toString()
+
+    }
+
+
+
 
     override fun onPause() {
         super.onPause()

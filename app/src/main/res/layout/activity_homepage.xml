@@ -3,24 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!-- Note: A RecyclerView can also be used -->
-    <androidx.core.widget.NestedScrollView
+
+    <TextView
+        android:id="@+id/usernameWelcome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="100dp"
-        android:clipToPadding="false">
+        android:layout_height="wrap_content"
+        android:text="@string/welcome" />
 
-        <!-- Scrollable content -->
-
-    </androidx.core.widget.NestedScrollView>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingStart="70dp"
-        android:paddingEnd="70dp"
-        />
+        android:layout_height="604dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp" >
+
+
+    </androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -39,6 +38,6 @@
         app:srcCompat="@drawable/ic_add_24dp"
         app:layout_anchor="@id/bottomAppBar"
 
-        />
+        android:contentDescription="@string/todo5" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

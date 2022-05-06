@@ -21,15 +21,17 @@ class LoginActivity : AppCompatActivity() {
         val signInBtn = findViewById<CardView>(R.id.btn_login)
         val signUpBtn = findViewById<TextView>(R.id.signdont)
 
+        signInBtn.setOnClickListener{
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent)
+        }
+
         signUpBtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
 
         }
 
-        signInBtn.setOnClickListener{
-            val intent = Intent(this, HomePageActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 }
