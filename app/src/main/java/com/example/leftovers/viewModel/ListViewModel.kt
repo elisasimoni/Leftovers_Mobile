@@ -1,4 +1,4 @@
-package com.example.leftovers.ViewModel
+package com.example.leftovers.viewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 

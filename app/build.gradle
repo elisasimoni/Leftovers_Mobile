@@ -31,12 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.leftovers'
 }
 
 dependencies {
 
 
     implementation 'androidx.test:core-ktx:1.4.0'
+    implementation 'junit:junit:4.12'
     def roomVersion = "2.4.2"
 
     implementation("androidx.room:room-runtime:$roomVersion")
