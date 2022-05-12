@@ -20,7 +20,7 @@ class HomePageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
         val username = intent.getStringExtra("Username")
-        handleUsername("Welcome,$username")
+        handleUsername("Welcome, $username")
 
         viewPager2 = findViewById(R.id.viewPage)
 

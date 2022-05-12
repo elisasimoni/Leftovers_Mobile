@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_email_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -49,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailText">
 
         <EditText
+            android:id="@+id/edit_email"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -75,10 +76,10 @@
         app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_CARD" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_password_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -89,6 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordText">
 
         <EditText
+            android:id="@+id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -112,7 +114,7 @@
         app:cardElevation="10dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_password">
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_CARD">
 
         <TextView
             android:layout_width="match_parent"
@@ -212,5 +214,19 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/wrongEPText"
+        android:layout_width="323dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dont"
+        app:layout_constraintVertical_bias="0.285"
+        android:text="Wrong email and password"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,7 +38,7 @@
        />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_username"
+        android:id="@+id/edit_username_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -49,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/usernameText">
 
         <EditText
+            android:id="@+id/edit_username"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -58,6 +59,7 @@
             android:cursorVisible="false"
             android:autofillHints="username"
             android:inputType="textPersonName"
+
              />
     </androidx.cardview.widget.CardView>
 
@@ -76,10 +78,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_username_CARD" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_email_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -90,6 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailText">
 
         <EditText
+            android:id="@+id/edit_email"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -116,10 +119,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_CARD" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_password_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -130,6 +133,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordText">
 
         <EditText
+            android:id="@+id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -155,10 +159,10 @@
         app:drawableTint="#7C000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_CARD" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/edit_confirm"
+        android:id="@+id/edit_confirm_CARD"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="40dp"
@@ -169,6 +173,7 @@
         app:layout_constraintTop_toBottomOf="@+id/confirmText">
 
         <EditText
+            android:id="@+id/edit_confirm"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:autofillHints="password"
@@ -190,7 +195,7 @@
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_confirm">
+        app:layout_constraintTop_toBottomOf="@+id/edit_confirm_CARD">
 
         <TextView
             android:layout_width="match_parent"
