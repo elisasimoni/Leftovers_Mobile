@@ -1,15 +1,23 @@
 package com.example.leftovers
 
 //import android.widget.Button
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.MenuItem
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class HomePageActivity : AppCompatActivity() {
@@ -56,28 +64,27 @@ class HomePageActivity : AppCompatActivity() {
         })
 
 
-        //val plusRecipeBtn = findViewById<Button>(R.id.plusButton)
 
-        //plusRecipeBtn.setOnClickListener(){
-        //  goToRecipe()
-        //}
+        val plusRecipeBtn = findViewById<FloatingActionButton>(R.id.plusButton)
 
+        plusRecipeBtn.setOnClickListener(){
+         goToRecipe()
+        }
 /*
-        bottomAppBar.setNavigationOnClickListener {
+        val topAppBar = findViewById<MaterialToolbar>(R.id.bottomAppBar)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        topAppBar.setNavigationOnClickListener {
+            drawerLayout.open()
             // Handle navigation icon press
         }
 
-
-        bottomAppBar.setOnMenuItemClickListener { menuItem ->
+        topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.search -> {
-                    // Handle search icon press
+                R.id.favorite -> {
+                    // Handle favorite icon press
                     true
                 }
-                R.id.more -> {
-                    // Handle more item (inside overflow menu) press
-                    true
-                }
+
                 else -> false
             }
         }*/

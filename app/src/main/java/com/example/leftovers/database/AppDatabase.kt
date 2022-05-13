@@ -10,7 +10,7 @@ import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.UserDAO
 
 
-@Database(entities = [User::class], version = 1)
+@Database(entities = [User::class]   , version = 1)
 abstract  class AppDatabase : RoomDatabase(){
 
     abstract fun userDao(): UserDAO

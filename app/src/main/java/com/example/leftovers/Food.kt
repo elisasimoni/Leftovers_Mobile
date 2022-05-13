@@ -10,6 +10,6 @@ data class Food(
     @ColumnInfo(name = "Name_scientific") val nameScientific: String?,
     @ColumnInfo(name = "Description") val description: String?,
     @ColumnInfo(name = "Food_group") val foodGroup: String?,
-    @ColumnInfo(name = "Food_subgroup") val foodSubgroup: Int?,
+    @ColumnInfo(name = "Food_subgroup") val foodSubgroup: String?,
 
     )
