@@ -7,18 +7,19 @@ data class Recipe(
     @PrimaryKey val uid: Int,
     @ColumnInfo(name = "Name") val name: String?,
     @ColumnInfo(name = "Source") val source: String?,
-    @ColumnInfo(name = "Servings") val serving: Int?,
+    @ColumnInfo(name = "Servings") val serving: String?,
     @ColumnInfo(name = "Comments") val password: String?,
-    @ColumnInfo(name = "Calories") val calories: Int?,
-    @ColumnInfo(name = "fat") val fat: Int?,
-    @ColumnInfo(name = "Sat_fat") val satFat: Int?,
-    @ColumnInfo(name = "Carbs") val carbs: Int?,
-    @ColumnInfo(name = "Fiber") val fiber: Int?,
-    @ColumnInfo(name = "Sugar") val sugar: Int?,
-    @ColumnInfo(name = "Protein") val protein: Int?,
+    @ColumnInfo(name = "Calories") val calories: String?,
+    @ColumnInfo(name = "fat") val fat: String?,
+    @ColumnInfo(name = "Sat_fat") val satFat: String?,
+    @ColumnInfo(name = "Carbs") val carbs: String?,
+    @ColumnInfo(name = "Fiber") val fiber: String?,
+    @ColumnInfo(name = "Sugar") val sugar: String?,
+    @ColumnInfo(name = "Protein") val protein: String?,
     @ColumnInfo(name = "Instruction") val instruction: String?,
     @ColumnInfo(name = "Ingredients") val ingredients: String?,
     @ColumnInfo(name = "Category") val category: String?,
+    @ColumnInfo(name = "tags") val tags: String?
 
 
-)
+    )

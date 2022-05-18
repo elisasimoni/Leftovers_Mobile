@@ -3,19 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splashscreen">
     <!-- Note: A RecyclerView can also be used -->
 
-    <!--<androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingBottom="100dp">
-
-         Scrollable content
-
-
-    </androidx.core.widget.NestedScrollView>-->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -46,7 +37,7 @@
         android:id="@+id/chipGroup"
         android:layout_width="333dp"
         android:layout_height="102dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +62,7 @@
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="false"
+
             android:text="Vegetarian" />
 
         <com.google.android.material.chip.Chip
@@ -112,9 +103,9 @@
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dropdown_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupFood" />
 
     <TextView
         android:id="@+id/searchreci"
@@ -130,24 +121,31 @@
         app:layout_constraintTop_toBottomOf="@+id/chooseIn2" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
+    <AutoCompleteTextView
         android:id="@+id/dropdown_menu"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="289dp"
-        android:layout_height="35dp"
+        android:layout_width="290dp"
+        android:layout_height="41dp"
         android:layout_marginTop="28dp"
-        android:hint="@string/label"
+        android:completionHint="Select a food"
+        android:completionThreshold="1"
+        android:hint="Select a food"
+        android:popupBackground="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchreci">
+        app:layout_constraintTop_toBottomOf="@+id/searchreci" />
 
-        <AutoCompleteTextView
-            android:id="@+id/autocomplete"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:inputType="none" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFood"
+            android:layout_width="355dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dropdown_menu"
+            >
 
+        </com.google.android.material.chip.ChipGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

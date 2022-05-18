@@ -1,0 +1,1871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food_list">
+        <item>Angelica</item>
+        <item>Savoy cabbage</item>
+        <item>Silver linden</item>
+        <item>Kiwi</item>
+        <item>Allium</item>
+        <item>Garden onion</item>
+        <item>Leek</item>
+        <item>Garlic</item>
+        <item>Chives</item>
+        <item>Lemon verbena</item>
+        <item>Cashew nut</item>
+        <item>Pineapple</item>
+        <item>Dill</item>
+        <item>Custard apple</item>
+        <item>Wild celery</item>
+        <item>Peanut</item>
+        <item>Burdock</item>
+        <item>Horseradish</item>
+        <item>Tarragon</item>
+        <item>Mugwort</item>
+        <item>Asparagus</item>
+        <item>Oat</item>
+        <item>Star fruit</item>
+        <item>Brazil nut</item>
+        <item>Common beet</item>
+        <item>Borage</item>
+        <item> Chinese mustard </item>
+        <item> Swede </item>
+        <item> Rape </item>
+        <item> Common cabbage </item>
+        <item> Cauliflower </item>
+        <item> Brussel sprouts </item>
+        <item> Kohlrabi </item>
+        <item> Broccoli </item>
+        <item> Chinese cabbage </item>
+        <item> Turnip </item>
+        <item> Pigeon pea </item>
+        <item> Tea </item>
+        <item> Capers </item>
+        <item> Pepper </item>
+        <item> Papaya </item>
+        <item> Safflower </item>
+        <item> Caraway </item>
+        <item> Pecan nut </item>
+        <item> Chestnut </item>
+        <item> Roman camomile </item>
+        <item> Chickpea </item>
+        <item> Endive </item>
+        <item> Chicory </item>
+        <item> Chinese cinnamon </item>
+        <item> Ceylon cinnamon </item>
+        <item> Watermelon </item>
+        <item> Lime </item>
+        <item> Lemon </item>
+        <item>Pummelo</item>
+        <item>Mandarin orange</item>
+        <item> Sweet orange </item>
+        <item> Coffee </item>
+        <item> Arabica coffee </item>
+        <item> Robusta coffee </item>
+        <item> Coriander </item>
+        <item> Common hazelnut </item>
+        <item> Saffron </item>
+        <item> Muskmelon </item>
+        <item> Cucumber </item>
+        <item> Cucurbita </item>
+        <item> Cumin </item>
+        <item> Turmeric </item>
+        <item> Quince </item>
+        <item> Lemon grass </item>
+        <item> Globe artichoke </item>
+        <item> Wild carrot </item>
+        <item> Japanese persimmon </item>
+        <item> Cardamom </item>
+        <item> Black crowberry </item>
+        <item> Loquat </item>
+        <item> Rocket salad (ssp.) </item>
+        <item> Wax apple </item>
+        <item> Common buckwheat </item>
+        <item> Tartary buckwheat </item>
+        <item> Fig </item>
+        <item> Fennel </item>
+        <item> Strawberry </item>
+        <item> Black huckleberry </item>
+        <item> Soy bean </item>
+        <item> Sunflower </item>
+        <item> Sea-buckthornberry </item>
+        <item> Barley </item>
+        <item> Hyssop </item>
+        <item> Star anise </item>
+        <item> Swamp cabbage </item>
+        <item> Sweet potato </item>
+        <item> Black walnut </item>
+        <item> Common walnut </item>
+        <item> Lettuce </item>
+        <item> Grass pea </item>
+        <item> Sweet bay </item>
+        <item> Lentils </item>
+        <item> Garden cress </item>
+        <item> Lovage </item>
+        <item> Flaxseed </item>
+        <item> Mexican oregano </item>
+        <item> Lichee </item>
+        <item> Lupine </item>
+        <item> Apple </item>
+        <item> Mango </item>
+        <item> German camomile </item>
+        <item> Lemon balm </item>
+        <item> Mentha </item>
+        <item> Orange mint </item>
+        <item> Cornmint </item>
+        <item> Spearmint </item>
+        <item> Peppermint </item>
+        <item> Medlar </item>
+        <item> Bitter gourd </item>
+        <item> Mulberry </item>
+        <item> Black mulberry </item>
+        <item> Nutmeg </item>
+        <item> Sweet basil </item>
+        <item> Evening primrose </item>
+        <item> Olive </item>
+        <item> Sweet marjoram </item>
+        <item> Pot marjoram </item>
+        <item> Common oregano </item>
+        <item> Rice </item>
+        <item> Millet </item>
+        <item> Poppy </item>
+        <item> Passion fruit </item>
+        <item> Parsnip </item>
+        <item> Avocado </item>
+        <item> Parsley </item>
+        <item> Scarlet bean </item>
+        <item> Lima bean </item>
+        <item> Common bean </item>
+        <item> Date </item>
+        <item> Black chokeberry </item>
+        <item> Anise </item>
+        <item> Pine nut </item>
+        <item> Pepper (Spice) </item>
+        <item> Pistachio </item>
+        <item> Common pea </item>
+        <item> Purslane </item>
+        <item> Prunus (Cherry, Plum) </item>
+        <item> Apricot </item>
+        <item> Sweet cherry </item>
+        <item> Sour cherry </item>
+        <item> European plum </item>
+        <item> Almond </item>
+        <item> Peach </item>
+        <item> Guava </item>
+        <item> Pomegranate </item>
+        <item> Pear </item>
+        <item> Radish </item>
+        <item> Garden rhubarb </item>
+        <item> Blackcurrant </item>
+        <item> Redcurrant </item>
+        <item> Gooseberry </item>
+        <item> Watercress </item>
+        <item> Rosemary </item>
+        <item> Rubus (Blackberry, Raspberry) </item>
+        <item> Cloudberry </item>
+        <item> Red raspberry </item>
+        <item> Black raspberry </item>
+        <item> Sorrel </item>
+        <item> Common sage </item>
+        <item> Black elderberry </item>
+        <item> Summer savory </item>
+        <item> Winter savory </item>
+        <item> Rye </item>
+        <item> Sesame </item>
+        <item> Garden tomato </item>
+        <item> Cherry tomato </item>
+        <item> Garden tomato (var.) </item>
+        <item> Eggplant </item>
+        <item> Potato </item>
+        <item> Rowanberry </item>
+        <item> Sorghum </item>
+        <item> Spinach </item>
+        <item> Cloves </item>
+        <item> Tamarind </item>
+        <item> Dandelion </item>
+        <item> Cocoa bean </item>
+        <item> Common thyme </item>
+        <item> Linden </item>
+        <item> Small-leaf linden </item>
+        <item> Fenugreek </item>
+        <item> Common wheat </item>
+        <item> Vaccinium (Blueberry, Cranberry, Huckleberry) </item>
+        <item> Lowbush blueberry </item>
+        <item> Sparkleberry </item>
+        <item> Highbush blueberry </item>
+        <item> American cranberry </item>
+        <item> Bilberry </item>
+        <item> Lingonberry </item>
+        <item> Vanilla </item>
+        <item> Common verbena </item>
+        <item> Broad bean </item>
+        <item> Adzuki bean </item>
+        <item> Gram bean </item>
+        <item> Mung bean </item>
+        <item> Climbing bean </item>
+        <item> Cowpea </item>
+        <item> Muscadine grape </item>
+        <item> Common grape </item>
+        <item> Corn </item>
+        <item> Ginger </item>
+        <item> Arctic blackberry </item>
+        <item> Banana </item>
+        <item> Bayberry </item>
+        <item> Elliott blueberry </item>
+        <item> Canada blueberry </item>
+        <item> Bog bilberry </item>
+        <item> Buffalo currant </item>
+        <item> Celeriac </item>
+        <item> Celery stalks </item>
+        <item> Chinese chives </item>
+        <item> European cranberry </item>
+        <item> Deerberry </item>
+        <item> Ginseng </item>
+        <item> Cascade huckleberry </item>
+        <item> Oval-leaf huckleberry </item>
+        <item> Evergreen huckleberry </item>
+        <item> Red huckleberry </item>
+        <item> Longan </item>
+        <item> Macadamia nut (M. tetraphylla) </item>
+        <item> Garden onion (var.) </item>
+        <item> Summer grape </item>
+        <item> Fox grape </item>
+        <item> Nectarine </item>
+        <item> Peach (var.) </item>
+        <item> Pepper (C. baccatum) </item>
+        <item> Pepper (C. chinense) </item>
+        <item> Pepper (Capsicum) </item>
+        <item> Rambutan </item>
+        <item> Red rice </item>
+        <item> Annual wild rice </item>
+        <item> Swiss chard </item>
+        <item> Lemon thyme </item>
+        <item> Tronchuda cabbage </item>
+        <item> Japanese walnut </item>
+        <item> Welsh onion </item>
+        <item> Hard wheat </item>
+        <item> Shallot </item>
+        <item> Rocket salad </item>
+        <item> Carrot </item>
+        <item> Triticale </item>
+        <item> Black cabbage </item>
+        <item> Half-highbush blueberry </item>
+        <item> Celery leaves </item>
+        <item> Chicory leaves </item>
+        <item> Komatsuna </item>
+        <item> Pak choy </item>
+        <item> Napa cabbage </item>
+        <item> Chicory roots </item>
+        <item> Grapefruit/Pummelo hybrid </item>
+        <item> Grapefruit </item>
+        <item> Jostaberry </item>
+        <item> Kai-lan </item>
+        <item> Italian oregano </item>
+        <item> Oxheart cabbage </item>
+        <item> Daikon radish </item>
+        <item> Black radish </item>
+        <item> Radish (var.) </item>
+        <item> Red beetroot </item>
+        <item> Sweet rowanberry </item>
+        <item> Pineappple sage </item>
+        <item> Skunk currant </item>
+        <item> Beer </item>
+        <item> Other bread </item>
+        <item> Breakfast cereal </item>
+        <item> Other soy product </item>
+        <item> Other cereal product </item>
+        <item> Pasta </item>
+        <item> Biscuit </item>
+        <item> Sourdough </item>
+        <item> Spirit </item>
+        <item> Fortified wine </item>
+        <item> Other alcoholic beverage </item>
+        <item> Abalone </item>
+        <item> Abiyuch </item>
+        <item> Acerola </item>
+        <item> Acorn </item>
+        <item> Winter squash </item>
+        <item> Agar </item>
+        <item> Red king crab </item>
+        <item> Alfalfa </item>
+        <item> Allspice </item>
+        <item> Amaranth </item>
+        <item> Arrowhead </item>
+        <item> Arrowroot </item>
+        <item> Asian pear </item>
+        <item> Atlantic herring </item>
+        <item> Atlantic mackerel </item>
+        <item> Painted comber </item>
+        <item> Atlantic pollock </item>
+        <item> Atlantic wolffish </item>
+        <item> Bamboo shoots </item>
+        <item> Striped bass </item>
+        <item> Beech nut </item>
+        <item> Beluga whale </item>
+        <item> Bison </item>
+        <item> Alaska blackfish </item>
+        <item> Blue crab </item>
+        <item> Blue mussel </item>
+        <item> Northern bluefin tuna </item>
+        <item> Bluefish </item>
+        <item> Wild boar </item>
+        <item> Bowhead whale </item>
+        <item> Breadfruit </item>
+        <item> Breadnut tree seed </item>
+        <item> Rapini </item>
+        <item> Buffalo </item>
+        <item> Burbot </item>
+        <item> Giant butterbur </item>
+        <item> American butterfish </item>
+        <item> Butternut </item>
+        <item> Butternut squash </item>
+        <item> Calabash </item>
+        <item> Cardoon </item>
+        <item> Natal plum </item>
+        <item> Carob </item>
+        <item> Common carp </item>
+        <item> Cassava </item>
+        <item> Channel catfish </item>
+        <item> Chayote </item>
+        <item> Cherimoya </item>
+        <item> Chervil </item>
+        <item> Chia </item>
+        <item> Chicken </item>
+        <item> Chinese broccoli </item>
+        <item> Chinese chestnut </item>
+        <item> Chinese water chestnut </item>
+        <item> Garland chrysanthemum </item>
+        <item> Cisco </item>
+        <item> Nuttall cockle </item>
+        <item> Coconut </item>
+        <item> Pacific cod </item>
+        <item> Atlantic cod </item>
+        <item> Common octopus </item>
+        <item> Corn salad </item>
+        <item> Cottonseed </item>
+        <item> Catjang pea </item>
+        <item> Malus (Crab apple) </item>
+        <item> Squashberry </item>
+        <item> Atlantic croaker </item>
+        <item> Cusk </item>
+        <item> Cuttlefish </item>
+        <item> Mule deer </item>
+        <item> Devilfish </item>
+        <item> Dock </item>
+        <item> Dolphin fish </item>
+        <item> Freshwater drum </item>
+        <item> Mallard duck </item>
+        <item> Dungeness crab </item>
+        <item> Durian </item>
+        <item> Eastern oyster </item>
+        <item> Freshwater eel </item>
+        <item> Elderberry </item>
+        <item> Elk </item>
+        <item> Emu </item>
+        <item> Oregon yampah </item>
+        <item> European anchovy </item>
+        <item> European chestnut </item>
+        <item> Turbot </item>
+        <item> Fireweed </item>
+        <item> Florida pompano </item>
+        <item> Ginkgo nuts </item>
+        <item> Greylag goose </item>
+        <item> Grape </item>
+        <item> Greenland halibut/turbot </item>
+        <item> Groundcherry </item>
+        <item> Grouper </item>
+        <item> Guinea hen </item>
+        <item> Haddock </item>
+        <item> Hippoglossus (Common halibut) </item>
+        <item> Hazelnut </item>
+        <item> Hickory nut </item>
+        <item> Horse </item>
+        <item> Horseradish tree </item>
+        <item> Alaska blueberry </item>
+        <item> Hyacinth bean </item>
+        <item> Irish moss </item>
+        <item> Pacific jack mackerel </item>
+        <item> Jackfruit </item>
+        <item> Japanese chestnut </item>
+        <item> Java plum </item>
+        <item> Jerusalem artichoke </item>
+        <item> Jujube </item>
+        <item> Jute </item>
+        <item> Kale </item>
+        <item> Kelp </item>
+        <item> King mackerel </item>
+        <item> Kumquat </item>
+        <item> Lambsquarters </item>
+        <item> Leather chiton </item>
+        <item> Wild leek </item>
+        <item> Common ling </item>
+        <item> Lingcod </item>
+        <item> American lobster </item>
+        <item> Loganberry </item>
+        <item> Lotus </item>
+        <item> Sacred lotus </item>
+        <item> White lupine </item>
+        <item> Malabar spinach </item>
+        <item> Mammee apple </item>
+        <item> Purple mangosteen </item>
+        <item> Alpine sweetvetch </item>
+        <item> Milkfish </item>
+        <item> Monkfish </item>
+        <item> Moth bean </item>
+        <item> Mountain yam </item>
+        <item> Striped mullet </item>
+        <item> White mustard </item>
+        <item> Mustard spinach </item>
+        <item> New Zealand spinach </item>
+        <item> Nopal </item>
+        <item> Ocean pout </item>
+        <item> North Pacific giant octopus </item>
+        <item> Ohelo berry </item>
+        <item> Okra </item>
+        <item> Tunicate </item>
+        <item> Ostrich </item>
+        <item> Spotted seal </item>
+        <item> Pacific herring </item>
+        <item> Pacific oyster </item>
+        <item> Pacific rockfish </item>
+        <item> Velvet duck </item>
+        <item> Pepper (C. frutescens) </item>
+        <item> Common persimmon </item>
+        <item> Pheasant </item>
+        <item> Northern pike </item>
+        <item> Pili nut </item>
+        <item> Colorado pinyon </item>
+        <item> Pitanga </item>
+        <item> Plains prickly pear </item>
+        <item> French plantain </item>
+        <item> American pokeweed </item>
+        <item> Opium poppy </item>
+        <item> Prairie turnip </item>
+        <item> Prickly pear </item>
+        <item> Quinoa </item>
+        <item> European rabbit </item>
+        <item> Rainbow smelt </item>
+        <item> Rainbow trout </item>
+        <item> Malabar plum </item>
+        <item> Angelica </item>
+        <item> Savoy cabbage </item>
+        <item> Silver linden </item>
+        <item> Kiwi </item>
+        <item> Allium </item>
+        <item> Garden onion </item>
+        <item> Leek </item>
+        <item> Garlic </item>
+        <item> Chives </item>
+        <item> Lemon verbena </item>
+        <item> Cashew nut </item>
+        <item> Pineapple </item>
+        <item> Dill </item>
+        <item> Custard apple </item>
+        <item> Wild celery </item>
+        <item> Peanut </item>
+        <item> Burdock </item>
+        <item> Horseradish </item>
+        <item> Tarragon </item>
+        <item> Mugwort </item>
+        <item> Asparagus </item>
+        <item> Oat </item>
+        <item> Star fruit </item>
+        <item> Brazil nut </item>
+        <item> Common beet </item>
+        <item> Borage </item>
+        <item> Chinese mustard </item>
+        <item> Swede </item>
+        <item> Rape </item>
+        <item> Common cabbage </item>
+        <item> Cauliflower </item>
+        <item> Brussel sprouts </item>
+        <item> Kohlrabi </item>
+        <item> Broccoli </item>
+        <item> Chinese cabbage </item>
+        <item> Turnip </item>
+        <item> Pigeon pea </item>
+        <item> Tea </item>
+        <item> Capers </item>
+        <item> Pepper </item>
+        <item> Papaya </item>
+        <item> Safflower </item>
+        <item> Caraway </item>
+        <item> Pecan nut </item>
+        <item> Chestnut </item>
+        <item> Roman camomile </item>
+        <item> Chickpea </item>
+        <item> Endive </item>
+        <item> Chicory </item>
+        <item> Chinese cinnamon </item>
+        <item> Ceylon cinnamon </item>
+        <item> Watermelon </item>
+        <item> Lime </item>
+        <item> Lemon </item>
+        <item> Pummelo </item>
+        <item> Mandarin orange (Clementine, Tangerine) </item>
+        <item> Sweet orange </item>
+        <item> Coffee </item>
+        <item> Arabica coffee </item>
+        <item> Robusta coffee </item>
+        <item> Coriander </item>
+        <item> Common hazelnut </item>
+        <item> Saffron </item>
+        <item> Muskmelon </item>
+        <item> Cucumber </item>
+        <item> Cucurbita </item>
+        <item> Cumin </item>
+        <item> Turmeric </item>
+        <item> Quince </item>
+        <item> Lemon grass </item>
+        <item> Globe artichoke </item>
+        <item> Wild carrot </item>
+        <item> Japanese persimmon </item>
+        <item> Cardamom </item>
+        <item> Black crowberry </item>
+        <item> Loquat </item>
+        <item> Rocket salad (ssp.) </item>
+        <item> Wax apple </item>
+        <item> Common buckwheat </item>
+        <item> Tartary buckwheat </item>
+        <item> Fig </item>
+        <item> Fennel </item>
+        <item> Strawberry </item>
+        <item> Black huckleberry </item>
+        <item> Soy bean </item>
+        <item> Sunflower </item>
+        <item> Sea-buckthornberry </item>
+        <item> Barley </item>
+        <item> Hyssop </item>
+        <item> Star anise </item>
+        <item> Swamp cabbage </item>
+        <item> Sweet potato </item>
+        <item> Black walnut </item>
+        <item> Common walnut </item>
+        <item> Lettuce </item>
+        <item> Grass pea </item>
+        <item> Sweet bay </item>
+        <item> Lentils </item>
+        <item> Garden cress </item>
+        <item> Lovage </item>
+        <item> Flaxseed </item>
+        <item> Mexican oregano </item>
+        <item> Lichee </item>
+        <item> Lupine </item>
+        <item> Apple </item>
+        <item> Mango </item>
+        <item> German camomile </item>
+        <item> Lemon balm </item>
+        <item> Mentha </item>
+        <item> Orange mint </item>
+        <item> Cornmint </item>
+        <item> Spearmint </item>
+        <item> Peppermint </item>
+        <item> Medlar </item>
+        <item> Bitter gourd </item>
+        <item> Mulberry </item>
+        <item> Black mulberry </item>
+        <item> Nutmeg </item>
+        <item> Sweet basil </item>
+        <item> Evening primrose </item>
+        <item> Olive </item>
+        <item> Sweet marjoram </item>
+        <item> Pot marjoram </item>
+        <item> Common oregano </item>
+        <item> Rice </item>
+        <item> Millet </item>
+        <item> Poppy </item>
+        <item> Passion fruit </item>
+        <item> Parsnip </item>
+        <item> Avocado </item>
+        <item> Parsley </item>
+        <item> Scarlet bean </item>
+        <item> Lima bean </item>
+        <item> Common bean </item>
+        <item> Date </item>
+        <item> Black chokeberry </item>
+        <item> Anise </item>
+        <item> Pine nut </item>
+        <item> Pepper (Spice) </item>
+        <item> Pistachio </item>
+        <item> Common pea </item>
+        <item> Purslane </item>
+        <item> Prunus (Cherry, Plum) </item>
+        <item> Apricot </item>
+        <item> Sweet cherry </item>
+        <item> Sour cherry </item>
+        <item> European plum </item>
+        <item> Almond </item>
+        <item> Peach </item>
+        <item> Guava </item>
+        <item> Pomegranate </item>
+        <item> Pear </item>
+        <item> Radish </item>
+        <item> Garden rhubarb </item>
+        <item> Blackcurrant </item>
+        <item> Redcurrant </item>
+        <item> Gooseberry </item>
+        <item> Watercress </item>
+        <item> Rosemary </item>
+        <item> Rubus (Blackberry, Raspberry) </item>
+        <item> Cloudberry </item>
+        <item> Red raspberry </item>
+        <item> Black raspberry </item>
+        <item> Sorrel </item>
+        <item> Common sage </item>
+        <item> Black elderberry </item>
+        <item> Summer savory </item>
+        <item> Winter savory </item>
+        <item> Rye </item>
+        <item> Sesame </item>
+        <item> Garden tomato </item>
+        <item> Cherry tomato </item>
+        <item> Garden tomato (var.) </item>
+        <item> Eggplant </item>
+        <item> Potato </item>
+        <item> Rowanberry </item>
+        <item> Sorghum </item>
+        <item> Spinach </item>
+        <item> Cloves </item>
+        <item> Tamarind </item>
+        <item> Dandelion </item>
+        <item> Cocoa bean </item>
+        <item> Common thyme </item>
+        <item> Linden </item>
+        <item> Small-leaf linden </item>
+        <item> Fenugreek </item>
+        <item> Common wheat </item>
+        <item> Vaccinium (Blueberry, Cranberry, Huckleberry) </item>
+        <item> Lowbush blueberry </item>
+        <item> Sparkleberry </item>
+        <item> Highbush blueberry </item>
+        <item> American cranberry </item>
+        <item> Bilberry </item>
+        <item> Lingonberry </item>
+        <item> Vanilla </item>
+        <item> Common verbena </item>
+        <item> Broad bean </item>
+        <item> Adzuki bean </item>
+        <item> Gram bean </item>
+        <item> Mung bean </item>
+        <item> Climbing bean </item>
+        <item> Cowpea </item>
+        <item> Muscadine grape </item>
+        <item> Common grape </item>
+        <item> Corn </item>
+        <item> Ginger </item>
+        <item> Arctic blackberry </item>
+        <item> Banana </item>
+        <item> Bayberry </item>
+        <item> Elliott blueberry </item>
+        <item> Canada blueberry </item>
+        <item> Bog bilberry </item>
+        <item> Buffalo currant </item>
+        <item> Celeriac </item>
+        <item> Celery stalks </item>
+        <item> Chinese chives </item>
+        <item> European cranberry </item>
+        <item> Deerberry </item>
+        <item> Ginseng </item>
+        <item> Cascade huckleberry </item>
+        <item> Oval-leaf huckleberry </item>
+        <item> Evergreen huckleberry </item>
+        <item> Red huckleberry </item>
+        <item> Longan </item>
+        <item> Macadamia nut (M. tetraphylla) </item>
+        <item> Garden onion (var.) </item>
+        <item> Summer grape </item>
+        <item> Fox grape </item>
+        <item> Nectarine </item>
+        <item> Peach (var.) </item>
+        <item> Pepper (C. baccatum) </item>
+        <item> Pepper (C. chinense) </item>
+        <item> Pepper (Capsicum) </item>
+        <item> Rambutan </item>
+        <item> Red rice </item>
+        <item> Annual wild rice </item>
+        <item> Swiss chard </item>
+        <item> Lemon thyme </item>
+        <item> Tronchuda cabbage </item>
+        <item> Japanese walnut </item>
+        <item> Welsh onion </item>
+        <item> Hard wheat </item>
+        <item> Shallot </item>
+        <item> Rocket salad </item>
+        <item> Carrot </item>
+        <item> Triticale </item>
+        <item> Black cabbage </item>
+        <item> Half-highbush blueberry </item>
+        <item> Celery leaves </item>
+        <item> Chicory leaves </item>
+        <item> Komatsuna </item>
+        <item> Pak choy </item>
+        <item> Napa cabbage </item>
+        <item> Chicory roots </item>
+        <item> Grapefruit/Pummelo hybrid </item>
+        <item> Grapefruit </item>
+        <item> Jostaberry </item>
+        <item> Kai-lan </item>
+        <item> Italian oregano </item>
+        <item> Oxheart cabbage </item>
+        <item> Daikon radish </item>
+        <item> Black radish </item>
+        <item> Radish (var.) </item>
+        <item> Red beetroot </item>
+        <item> Sweet rowanberry </item>
+        <item> Pineappple sage </item>
+        <item> Skunk currant </item>
+        <item> Beer </item>
+        <item> Other bread </item>
+        <item> Breakfast cereal </item>
+        <item> Other soy product </item>
+        <item> Other cereal product </item>
+        <item> Pasta </item>
+        <item> Biscuit </item>
+        <item> Sourdough </item>
+        <item> Spirit </item>
+        <item> Fortified wine </item>
+        <item> Other alcoholic beverage </item>
+        <item> Abalone </item>
+        <item> Abiyuch </item>
+        <item> Acerola </item>
+        <item> Acorn </item>
+        <item> Winter squash </item>
+        <item> Agar </item>
+        <item> Red king crab </item>
+        <item> Alfalfa </item>
+        <item> Allspice </item>
+        <item> Amaranth </item>
+        <item> Arrowhead </item>
+        <item> Arrowroot </item>
+        <item> Asian pear </item>
+        <item> Atlantic herring </item>
+        <item> Atlantic mackerel </item>
+        <item> Painted comber </item>
+        <item> Atlantic pollock </item>
+        <item> Atlantic wolffish </item>
+        <item> Bamboo shoots </item>
+        <item> Striped bass </item>
+        <item> Beech nut </item>
+        <item> Beluga whale </item>
+        <item> Bison </item>
+        <item> Alaska blackfish </item>
+        <item> Blue crab </item>
+        <item> Blue mussel </item>
+        <item> Northern bluefin tuna </item>
+        <item> Bluefish </item>
+        <item> Wild boar </item>
+        <item> Bowhead whale </item>
+        <item> Breadfruit </item>
+        <item> Breadnut tree seed </item>
+        <item> Rapini </item>
+        <item> Buffalo </item>
+        <item> Burbot </item>
+        <item> Giant butterbur </item>
+        <item> American butterfish </item>
+        <item> Butternut </item>
+        <item> Butternut squash </item>
+        <item> Calabash </item>
+        <item> Cardoon </item>
+        <item> Natal plum </item>
+        <item> Carob </item>
+        <item> Common carp </item>
+        <item> Cassava </item>
+        <item> Channel catfish </item>
+        <item> Chayote </item>
+        <item> Cherimoya </item>
+        <item> Chervil </item>
+        <item> Chia </item>
+        <item> Chicken </item>
+        <item> Chinese broccoli </item>
+        <item> Chinese chestnut </item>
+        <item> Chinese water chestnut </item>
+        <item> Garland chrysanthemum </item>
+        <item> Cisco </item>
+        <item> Nuttall cockle </item>
+        <item> Coconut </item>
+        <item> Pacific cod </item>
+        <item> Atlantic cod </item>
+        <item> Common octopus </item>
+        <item> Corn salad </item>
+        <item> Cottonseed </item>
+        <item> Catjang pea </item>
+        <item> Malus (Crab apple) </item>
+        <item> Squashberry </item>
+        <item> Atlantic croaker </item>
+        <item> Cusk </item>
+        <item> Cuttlefish </item>
+        <item> Mule deer </item>
+        <item> Devilfish </item>
+        <item> Dock </item>
+        <item> Dolphin fish </item>
+        <item> Freshwater drum </item>
+        <item> Mallard duck </item>
+        <item> Dungeness crab </item>
+        <item> Durian </item>
+        <item> Eastern oyster </item>
+        <item> Freshwater eel </item>
+        <item> Elderberry </item>
+        <item> Elk </item>
+        <item> Emu </item>
+        <item> Oregon yampah </item>
+        <item> European anchovy </item>
+        <item> European chestnut </item>
+        <item> Turbot </item>
+        <item> Fireweed </item>
+        <item> Florida pompano </item>
+        <item> Ginkgo nuts </item>
+        <item> Greylag goose </item>
+        <item> Grape </item>
+        <item> Greenland halibut/turbot </item>
+        <item> Groundcherry </item>
+        <item> Grouper </item>
+        <item> Guinea hen </item>
+        <item> Haddock </item>
+        <item> Hippoglossus (Common halibut) </item>
+        <item> Hazelnut </item>
+        <item> Hickory nut </item>
+        <item> Horse </item>
+        <item> Horseradish tree </item>
+        <item> Alaska blueberry </item>
+        <item> Hyacinth bean </item>
+        <item> Irish moss </item>
+        <item> Pacific jack mackerel </item>
+        <item> Jackfruit </item>
+        <item> Japanese chestnut </item>
+        <item> Java plum </item>
+        <item> Jerusalem artichoke </item>
+        <item> Jujube </item>
+        <item> Jute </item>
+        <item> Kale </item>
+        <item> Kelp </item>
+        <item> King mackerel </item>
+        <item> Kumquat </item>
+        <item> Lambsquarters </item>
+        <item> Leather chiton </item>
+        <item> Wild leek </item>
+        <item> Common ling </item>
+        <item> Lingcod </item>
+        <item> American lobster </item>
+        <item> Loganberry </item>
+        <item> Lotus </item>
+        <item> Sacred lotus </item>
+        <item> White lupine </item>
+        <item> Malabar spinach </item>
+        <item> Mammee apple </item>
+        <item> Purple mangosteen </item>
+        <item> Alpine sweetvetch </item>
+        <item> Milkfish </item>
+        <item> Monkfish </item>
+        <item> Moth bean </item>
+        <item> Mountain yam </item>
+        <item> Striped mullet </item>
+        <item> White mustard </item>
+        <item> Mustard spinach </item>
+        <item> New Zealand spinach </item>
+        <item> Nopal </item>
+        <item> Ocean pout </item>
+        <item> North Pacific giant octopus </item>
+        <item> Ohelo berry </item>
+        <item> Okra </item>
+        <item> Tunicate </item>
+        <item> Ostrich </item>
+        <item> Spotted seal </item>
+        <item> Pacific herring </item>
+        <item> Pacific oyster </item>
+        <item> Pacific rockfish </item>
+        <item> Velvet duck </item>
+        <item> Pepper (C. frutescens) </item>
+        <item> Common persimmon </item>
+        <item> Pheasant </item>
+        <item> Northern pike </item>
+        <item> Pili nut </item>
+        <item> Colorado pinyon </item>
+        <item> Pitanga </item>
+        <item> Plains prickly pear </item>
+        <item> French plantain </item>
+        <item> American pokeweed </item>
+        <item> Opium poppy </item>
+        <item> Prairie turnip </item>
+        <item> Prickly pear </item>
+        <item> Quinoa </item>
+        <item> European rabbit </item>
+        <item> Rainbow smelt </item>
+        <item> Rainbow trout </item>
+        <item> Malabar plum </item>
+        <item> Leather chiton </item>
+        <item> Wild leek </item>
+        <item> Common ling </item>
+        <item> Lingcod </item>
+        <item> American lobster </item>
+        <item> Loganberry </item>
+        <item> Lotus </item>
+        <item> Sacred lotus </item>
+        <item> White lupine </item>
+        <item> Malabar spinach </item>
+        <item> Mammee apple </item>
+        <item> Purple mangosteen </item>
+        <item> Alpine sweetvetch </item>
+        <item> Milkfish </item>
+        <item> Monkfish </item>
+        <item> Moth bean </item>
+        <item> Mountain yam </item>
+        <item> Striped mullet </item>
+        <item> White mustard </item>
+        <item> Mustard spinach </item>
+        <item> New Zealand spinach </item>
+        <item> Nopal </item>
+        <item> Ocean pout </item>
+        <item> North Pacific giant octopus </item>
+        <item> Ohelo berry </item>
+        <item> Okra </item>
+        <item> Tunicate </item>
+        <item> Ostrich </item>
+        <item> Spotted seal </item>
+        <item> Pacific herring </item>
+        <item> Pacific oyster </item>
+        <item> Pacific rockfish </item>
+        <item> Velvet duck </item>
+        <item> Pepper (C. frutescens) </item>
+        <item> Common persimmon </item>
+        <item> Pheasant </item>
+        <item> Northern pike </item>
+        <item> Pili nut </item>
+        <item> Colorado pinyon </item>
+        <item> Pitanga </item>
+        <item> Plains prickly pear </item>
+        <item> French plantain </item>
+        <item> American pokeweed </item>
+        <item> Opium poppy </item>
+        <item> Prairie turnip </item>
+        <item> Prickly pear </item>
+        <item> Quinoa </item>
+        <item> European rabbit </item>
+        <item> Rainbow smelt </item>
+        <item> Rainbow trout </item>
+        <item> Malabar plum </item>
+        <item> Rose hip </item>
+        <item> Roselle </item>
+        <item> Orange roughy </item>
+        <item> Sablefish </item>
+        <item> Pink salmon </item>
+        <item> Chum salmon </item>
+        <item> Coho salmon </item>
+        <item> Sockeye salmon </item>
+        <item> Chinook salmon </item>
+        <item> Atlantic salmon </item>
+        <item> Salmonberry </item>
+        <item> Common salsify </item>
+        <item> Sapodilla </item>
+        <item> Mamey sapote </item>
+        <item> Spanish mackerel </item>
+        <item> Pacific sardine </item>
+        <item> Scallop </item>
+        <item> Scup </item>
+        <item> Sea cucumber </item>
+        <item> Steller sea lion </item>
+        <item> Bearded seal </item>
+        <item> Ringed seal </item>
+        <item> Sea trout </item>
+        <item> Sesbania flower </item>
+        <item> American shad </item>
+        <item> Shark </item>
+        <item> Sheefish </item>
+        <item> Sheep (Mutton, Lamb) </item>
+        <item> Sheepshead </item>
+        <item> Hedge mustard </item>
+        <item> Skipjack tuna </item>
+        <item> Snapper </item>
+        <item> Soursop </item>
+        <item> Spelt </item>
+        <item> Spirulina </item>
+        <item> Squab </item>
+        <item> Strawberry guava </item>
+        <item> Greater sturgeon </item>
+        <item> White sucker </item>
+        <item> Sugar apple </item>
+        <item> Pumpkinseed sunfish </item>
+        <item> Swordfish </item>
+        <item> Taro </item>
+        <item> Teff </item>
+        <item> Tilefish </item>
+        <item> Mexican groundcherry </item>
+        <item> Towel gourd </item>
+        <item> Salmonidae (Salmon, Trout) </item>
+        <item> Turkey </item>
+        <item> Cattle (Beef, Veal) </item>
+        <item> Walleye </item>
+        <item> Alaska pollock </item>
+        <item> Wasabi </item>
+        <item> Wax gourd </item>
+        <item> Whelk </item>
+        <item> Coalfish pollock </item>
+        <item> Broad whitefish </item>
+        <item> Whitefish </item>
+        <item> Whiting </item>
+        <item> Wild rice </item>
+        <item> Tea leaf willow </item>
+        <item> Winged bean </item>
+        <item> Yam </item>
+        <item> Jicama </item>
+        <item> Yautia </item>
+        <item> Yellowfin tuna </item>
+        <item> Yellowtail amberjack </item>
+        <item> Pollock </item>
+        <item> Albacore tuna </item>
+        <item> Gadus (Common cod) </item>
+        <item> Atlantic halibut </item>
+        <item> Pacific halibut </item>
+        <item> Pacific salmon </item>
+        <item> Smelt </item>
+        <item> Clupeinae (Herring, Sardine, Sprat) </item>
+        <item> Spiny lobster </item>
+        <item> Snow crab </item>
+        <item> Black-eyed pea </item>
+        <item> Deer </item>
+        <item> Macadamia nut </item>
+        <item> Percoidei (Bass and others) </item>
+        <item> Perciformes </item>
+        <item> Rabbit </item>
+        <item> Domestic goat </item>
+        <item> Beefalo </item>
+        <item> Bivalvia (Clam, Mussel, Oyster) </item>
+        <item> Squid </item>
+        <item> Shrimp </item>
+        <item> Crayfish </item>
+        <item> Flatfish </item>
+        <item> Domestic pig </item>
+        <item> Walrus </item>
+        <item> Alaska wild rhubarb </item>
+        <item> Oriental wheat </item>
+        <item> Yardlong bean </item>
+        <item> Quail </item>
+        <item> Boysenberry </item>
+        <item> Persian lime </item>
+        <item> Feijoa </item>
+        <item> Rowal </item>
+        <item> Jew ear </item>
+        <item> Common mushroom </item>
+        <item> Shiitake </item>
+        <item> Purple laver </item>
+        <item> Wakame </item>
+        <item> Enokitake </item>
+        <item> Epazote </item>
+        <item> Oyster mushroom </item>
+        <item> Cloud ear fungus </item>
+        <item> Maitake </item>
+        <item> Ostrich fern </item>
+        <item> Spot croaker </item>
+        <item> Sourdock </item>
+        <item> Tinda </item>
+        <item> Atlantic menhaden </item>
+        <item> Wheat </item>
+        <item> Common chokecherry </item>
+        <item> Agave </item>
+        <item> Narrowleaf cattail </item>
+        <item> Jellyfish </item>
+        <item> Anchovy </item>
+        <item> Blue whiting </item>
+        <item> Carp bream </item>
+        <item> Chanterelle </item>
+        <item> Sturgeon </item>
+        <item> Charr </item>
+        <item> Cinnamon </item>
+        <item> Crab </item>
+        <item> Common dab </item>
+        <item> Spiny dogfish </item>
+        <item> Anatidae </item>
+        <item> Anguilliformes </item>
+        <item> True frog </item>
+        <item> Garfish </item>
+        <item> Gadiformes </item>
+        <item> Mountain hare </item>
+        <item> Lake trout </item>
+        <item> Lemon sole </item>
+        <item> Clawed lobster </item>
+        <item> Lumpsucker </item>
+        <item> Scombridae (Bonito, Mackerel, Tuna) </item>
+        <item> Marine mussel </item>
+        <item> Norway haddock </item>
+        <item> Norway lobster </item>
+        <item> Norway pout </item>
+        <item> Oil palm </item>
+        <item> True oyster </item>
+        <item> Sago palm </item>
+        <item> Persimmon </item>
+        <item> Pikeperch </item>
+        <item> Pleuronectidae (Dab, Halibut, Plaice) </item>
+        <item> Rock ptarmigan </item>
+        <item> Pacific ocean perch </item>
+        <item> Black salsify </item>
+        <item> True seal </item>
+        <item> Red algae </item>
+        <item> Kombu </item>
+        <item> Snail </item>
+        <item> True sole </item>
+        <item> Catfish </item>
+        <item> Thistle </item>
+        <item> Thunnus </item>
+        <item> Walnut </item>
+        <item> Cetacea (Dolphin, Porpoise, Whale) </item>
+        <item> Columbidae (Dove, Pigeon) </item>
+        <item> Conch </item>
+        <item> Grape wine </item>
+        <item> Berry wine </item>
+        <item> Other wine </item>
+        <item> Apple cider </item>
+        <item> Liquor </item>
+        <item> Cheese </item>
+        <item> Milk (Cow) </item>
+        <item> Eggs </item>
+        <item> Yogurt </item>
+        <item> Bean </item>
+        <item> Vodka </item>
+        <item> Whisky </item>
+        <item> Ice cream </item>
+        <item> Gin </item>
+        <item> Honey </item>
+        <item> Liquorice </item>
+        <item> Vinegar </item>
+        <item> Rum </item>
+        <item> Port wine </item>
+        <item> Vermouth </item>
+        <item> Sherry </item>
+        <item> Madeira wine </item>
+        <item> Nougat </item>
+        <item> Toffee </item>
+        <item> Cake </item>
+        <item> Pizza </item>
+        <item> Ymer </item>
+        <item> Other snack food </item>
+        <item> Crisp bread </item>
+        <item> Pastry </item>
+        <item> Dragée </item>
+        <item> Chewing gum </item>
+        <item> Marzipan </item>
+        <item> Salad dressing </item>
+        <item> Sauce </item>
+        <item> Salt </item>
+        <item> Butter </item>
+        <item> Butter substitute </item>
+        <item> Cream </item>
+        <item> Sugar </item>
+        <item> Sausage </item>
+        <item> Meatball </item>
+        <item> Mustard </item>
+        <item> Pate </item>
+        <item> Sugar substitute </item>
+        <item> Meat bouillon </item>
+        <item> Whey </item>
+        <item> Casein </item>
+        <item> Fruit preserve </item>
+        <item> Leavening agent </item>
+        <item> Marshmallow </item>
+        <item> Gelatin </item>
+        <item> Water </item>
+        <item> Other fish product </item>
+        <item> Milk (Human) </item>
+        <item> Other beverage </item>
+        <item> Baby food </item>
+        <item> Dumpling </item>
+        <item> Soup </item>
+        <item> Other vegetable product </item>
+        <item> Unclassified food or beverage </item>
+        <item> Syrup </item>
+        <item> Tallow </item>
+        <item> Remoulade </item>
+        <item> Chocolate spread </item>
+        <item> Fruit gum </item>
+        <item> Curry powder </item>
+        <item> Other candy </item>
+        <item> Meringue </item>
+        <item> Lard </item>
+        <item> Other animal fat </item>
+        <item> Other cocoa product </item>
+        <item> Cocoa butter </item>
+        <item> Cocoa powder </item>
+        <item> Cocoa liquor </item>
+        <item> Chocolate </item>
+        <item> Hot chocolate </item>
+        <item> Dried milk </item>
+        <item> Milk (Other mammals) </item>
+        <item> Kefir </item>
+        <item> Buttermilk </item>
+        <item> Other fermented milk </item>
+        <item> Soy sauce </item>
+        <item> Miso </item>
+        <item> Tofu </item>
+        <item> Zwieback </item>
+        <item> Roe </item>
+        <item> Cichlidae (Tilapia) </item>
+        <item> Icing </item>
+        <item> Snack bar </item>
+        <item> Green turtle </item>
+        <item> Energy drink </item>
+        <item> Burrito </item>
+        <item> Hamburger </item>
+        <item> Baked beans </item>
+        <item> Chili </item>
+        <item> Taco </item>
+        <item> Tortilla </item>
+        <item> Nachos </item>
+        <item> Processed cheese </item>
+        <item> Salad </item>
+        <item> Cream substitute </item>
+        <item> Dulce de leche </item>
+        <item> Topping </item>
+        <item> Sweet custard </item>
+        <item> Egg roll </item>
+        <item> Heart of palm </item>
+        <item> Popcorn </item>
+        <item> Potato chip </item>
+        <item> Tortilla chip </item>
+        <item> Corn chip </item>
+        <item> Hibiscus tea </item>
+        <item> Stew </item>
+        <item> Gelatin dessert </item>
+        <item> Junket </item>
+        <item> Falafel </item>
+        <item> Frybread </item>
+        <item> Other frozen dessert </item>
+        <item> Lasagna </item>
+        <item> Morchella (Morel) </item>
+        <item> Pancake </item>
+        <item> Pectin </item>
+        <item> Pudding </item>
+        <item> Waffle </item>
+        <item> Soy milk </item>
+        <item> Meatloaf </item>
+        <item> Sake </item>
+        <item> Cocktail </item>
+        <item> Couscous </item>
+        <item> Bulgur </item>
+        <item> Coffee substitute </item>
+        <item> Coffee mocha </item>
+        <item> Chimichanga </item>
+        <item> Semolina </item>
+        <item> Tapioca pearl </item>
+        <item> Tostada </item>
+        <item> Quesadilla </item>
+        <item> Baked potato </item>
+        <item> Hot dog </item>
+        <item> Spread </item>
+        <item> Enchilada </item>
+        <item> Egg substitute </item>
+        <item> Nutritional drink </item>
+        <item> Other sandwich </item>
+        <item> Ketchup </item>
+        <item> Breakfast sandwich </item>
+        <item> Adobo </item>
+        <item> Macaroni and cheese </item>
+        <item> Butterfat </item>
+        <item> Horned melon </item>
+        <item> Hushpuppy </item>
+        <item> Fruit juice </item>
+        <item> Relish </item>
+        <item> Other fruit product </item>
+        <item> Fruit salad </item>
+        <item> Soy yogurt </item>
+        <item> Vegetarian food </item>
+        <item> Veggie burger </item>
+        <item> Cold cut </item>
+        <item> Mixed nuts </item>
+        <item> Canola </item>
+        <item> Babassu palm </item>
+        <item> Cupuaçu </item>
+        <item> Shea tree </item>
+        <item> Oil-seed Camellia </item>
+        <item> Ucuhuba </item>
+        <item> Phyllo dough </item>
+        <item> Cooking oil </item>
+        <item> Pie crust </item>
+        <item> Pie filling </item>
+        <item> Pie </item>
+        <item> Shortening </item>
+        <item> Soy cream </item>
+        <item> Ice cream cone </item>
+        <item> Molasses </item>
+        <item> Cracker </item>
+        <item> Nance </item>
+        <item> Naranjilla </item>
+        <item> Natto </item>
+        <item> Ravioli </item>
+        <item> Scrapple </item>
+        <item> Other pasta dish </item>
+        <item> Succotash </item>
+        <item> Tamale </item>
+        <item> Rice cake </item>
+        <item> Tree fern </item>
+        <item> Evaporated milk </item>
+        <item> Flour </item>
+        <item> Akutaq </item>
+        <item> Dough </item>
+        <item> Pita bread </item>
+        <item> Focaccia </item>
+        <item> Bagel </item>
+        <item> Other bread product </item>
+        <item> Piki bread </item>
+        <item> French toast </item>
+        <item> Wheat bread </item>
+        <item> Rye bread </item>
+        <item> Oat bread </item>
+        <item> Potato bread </item>
+        <item> Cornbread </item>
+        <item> Corn grits </item>
+        <item> Multigrain bread </item>
+        <item> Rice bread </item>
+        <item> Pan dulce </item>
+        <item> Raisin bread </item>
+        <item> Wonton wrapper </item>
+        <item> Trail mix </item>
+        <item> Greenthread tea </item>
+        <item> Fruit-flavor drink </item>
+        <item> Vegetable juice </item>
+        <item> Horchata </item>
+        <item> Soft drink </item>
+        <item> Frozen yogurt </item>
+        <item> Milkshake </item>
+        <item> Chocolate mousse </item>
+        <item> Dripping </item>
+        <item> Pupusa </item>
+        <item> Empanada </item>
+        <item> Arepa </item>
+        <item> Ascidians </item>
+        <item> Gefilte fish </item>
+        <item> Yellow pond-lily </item>
+        <item> Fish burger </item>
+        <item> Other dish </item>
+        <item> Pot pie </item>
+        <item> Stuffing </item>
+        <item> Edible shell </item>
+        <item> Fudge </item>
+        <item> Candy bar </item>
+        <item> Condensed milk </item>
+        <item> Margarine </item>
+        <item> Margarine-like spread </item>
+        <item> Hummus </item>
+        <item> Potato puffs </item>
+        <item> Potato gratin </item>
+        <item> Milk substitute </item>
+        <item> Pepper (C. pubescens) </item>
+        <item> Soft-necked garlic </item>
+        <item> Cabbage </item>
+        <item> Chinese bayberry </item>
+        <item> Mushrooms </item>
+        <item> Alcoholic beverages </item>
+        <item> Onion-family vegetables </item>
+        <item> Pomes </item>
+        <item> Brassicas </item>
+        <item> Cereals and cereal products </item>
+        <item> Citrus </item>
+        <item> Cocoa and cocoa products </item>
+        <item> Coffee and coffee products </item>
+        <item> Crustaceans </item>
+        <item> Milk and milk products </item>
+        <item> Fats and oils </item>
+        <item> Fishes </item>
+        <item> Herbs and Spices </item>
+        <item> Pulses </item>
+        <item> Mollusks </item>
+        <item> Nuts </item>
+        <item> Beverages </item>
+        <item> Fruits </item>
+        <item> Green vegetables </item>
+        <item> Root vegetables </item>
+        <item> Sunburst squash (pattypan squash) </item>
+        <item> Green zucchini </item>
+        <item> Yellow zucchini </item>
+        <item> Green bell pepper </item>
+        <item> Yellow bell pepper </item>
+        <item> Orange bell pepper </item>
+        <item> Red bell pepper </item>
+        <item> Italian sweet red pepper </item>
+        <item> Yellow wax bean </item>
+        <item> Green bean </item>
+        <item> Saskatoon berry </item>
+        <item> Nanking cherry </item>
+        <item> Japanese pumpkin </item>
+        <item> White cabbage </item>
+        <item> Romaine lettuce </item>
+        <item> Cow milk 0% fat </item>
+        <item> Cow milk 1% fat </item>
+        <item> Pollock </item>
+        <item> Albacore tuna </item>
+        <item> Gadus (Common cod) </item>
+        <item> Atlantic halibut </item>
+        <item> Pacific halibut </item>
+        <item> Pacific salmon </item>
+        <item> Smelt </item>
+        <item> Clupeinae (Herring, Sardine, Sprat) </item>
+        <item> Spiny lobster </item>
+        <item> Snow crab </item>
+        <item> Black-eyed pea </item>
+        <item> Deer </item>
+        <item> Macadamia nut </item>
+        <item> Percoidei (Bass and others) </item>
+        <item> Perciformes </item>
+        <item> Rabbit </item>
+        <item> Domestic goat </item>
+        <item> Beefalo </item>
+        <item> Bivalvia (Clam, Mussel, Oyster) </item>
+        <item> Squid </item>
+        <item> Shrimp </item>
+        <item> Crayfish </item>
+        <item> Flatfish </item>
+        <item> Domestic pig </item>
+        <item> Walrus </item>
+        <item> Alaska wild rhubarb </item>
+        <item> Oriental wheat </item>
+        <item> Yardlong bean </item>
+        <item> Quail </item>
+        <item> Boysenberry </item>
+        <item> Persian lime </item>
+        <item> Feijoa </item>
+        <item> Rowal </item>
+        <item> Jew ear </item>
+        <item> Common mushroom </item>
+        <item> Shiitake </item>
+        <item> Purple laver </item>
+        <item> Wakame </item>
+        <item> Enokitake </item>
+        <item> Epazote </item>
+        <item> Oyster mushroom </item>
+        <item> Cloud ear fungus </item>
+        <item> Maitake </item>
+        <item> Ostrich fern </item>
+        <item> Spot croaker </item>
+        <item> Sourdock </item>
+        <item> Tinda </item>
+        <item> Atlantic menhaden </item>
+        <item> Wheat </item>
+        <item> Common chokecherry </item>
+        <item> Agave </item>
+        <item> Narrowleaf cattail </item>
+        <item> Jellyfish </item>
+        <item> Anchovy </item>
+        <item> Blue whiting </item>
+        <item> Carp bream </item>
+        <item> Chanterelle </item>
+        <item> Sturgeon </item>
+        <item> Charr </item>
+        <item> Cinnamon </item>
+        <item> Crab </item>
+        <item> Common dab </item>
+        <item> Spiny dogfish </item>
+        <item> Anatidae </item>
+        <item> Anguilliformes </item>
+        <item> True frog </item>
+        <item> Garfish </item>
+        <item> Gadiformes </item>
+        <item> Mountain hare </item>
+        <item> Lake trout </item>
+        <item> Lemon sole </item>
+        <item> Clawed lobster </item>
+        <item> Lumpsucker </item>
+        <item> Scombridae (Bonito, Mackerel, Tuna) </item>
+        <item> Marine mussel </item>
+        <item> Norway haddock </item>
+        <item> Norway lobster </item>
+        <item> Norway pout </item>
+        <item> Oil palm </item>
+        <item> True oyster </item>
+        <item> Sago palm </item>
+        <item> Persimmon </item>
+        <item> Pikeperch </item>
+        <item> Pleuronectidae (Dab, Halibut, Plaice) </item>
+        <item> Rock ptarmigan </item>
+        <item> Pacific ocean perch </item>
+        <item> Black salsify </item>
+        <item> True seal </item>
+        <item> Red algae </item>
+        <item> Kombu </item>
+        <item> Snail </item>
+        <item> True sole </item>
+        <item> Catfish </item>
+        <item> Thistle </item>
+        <item> Thunnus </item>
+        <item> Walnut </item>
+        <item> Cetacea (Dolphin, Porpoise, Whale) </item>
+        <item> Columbidae (Dove, Pigeon) </item>
+        <item> Conch </item>
+        <item> Grape wine </item>
+        <item> Berry wine </item>
+        <item> Other wine </item>
+        <item> Apple cider </item>
+        <item> Liquor </item>
+        <item> Cheese </item>
+        <item> Milk (Cow) </item>
+        <item> Eggs </item>
+        <item> Yogurt </item>
+        <item> Bean </item>
+        <item> Vodka </item>
+        <item> Whisky </item>
+        <item> Ice cream </item>
+        <item> Gin </item>
+        <item> Honey </item>
+        <item> Liquorice </item>
+        <item> Vinegar </item>
+        <item> Rum </item>
+        <item> Port wine </item>
+        <item> Vermouth </item>
+        <item> Sherry </item>
+        <item> Madeira wine </item>
+        <item> Nougat </item>
+        <item> Toffee </item>
+        <item> Cake </item>
+        <item> Pizza </item>
+        <item> Ymer </item>
+        <item> Other snack food </item>
+        <item> Crisp bread </item>
+        <item> Pastry </item>
+        <item> Dragée </item>
+        <item> Chewing gum </item>
+        <item> Marzipan </item>
+        <item> Salad dressing </item>
+        <item> Sauce </item>
+        <item> Salt </item>
+        <item> Butter </item>
+        <item> Butter substitute </item>
+        <item> Cream </item>
+        <item> Sugar </item>
+        <item> Sausage </item>
+        <item> Meatball </item>
+        <item> Mustard </item>
+        <item> Pate </item>
+        <item> Sugar substitute </item>
+        <item> Meat bouillon </item>
+        <item> Whey </item>
+        <item> Casein </item>
+        <item> Fruit preserve </item>
+        <item> Leavening agent </item>
+        <item> Marshmallow </item>
+        <item> Gelatin </item>
+        <item> Water </item>
+        <item> Other fish product </item>
+        <item> Milk (Human) </item>
+        <item> Other beverage </item>
+        <item> Baby food </item>
+        <item> Dumpling </item>
+        <item> Soup </item>
+        <item> Other vegetable product </item>
+        <item> Unclassified food or beverage </item>
+        <item> Syrup </item>
+        <item> Tallow </item>
+        <item> Remoulade </item>
+        <item> Chocolate spread </item>
+        <item> Fruit gum </item>
+        <item> Curry powder </item>
+        <item> Other candy </item>
+        <item> Meringue </item>
+        <item> Lard </item>
+        <item> Other animal fat </item>
+        <item> Other cocoa product </item>
+        <item> Cocoa butter </item>
+        <item> Cocoa powder </item>
+        <item> Cocoa liquor </item>
+        <item> Chocolate </item>
+        <item> Hot chocolate </item>
+        <item> Dried milk </item>
+        <item> Milk (Other mammals) </item>
+        <item> Kefir </item>
+        <item> Buttermilk </item>
+        <item> Other fermented milk </item>
+        <item> Soy sauce </item>
+        <item> Miso </item>
+        <item> Tofu </item>
+        <item> Zwieback </item>
+        <item> Roe </item>
+        <item> Cichlidae (Tilapia) </item>
+        <item> Icing </item>
+        <item> Snack bar </item>
+        <item> Green turtle </item>
+        <item> Energy drink </item>
+        <item> Burrito </item>
+        <item> Hamburger </item>
+        <item> Baked beans </item>
+        <item> Chili </item>
+        <item> Taco </item>
+        <item> Tortilla </item>
+        <item> Nachos </item>
+        <item> Processed cheese </item>
+        <item> Salad </item>
+        <item> Cream substitute </item>
+        <item> Dulce de leche </item>
+        <item> Topping </item>
+        <item> Sweet custard </item>
+        <item> Egg roll </item>
+        <item> Heart of palm </item>
+        <item> Popcorn </item>
+        <item> Potato chip </item>
+        <item> Tortilla chip </item>
+        <item> Corn chip </item>
+        <item> Hibiscus tea </item>
+        <item> Stew </item>
+        <item> Gelatin dessert </item>
+        <item> Junket </item>
+        <item> Falafel </item>
+        <item> Frybread </item>
+        <item> Other frozen dessert </item>
+        <item> Lasagna </item>
+        <item> Morchella (Morel) </item>
+        <item> Pancake </item>
+        <item> Pectin </item>
+        <item> Pudding </item>
+        <item> Waffle </item>
+        <item> Soy milk </item>
+        <item> Meatloaf </item>
+        <item> Sake </item>
+        <item> Cocktail </item>
+        <item> Couscous </item>
+        <item> Bulgur </item>
+        <item> Coffee substitute </item>
+        <item> Coffee mocha </item>
+        <item> Chimichanga </item>
+        <item> Semolina </item>
+        <item> Tapioca pearl </item>
+        <item> Tostada </item>
+        <item> Quesadilla </item>
+        <item> Baked potato </item>
+        <item> Hot dog </item>
+        <item> Spread </item>
+        <item> Enchilada </item>
+        <item> Egg substitute </item>
+        <item> Nutritional drink </item>
+        <item> Other sandwich </item>
+        <item> Ketchup </item>
+        <item> Breakfast sandwich </item>
+        <item> Adobo </item>
+        <item> Macaroni and cheese </item>
+        <item> Butterfat </item>
+        <item> Horned melon </item>
+        <item> Hushpuppy </item>
+        <item> Fruit juice </item>
+        <item> Relish </item>
+        <item> Other fruit product </item>
+        <item> Fruit salad </item>
+        <item> Soy yogurt </item>
+        <item> Vegetarian food </item>
+        <item> Veggie burger </item>
+        <item> Cold cut </item>
+        <item> Mixed nuts </item>
+        <item> Canola </item>
+        <item> Babassu palm </item>
+        <item> Cupuaçu </item>
+        <item> Shea tree </item>
+        <item> Oil-seed Camellia </item>
+        <item> Ucuhuba </item>
+        <item> Phyllo dough </item>
+        <item> Cooking oil </item>
+        <item> Pie crust </item>
+        <item> Pie filling </item>
+        <item> Pie </item>
+        <item> Shortening </item>
+        <item> Soy cream </item>
+        <item> Ice cream cone </item>
+        <item> Molasses </item>
+        <item> Cracker </item>
+        <item> Nance </item>
+        <item> Naranjilla </item>
+        <item> Natto </item>
+        <item> Ravioli </item>
+        <item> Scrapple </item>
+        <item> Other pasta dish </item>
+        <item> Succotash </item>
+        <item> Tamale </item>
+        <item> Rice cake </item>
+        <item> Tree fern </item>
+        <item> Evaporated milk </item>
+        <item> Flour </item>
+        <item> Akutaq </item>
+        <item> Dough </item>
+        <item> Pita bread </item>
+        <item> Focaccia </item>
+        <item> Bagel </item>
+        <item> Other bread product </item>
+        <item> Piki bread </item>
+        <item> French toast </item>
+        <item> Wheat bread </item>
+        <item> Rye bread </item>
+        <item> Oat bread </item>
+        <item> Potato bread </item>
+        <item> Cornbread </item>
+        <item> Corn grits </item>
+        <item> Multigrain bread </item>
+        <item> Rice bread </item>
+        <item> Pan dulce </item>
+        <item> Raisin bread </item>
+        <item> Wonton wrapper </item>
+        <item> Trail mix </item>
+        <item> Greenthread tea </item>
+        <item> Fruit-flavor drink </item>
+        <item> Vegetable juice </item>
+        <item> Horchata </item>
+        <item> Soft drink </item>
+        <item> Frozen yogurt </item>
+        <item> Milkshake </item>
+        <item> Chocolate mousse </item>
+        <item> Dripping </item>
+        <item> Pupusa </item>
+        <item> Empanada </item>
+        <item> Arepa </item>
+        <item> Ascidians </item>
+        <item> Gefilte fish </item>
+        <item> Yellow pond-lily </item>
+        <item> Fish burger </item>
+        <item> Other dish </item>
+        <item> Pot pie </item>
+        <item> Stuffing </item>
+        <item> Edible shell </item>
+        <item> Fudge </item>
+        <item> Candy bar </item>
+        <item> Condensed milk </item>
+        <item> Margarine </item>
+        <item> Margarine-like spread </item>
+        <item> Hummus </item>
+        <item> Potato puffs </item>
+        <item> Potato gratin </item>
+        <item> Milk substitute </item>
+        <item> Pepper (C. pubescens) </item>
+        <item> Soft-necked garlic </item>
+        <item> Cabbage </item>
+        <item> Chinese bayberry </item>
+        <item> Mushrooms </item>
+        <item> Alcoholic beverages </item>
+        <item> Onion-family vegetables </item>
+        <item> Pomes </item>
+        <item> Brassicas </item>
+        <item> Cereals and cereal products </item>
+        <item> Citrus </item>
+        <item> Cocoa and cocoa products </item>
+        <item> Coffee and coffee products </item>
+        <item> Crustaceans </item>
+        <item> Milk and milk products </item>
+        <item> Fats and oils </item>
+        <item> Fishes </item>
+        <item> Herbs and Spices </item>
+        <item> Pulses </item>
+        <item> Mollusks </item>
+        <item> Nuts </item>
+        <item> Beverages </item>
+        <item> Fruits </item>
+        <item> Green vegetables </item>
+        <item> Root vegetables </item>
+        <item> Sunburst squash (pattypan squash) </item>
+        <item> Green zucchini </item>
+        <item> Yellow zucchini </item>
+        <item> Green bell pepper </item>
+        <item> Yellow bell pepper </item>
+        <item> Orange bell pepper </item>
+        <item> Red bell pepper </item>
+        <item> Italian sweet red pepper </item>
+        <item> Yellow wax bean </item>
+        <item> Green bean </item>
+        <item> Saskatoon berry </item>
+        <item> Nanking cherry </item>
+        <item> Japanese pumpkin </item>
+        <item> White cabbage </item>
+        <item> Romaine lettuce </item>
+        <item> Cow milk, pasteurized, vitamin A + D added, 0% fat </item>
+        <item> Cow milk, pasteurized, vitamin A + D added, 1% fat </item>
+        <item> Cow milk, pasteurized, vitamin A + D added, 2% fat </item>
+        <item> Cow milk, pasteurized, vitamin D added, 3.25% fat </item>
+        <item> Castanospermum australe </item>
+        <item> Gentiana lutea </item>
+        <item> Juniperus communis </item>
+        <item> Albizia gummifera </item>
+        <item> Mundu </item>
+        <item> Rabbiteye blueberry </item>
+        <item> Yali pear </item>
+        <item> Asparagus racemosus </item>
+        <item> Evergreen blackberry </item>
+        <item> Asparagus fern </item>
+        <item> Thornless blackberry </item>
+        <item> Tropical highland blackberry </item>
+        <item> Andean blackberry </item>
+        <item> Blackberry </item>
+        <item> Black tea </item>
+        <item> Green tea </item>
+        <item> Olive oil </item>
+        <item> Macroalgae </item>
+        <item> Red wine </item>
+        <item> linseed oil </item>
+        <item> Rapeseed oil </item>
+        <item> Soybean oil </item>
+        <item> Guarana </item>
+        <item> Mate </item>
+        <item> White wine </item>
+        <item> Sour orange </item>
+        <item> Egg yolk </item>
+        <item> Rosé wine </item>
+        <item> White mulberry </item>
+        <item> Canola oil </item>
+        <item> Dessert wine </item>
+        <item> Red champagne </item>
+        <item> Red tea </item>
+        <item> White champagne </item>
+        <item> Red grape juice </item>
+        <item> White grape juice </item>
+        <item> Crosne </item>
+        <item> Red clover </item>
+        <item> Partridge berry </item>
+        <item> Mikan </item>
+        <item> Mozzarella cheese </item>
+        <item> Plain cream cheese </item>
+        <item> Cheddar Cheese </item>
+        <item> Parmesan cheese </item>
+        <item> Almond milk </item>
+        <item> Coconut milk </item>
+        <item> Salted butter </item>
+        <item> Sunflower oil </item>
+        <item> Coconut oil </item>
+        <item> Peanut oil </item>
+        <item> Cottonseed oil </item>
+        <item> Corn oil </item>
+        <item> Avocado oil </item>
+        <item> Grapeseed oil </item>
+        <item> Sesame oil </item>
+        <item> Monterey Jack cheese </item>
+        <item> Swiss cheese </item>
+        <item> Cottage cheese </item>
+        <item> Blue cheese </item>
+        <item> Clam </item>
+        <item> Sour cream </item>
+        <item> Whole wheat bread </item>
+        <item> Jalapeno pepper </item>
+        <item> Greek feta cheese </item>
+        <item> Eddoe </item>
+        <item> Plantain </item>
+        <item> Clementine </item>
+        <item> Green apple </item>
+        <item> White onion </item>
+        <item> Red onion </item>
+        <item> Green onion </item>
+        <item> Green grape </item>
+        <item> Red grape </item>
+        <item> Black plum </item>
+        <item> Green cabbage </item>
+        <item> Black raisin </item>
+        <item> Cannellini bean </item>
+        <item> Green lentil </item>
+        <item> Cubanelle pepper </item>
+        <item> Acorn squash </item>
+        <item> Iceberg lettuce </item>
+        <item> Japanese sea bass </item>
+        <item> Pea shoots </item>
+        <item> Yau choy </item>
+        <item> Water spinach </item>
+        <item> Chineese plum </item>
+        <item> Green plum </item>
+        <item> Wampee </item>
+        <item> Pitaya </item>
+        <item> Goji </item>
+        <item> Monk fruit </item>
+        <item> Cantaloupe melon </item>
+        <item> Hawthorn </item>
+        <item> Lantern fruit </item>
+        <item> White bread </item>
+        <item> Cape gooseberry </item>
+        <item> Herbal tea </item>
+        <item> Fish oil </item>
+        <item> Taco shell </item>
+        <item> Tostada shell </item>
+    </string-array>
+</resources>

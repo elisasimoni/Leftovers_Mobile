@@ -2,6 +2,7 @@
 
 package com.example.leftovers
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
        val button = findViewById<CardView>(R.id.button)
 
         button.setOnClickListener{
-            changeLogin()
+            changePage(this,LoginActivity::class.java)
         }
 
     }
@@ -30,31 +31,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this,LoginActivity::class.java))
     }
 
-/*
-    fun read_json() {
-
-        val arr = arrayListOf<String>()
-        val jsonList = findViewById<ListView>(R.id.json_list)
-
-        try {
-            val inputStream = assets.open("Food.json")
-            val json = inputStream.bufferedReader().use { it.readText() }
-
-            val jsonarr = JSONArray(json)
-
-            for (i in 0 until jsonarr.length()) {
-                val jsonobj = jsonarr.getJSONObject(i)
-                arr.add(jsonobj.getString("name"))
-            }
-            val adpt = ArrayAdapter(this, android.R.layout.simple_list_item_1, arr)
+    private fun changePage(context : Context, activity : Class<*>){
+        val intent = Intent(context, activity)
+        startActivity(intent)
+    }
 
 
-            jsonList.adapter = adpt
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-
-    }*/
 
 }
 
