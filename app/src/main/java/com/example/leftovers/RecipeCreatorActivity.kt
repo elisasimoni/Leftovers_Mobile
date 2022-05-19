@@ -1,13 +1,16 @@
 package com.example.leftovers
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.transition.TransitionManager
 import android.util.Log
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
 import com.example.leftovers.database.FoodDAO
 import com.example.leftovers.database.RecipeDAO
 import com.google.android.material.chip.Chip
@@ -17,7 +20,6 @@ import org.json.JSONArray
 
 class RecipeCreatorActivity : AppCompatActivity() {
     lateinit var foodDAO: FoodDAO
-    lateinit var recipeDao: RecipeDAO
     var foodListRecipe = arrayListOf<String>()
     private var filterListRecipe = arrayListOf<String>()
     var filter = arrayListOf<String>()
@@ -26,8 +28,14 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe)
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "leftovers.db"
+        ).allowMainThreadQueries().fallbackToDestructiveMigration().build()
+        foodDAO = db.foodDao()
+
+
         ingredientsLoad()
-        recipeLoad()
         read_json()
         catchIngredients()
         catchFilters("Starter")
@@ -42,12 +50,17 @@ class RecipeCreatorActivity : AppCompatActivity() {
         catchFilters("Gluten Free")
         catchFilters("Lactose Free")
 
+        val findBtn = findViewById<Button>(R.id.findRecipe)
 
-        /*val db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, "leftovers.db"
-        ).allowMainThreadQueries().build()
-        foodDAO = db.foodDao()*/
+        findBtn.setOnClickListener(){
+            val intent = Intent(this, RecipeDetailActivity::class.java)
+            intent.putExtra("choosenFilter", filterListRecipe)
+            intent.putExtra("choosenIngredients", foodListRecipe)
+            startActivity(intent)
+        }
+
+
+
 
 
     }
@@ -55,7 +68,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
     private fun read_json() {
         var food: Food
-        val foodList = arrayListOf<Food>()
         try {
             val inputStream = assets.open("Food.json")
             val json = inputStream.bufferedReader().use { it.readText() }
@@ -70,7 +82,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
                     jsonobj.getString("food_group"),
                     jsonobj.getString("food_subgroup")
                 )
-                foodList.add(food)
+                foodDAO.insertFood(food)
 
             }
 
@@ -139,46 +151,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
     }
 
-    private fun recipeLoad() {
-        var recipe: Recipe
-        val recipeList = arrayListOf<Recipe>()
-        try {
-            val inputStream = assets.open("Recipes.json")
-            val json = inputStream.bufferedReader().use { it.readText() }
-            val jsonarr = JSONArray(json)
-            for (i in 0 until jsonarr.length()) {
-                val jsonobj = jsonarr.getJSONObject(i)
-                recipe = Recipe(
-                    i,
-                    jsonobj.getString("name"),
-                    jsonobj.getString("source"),
-                    jsonobj.getString("servings"),
-                    jsonobj.getString("comments"),
-                    jsonobj.getString("calories"),
-                    jsonobj.getString("fat"),
-                    jsonobj.getString("satfat"),
-                    jsonobj.getString("carbs"),
-                    jsonobj.getString("fiber"),
-                    jsonobj.getString("sugar"),
-                    jsonobj.getString("protein"),
-                    jsonobj.getString("instructions"),
-                    jsonobj.getString("ingredients"),
-                    jsonobj.getString("category"),
-                    jsonobj.getString("tags")
-                )
-                recipeList.add(recipe)
-
-
-            }
-
-
-            //foodDAO.insertFood(food)
-
-
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
 
 }
 

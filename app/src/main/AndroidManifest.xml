@@ -25,6 +25,7 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".HomePageActivity"/>
         <activity android:name=".RecipeCreatorActivity"/>
+        <activity android:name=".RecipeDetailActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

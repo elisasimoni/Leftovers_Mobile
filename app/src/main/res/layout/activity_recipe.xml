@@ -35,14 +35,14 @@
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroupFilter"
-        android:layout_width="333dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="342dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="32dp"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchreci2">
-
 
 
     </com.google.android.material.chip.ChipGroup>
@@ -51,13 +51,13 @@
         android:id="@+id/searchreci2"
         android:layout_width="274dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="CHOOSE THE FILTER"
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipGroupFood" />
 
@@ -89,17 +89,31 @@
         app:layout_constraintTop_toBottomOf="@+id/searchreci" />
 
 
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/chipGroupFood"
-            android:layout_width="355dp"
-            android:layout_height="57dp"
-            android:layout_marginTop="12dp"
-            android:foregroundGravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dropdown_menu"
-            >
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupFood"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown_menu">
 
-        </com.google.android.material.chip.ChipGroup>
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/findRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Find a recipe"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupFilter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

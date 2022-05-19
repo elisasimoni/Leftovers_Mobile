@@ -11,6 +11,8 @@ interface FoodDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertFood(food: Food)
 
+
+
 }
 
 

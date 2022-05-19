@@ -94,7 +94,10 @@
     <string name="option_1" />
     <string name="option_2" />
     <string name="option_3" />
-
+    <string name="content_description_media" />
+    <string name="title" />
+    <string name="secondary_text" />
+    <string name="supporting_text" />
 
 
 </resources>
