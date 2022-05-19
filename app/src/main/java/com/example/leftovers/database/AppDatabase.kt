@@ -10,8 +10,8 @@ import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.UserDAO
 
 
-@Database(entities = [User::class, Food::class, Recipe::class], version = 2, autoMigrations = [AutoMigration (from = 1, to = 2)
-])
+@Database(entities = [User::class, Food::class, Recipe::class], version = 2, exportSchema = false)
+
 abstract  class AppDatabase : RoomDatabase(){
 
     abstract fun userDao(): UserDAO
@@ -25,8 +25,7 @@ abstract  class AppDatabase : RoomDatabase(){
             if (INSTANCE == null) {
                 synchronized(AppDatabase::class) {
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
-                        AppDatabase::class.java, "leftovers.db").allowMainThreadQueries()
-                        .build()
+                        AppDatabase::class.java, "leftovers.db").allowMainThreadQueries().fallbackToDestructiveMigration().build()
                 }
             }
             return INSTANCE

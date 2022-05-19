@@ -8,8 +8,8 @@ import com.example.leftovers.Food
 @Dao
 interface FoodDAO {
 
-    //@Insert(onConflict = OnConflictStrategy.REPLACE)
-    //fun insertFood(food: Food)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertFood(food: Food)
 
 }
 

@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java, "leftovers.db"
-        ).allowMainThreadQueries().build()
+        ).allowMainThreadQueries().fallbackToDestructiveMigration().build()
         userDao = db.userDao()
         var user:User
         var existUser:Boolean
