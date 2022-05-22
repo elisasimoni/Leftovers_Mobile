@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Leftovers">
-        <activity android:name=".MainActivity"
+        <activity android:name=".SplashActivity" android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +26,7 @@
         <activity android:name=".HomePageActivity"/>
         <activity android:name=".RecipeCreatorActivity"/>
         <activity android:name=".RecipeDetailActivity"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

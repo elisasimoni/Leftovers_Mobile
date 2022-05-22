@@ -36,7 +36,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
 
         ingredientsLoad()
-        read_json()
         catchIngredients()
         catchFilters("Starter")
         catchFilters("Main")
@@ -66,30 +65,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
     }
 
 
-    private fun read_json() {
-        var food: Food
-        try {
-            val inputStream = assets.open("Food.json")
-            val json = inputStream.bufferedReader().use { it.readText() }
-            val jsonarr = JSONArray(json)
-            for (i in 0 until jsonarr.length()) {
-                val jsonobj = jsonarr.getJSONObject(i)
-                food = Food(
-                    i,
-                    jsonobj.getString("name"),
-                    jsonobj.getString("name_scientific"),
-                    jsonobj.getString("description"),
-                    jsonobj.getString("food_group"),
-                    jsonobj.getString("food_subgroup")
-                )
-                foodDAO.insertFood(food)
-
-            }
-
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
 
 
     private fun catchIngredients() {

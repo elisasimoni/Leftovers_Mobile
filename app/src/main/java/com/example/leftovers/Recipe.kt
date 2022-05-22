@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class Recipe(
     @PrimaryKey val uid: Int,
+    @ColumnInfo(name = "ID") val id: Int,
     @ColumnInfo(name = "Name") val name: String?,
     @ColumnInfo(name = "Source") val source: String?,
     @ColumnInfo(name = "Servings") val serving: String?,

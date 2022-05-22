@@ -10,7 +10,7 @@ import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.UserDAO
 
 
-@Database(entities = [User::class, Food::class, Recipe::class], version = 3, exportSchema = false)
+@Database(entities = [User::class, Food::class, Recipe::class], version = 4, exportSchema = false)
 
 abstract  class AppDatabase : RoomDatabase(){
 
