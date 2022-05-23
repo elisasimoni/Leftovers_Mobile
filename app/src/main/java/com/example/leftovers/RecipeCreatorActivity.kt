@@ -20,6 +20,7 @@ import org.json.JSONArray
 
 class RecipeCreatorActivity : AppCompatActivity() {
     lateinit var foodDAO: FoodDAO
+    val a = "%"
     var foodListRecipe = arrayListOf<String>()
     private var filterListRecipe = arrayListOf<String>()
     var filter = arrayListOf<String>()
@@ -39,15 +40,15 @@ class RecipeCreatorActivity : AppCompatActivity() {
         catchIngredients()
         catchFilters("Starter")
         catchFilters("Main")
-        catchFilters("Second")
+        catchFilters("Soup")
         catchFilters("Dessert")
-        catchFilters("Drink")
-        catchFilters("Snack")
+        catchFilters("Sides")
+        catchFilters("Snacks")
         catchFilters("Breakfast")
         catchFilters("Vegetarian")
         catchFilters("Vegan")
-        catchFilters("Gluten Free")
-        catchFilters("Lactose Free")
+        catchFilters("Appetizer")
+        catchFilters("Sauce")
 
         val findBtn = findViewById<Button>(R.id.findRecipe)
 
@@ -65,8 +66,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
     }
 
 
-
-
     private fun catchIngredients() {
 
         val autoCompleteTextView = findViewById<AutoCompleteTextView>(R.id.dropdown_menu)
@@ -76,7 +75,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
                 autoCompleteTextView.setText("")
                 chipFood(selection)
-                foodListRecipe.add(selection)
+                foodListRecipe.add(a.plus(selection).plus(a))
                 Log.i("FoodSelected.", selection)
 
             }
@@ -89,9 +88,9 @@ class RecipeCreatorActivity : AppCompatActivity() {
         chip.isCheckable = true
         chip.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked){
-                filterListRecipe.add(filter)
+                filterListRecipe.add(a.plus(filter).plus(a))
             }else{
-                filterListRecipe.remove(filter)
+                filterListRecipe.remove(a.plus(filter).plus(a))
             }
 
             Log.i("FilterSelected.", filterListRecipe.toString())
@@ -109,7 +108,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
             // Smoothly remove chip from chip group
             TransitionManager.beginDelayedTransition(chipGroup)
             chipGroup.removeView(chip)
-            foodListRecipe.remove(food)
+            foodListRecipe.remove(a.plus(food).plus(a))
             Log.i("FoodList", foodListRecipe.toString())
         }
         chipGroup.addView(chip)

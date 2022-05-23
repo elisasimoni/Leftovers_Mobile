@@ -2,6 +2,7 @@ package com.example.leftovers
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
 import com.example.leftovers.database.FoodDAO
@@ -63,8 +64,32 @@ class SplashActivity : AppCompatActivity() {
             val jsonarr = JSONArray(json)
             for (i in 0 until jsonarr.length()) {
                 val jsonobj = jsonarr.getJSONObject(i)
+                var ingredients = jsonobj.getString("ingredients")
+                var ingredientsArr = ingredients.split(",")
+
+                var ingredientsList = ArrayList<String>()
+                for (j in 0 until ingredientsArr.size) {
+
+                    ingredientsList.add(ingredientsArr[j])
+
+                }
+
+
+
+
+                var tags = jsonobj.getString("tags")
+                var tagsArr = tags.split(",")
+                var tagsList = ArrayList<String>()
+                for (j in 0 until tagsArr.size) {
+                    tagsList.add(tagsArr[j])
+                }
+
+
+
+
+
+
                 recipe = Recipe(
-                    i,
                     i,
                     jsonobj.getString("name"),
                     jsonobj.getString("source"),
@@ -78,8 +103,8 @@ class SplashActivity : AppCompatActivity() {
                     jsonobj.getString("sugar"),
                     jsonobj.getString("protein"),
                     jsonobj.getString("instructions"),
-                    jsonobj.getString("ingredients"),
-                    jsonobj.getString("tags")
+                    ingredientsList,
+                    tagsList
                 )
 
                 recipeDAO.insertRecipe(recipe)

@@ -5,7 +5,6 @@ import androidx.room.PrimaryKey
 @Entity
 data class Recipe(
     @PrimaryKey val uid: Int,
-    @ColumnInfo(name = "ID") val id: Int,
     @ColumnInfo(name = "Name") val name: String?,
     @ColumnInfo(name = "Source") val source: String?,
     @ColumnInfo(name = "Servings") val serving: String?,
@@ -18,8 +17,11 @@ data class Recipe(
     @ColumnInfo(name = "Sugar") val sugar: String?,
     @ColumnInfo(name = "Protein") val protein: String?,
     @ColumnInfo(name = "Instruction") val instruction: String?,
-    @ColumnInfo(name = "Ingredients") val ingredients: String?,
-    @ColumnInfo(name = "Tags") val tags: String?
-
+    @ColumnInfo(name = "Ingredients") val ingredients: ArrayList<String>,
+    @ColumnInfo(name = "Tags") val tags: ArrayList<String>?
 
     )
+
+
+
+

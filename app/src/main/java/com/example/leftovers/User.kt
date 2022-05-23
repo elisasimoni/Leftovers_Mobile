@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor
 @Entity
 data class User(
 
-    @PrimaryKey val uid: Int,
+    @PrimaryKey(autoGenerate = true) val uid: Int,
     @ColumnInfo(name = "Full_name") var fullName: String?,
     @ColumnInfo(name = "Email") val email: String?,
     @ColumnInfo(name = "Password") val password: String?,

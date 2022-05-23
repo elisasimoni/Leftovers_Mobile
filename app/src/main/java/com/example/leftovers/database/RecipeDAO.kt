@@ -1,6 +1,7 @@
 package com.example.leftovers.database
 
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -16,17 +17,11 @@ interface RecipeDAO {
     @Query("SELECT * FROM Recipe")
     fun getAllRecipes(): List<Recipe>
 
-    @Query("SELECT * FROM Recipe WHERE Tags = :tags")
-    fun getRecipeByTags(tags: String?): Recipe
+    @Query("SELECT * FROM Recipe WHERE Tags LIKE :tags AND Ingredients LIKE :ingredients")
+    fun getRecipeByTags(tags: ArrayList<String>, ingredients:ArrayList<String>): List<Recipe>
 
-    @Query("SELECT Tags FROM Recipe WHERE ID = :id")
-    fun getAllTags(id: Int): List<String>
 
-    @Query("SELECT Ingredients FROM Recipe WHERE ID = :id")
-    fun getAllIngredients(id: Int): List<String>
 
-    @Query("SELECT * FROM Recipe WHERE ID = :id")
-    fun getRecipeById(id: Int): Recipe
 
 
 
