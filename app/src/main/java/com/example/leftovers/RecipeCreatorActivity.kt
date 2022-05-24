@@ -74,9 +74,16 @@ class RecipeCreatorActivity : AppCompatActivity() {
                 val selection = parent.getItemAtPosition(position) as String
 
                 autoCompleteTextView.setText("")
-                chipFood(selection)
-                foodListRecipe.add(a.plus(selection).plus(a))
-                Log.i("FoodSelected.", selection)
+
+                if(foodListRecipe.contains(a.plus(selection).plus(a))){
+                    //do nothing
+                }else{
+                    chipFood(selection)
+                    foodListRecipe.add(a.plus(selection).plus(a))
+                    Log.i("FoodSelected.", selection)
+                }
+
+
 
             }
     }
