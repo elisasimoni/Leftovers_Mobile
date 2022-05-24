@@ -83,8 +83,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
                     Log.i("FoodSelected.", selection)
                 }
 
-
-
             }
     }
 
