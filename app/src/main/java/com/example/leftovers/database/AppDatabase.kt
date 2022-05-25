@@ -4,16 +4,18 @@ import android.content.Context
 import androidx.room.*
 import com.example.leftovers.database.FoodDAO
 import com.example.leftovers.database.RecipeDAO
+import com.example.leftovers.database.StarredDAO
 import com.example.leftovers.database.UserDAO
 
 
-@Database(entities = [User::class, Food::class, Recipe::class], version = 5, exportSchema = false)
+@Database(entities = [User::class, Food::class, Recipe::class, Starred::class], version = 6, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract  class AppDatabase : RoomDatabase(){
 
     abstract fun userDao(): UserDAO
     abstract fun foodDao(): FoodDAO
     abstract fun recipeDao(): RecipeDAO
+    abstract fun starredDao(): StarredDAO
 
     companion object {
         private var INSTANCE: AppDatabase? = null

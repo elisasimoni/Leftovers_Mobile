@@ -42,6 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
                 val intent = Intent(this, HomePageActivity::class.java)
                 intent.putExtra("Username", user.fullName)
+                intent.putExtra("EMAIL_PID", user.email)
                 startActivity(intent)
             }else{
 
@@ -78,6 +79,7 @@ class LoginActivity : AppCompatActivity() {
 
         signUpBtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+
             startActivity(intent)
 
         }

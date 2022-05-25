@@ -59,6 +59,7 @@ class RegisterActivity : AppCompatActivity() {
                 if (checkUser) {
                     val intent = Intent(this, HomePageActivity::class.java)
                     intent.putExtra("Username", user.fullName)
+                    intent.putExtra("EMAIL_PID", user.email)
                     startActivity(intent)
 
                 }

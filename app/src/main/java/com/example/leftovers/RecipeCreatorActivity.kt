@@ -38,7 +38,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
         ingredientsLoad()
         catchIngredients()
-        catchFilters("Starter")
         catchFilters("Main")
         catchFilters("Soup")
         catchFilters("Dessert")
@@ -58,10 +57,6 @@ class RecipeCreatorActivity : AppCompatActivity() {
             intent.putExtra("choosenIngredients", foodListRecipe)
             startActivity(intent)
         }
-
-
-
-
 
     }
 

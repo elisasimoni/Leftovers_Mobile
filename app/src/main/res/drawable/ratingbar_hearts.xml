@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background"
+        android:drawable="@drawable/rating_hearts_empty" />
+    <item android:id="@+id/fullheart"
+        android:drawable="@drawable/rating_hearts_full" />
+</layer-list>

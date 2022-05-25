@@ -3,46 +3,115 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardview"
-    android:layout_width="wrap_content"
-    android:layout_height="75dp"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
     android:layout_centerHorizontal="true"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="15dp"
     android:layout_margin="10dp"
-    android:background="@drawable/back_splashscreen"
+    >
+<RelativeLayout
+    android:id="@+id/relativeBackground"
+    android:layout_width="240dp"
+    android:layout_height="300dp"
+    android:layout_marginStart="120dp"
+    android:background="@drawable/dessert"
+    android:backgroundTint="@color/gray"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="382dp"
-        android:layout_height="172dp">
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/bookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="250dp"
+        app:srcCompat="@drawable/bookmarks"
+
+        />
+    <ImageButton
+        android:id="@+id/favoriteHeart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/drawable_bg_heart"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp">
 
         <TextView
-            android:id="@+id/name"
-            android:layout_width="251dp"
-            android:layout_height="66dp"
-            android:layout_marginTop="4dp"
-            android:gravity="center"
-            android:textSize="18sp"
+            android:id="@+id/title"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/black"
+            android:textSize="19sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.13"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="95dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/back_splashscreen"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/name"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.061" />
+            android:maxHeight="55dp"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="-0dp"
+            android:layout_marginTop="-17dp">
+
+            <TextView
+                android:id="@+id/servants"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/kcal"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="130dp"
+            android:progressTint="@color/purple_700"/>
+    </LinearLayout>
 
 
 </com.google.android.material.card.MaterialCardView>
