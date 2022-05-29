@@ -8,7 +8,7 @@ import com.example.leftovers.database.StarredDAO
 import com.example.leftovers.database.UserDAO
 
 
-@Database(entities = [User::class, Food::class, Recipe::class, Starred::class], version = 6, exportSchema = false)
+@Database(entities = [User::class, Food::class, Recipe::class, Starred::class], version = 7, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract  class AppDatabase : RoomDatabase(){
 

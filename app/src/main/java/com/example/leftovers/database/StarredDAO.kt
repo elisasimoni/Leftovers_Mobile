@@ -11,4 +11,7 @@ interface StarredDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertStarred(starred: Starred)
+
+    @Delete
+    fun deleteStarred(starred: Starred)
 }

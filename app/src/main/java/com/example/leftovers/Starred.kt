@@ -8,5 +8,5 @@ import androidx.room.PrimaryKey
 data class Starred(
     @PrimaryKey(autoGenerate = true) val uid: Int,
     @ColumnInfo(name = "Email") val email: String?,
-    @ColumnInfo(name = "RecipeID") val recipeID: String?,
+    @ColumnInfo(name = "RecipeID") val recipeID: Int,
 )
