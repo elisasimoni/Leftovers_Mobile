@@ -26,6 +26,7 @@
         <activity android:name=".HomePageActivity"/>
         <activity android:name=".RecipeCreatorActivity"/>
         <activity android:name=".RecipeDetailActivity"/>
+        <activity android:name=".FavoriteActivity"/>
 
 
         <meta-data

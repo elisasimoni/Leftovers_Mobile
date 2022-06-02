@@ -14,4 +14,8 @@ interface StarredDAO {
 
     @Delete
     fun deleteStarred(starred: Starred)
+
+    @Query("SELECT uid FROM Starred WHERE Email = :userPid")
+    fun getStarred(userPid: String): List<Int>
+
 }

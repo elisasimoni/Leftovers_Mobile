@@ -6,17 +6,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.appbar.MaterialToolbar
-import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -24,10 +21,14 @@ class HomePageActivity : AppCompatActivity() {
 
     private lateinit var viewPager2: ViewPager2
     private var sliderHandler = Handler()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
         val username = intent.getStringExtra("Username")
+        var userPid = intent.getStringExtra("EMAIL_PID")
+
         handleUsername("Welcome, $username")
 
         viewPager2 = findViewById(R.id.viewPage)
@@ -66,9 +67,25 @@ class HomePageActivity : AppCompatActivity() {
 
 
         val plusRecipeBtn = findViewById<FloatingActionButton>(R.id.plusButton)
+        val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
+
+        topAppBar.setOnMenuItemClickListener { item ->
+            when (item?.itemId) {
+                R.id.favoriteHeartButtonTopBar -> {
+                    val intent = Intent(this@HomePageActivity, FavoriteActivity::class.java)
+                    intent.putExtra("EMAIL_PID", userPid)
+                    startActivity(intent)
+                }
+
+            }
+            true
+        }
+
 
         plusRecipeBtn.setOnClickListener(){
-         goToRecipe()
+            if (userPid != null) {
+                goToRecipe(userPid)
+            }
         }
 /*
         val topAppBar = findViewById<MaterialToolbar>(R.id.bottomAppBar)
@@ -111,8 +128,9 @@ class HomePageActivity : AppCompatActivity() {
         sliderHandler.postDelayed(sliderRunnable, 3000)
     }
 
-    private fun goToRecipe() {
+    private fun goToRecipe(userPid:String) {
         val intent = Intent(this, RecipeCreatorActivity::class.java)
+        intent.putExtra("EMAIL_PID", userPid)
         startActivity(intent)
 
     }

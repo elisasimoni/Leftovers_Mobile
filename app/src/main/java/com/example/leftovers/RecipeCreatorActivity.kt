@@ -24,6 +24,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
     var foodListRecipe = arrayListOf<String>()
     private var filterListRecipe = arrayListOf<String>()
     var filter = arrayListOf<String>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
@@ -50,11 +51,12 @@ class RecipeCreatorActivity : AppCompatActivity() {
         catchFilters("Sauce")
 
         val findBtn = findViewById<Button>(R.id.findRecipe)
-
+        val userPid = intent.getStringExtra("EMAIL_PID")
         findBtn.setOnClickListener(){
             val intent = Intent(this, RecipeDetailActivity::class.java)
             intent.putExtra("choosenFilter", filterListRecipe)
             intent.putExtra("choosenIngredients", foodListRecipe)
+            intent.putExtra("EMAIL_PID", userPid)
             startActivity(intent)
         }
 

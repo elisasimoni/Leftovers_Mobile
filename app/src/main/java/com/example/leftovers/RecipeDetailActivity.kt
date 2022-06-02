@@ -46,6 +46,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         getRecipeByTagsAndIngredients(tags,ingredients)
 
         handleNumberOfRecipe()
@@ -145,10 +146,6 @@ class RecipeDetailActivity : AppCompatActivity() {
 
 
             }
-
-
-
-
 
             cards.addView(newCard)
             }
