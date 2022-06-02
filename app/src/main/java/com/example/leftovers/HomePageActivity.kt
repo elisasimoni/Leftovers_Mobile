@@ -5,10 +5,12 @@ package com.example.leftovers
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.view.MenuItem
+import android.view.Gravity
+import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -80,6 +82,18 @@ class HomePageActivity : AppCompatActivity() {
             }
             true
         }
+        topAppBar.setNavigationOnClickListener(View.OnClickListener {
+            val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
+
+            var slide = true
+
+            if (slide) {
+                drawer.openDrawer(Gravity.LEFT)
+
+            } else {
+                drawer.closeDrawer(Gravity.LEFT)
+            }
+        })
 
 
         plusRecipeBtn.setOnClickListener(){
