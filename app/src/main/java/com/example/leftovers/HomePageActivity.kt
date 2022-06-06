@@ -2,21 +2,27 @@ package com.example.leftovers
 
 //import android.widget.Button
 
+
+
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.Gravity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.example.leftovers.barcodeAnalyzer.view.BarcodeScannerActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
 
 
 class HomePageActivity : AppCompatActivity() {
@@ -34,6 +40,7 @@ class HomePageActivity : AppCompatActivity() {
         handleUsername("Welcome, $username")
 
         viewPager2 = findViewById(R.id.viewPage)
+        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
 
         val sliderItems: MutableList<SliderRecipe> = ArrayList()
         sliderItems.add(SliderRecipe(R.drawable.smothie))
@@ -46,6 +53,10 @@ class HomePageActivity : AppCompatActivity() {
         viewPager2.clipChildren = false
         viewPager2.offscreenPageLimit = 3
         viewPager2.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
+
+
+
+
 
         val compositePageTransformer = CompositePageTransformer()
         compositePageTransformer.addTransformer(MarginPageTransformer(30))
@@ -83,12 +94,14 @@ class HomePageActivity : AppCompatActivity() {
             true
         }
         topAppBar.setNavigationOnClickListener(View.OnClickListener {
-            val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
 
             var slide = true
 
             if (slide) {
                 drawer.openDrawer(Gravity.LEFT)
+
+
+
 
             } else {
                 drawer.closeDrawer(Gravity.LEFT)
@@ -96,30 +109,23 @@ class HomePageActivity : AppCompatActivity() {
         })
 
 
+
+
         plusRecipeBtn.setOnClickListener(){
             if (userPid != null) {
                 goToRecipe(userPid)
             }
         }
-/*
-        val topAppBar = findViewById<MaterialToolbar>(R.id.bottomAppBar)
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        topAppBar.setNavigationOnClickListener {
-            drawerLayout.open()
-            // Handle navigation icon press
+        val scanBtn = findViewById<FloatingActionButton>(R.id.scanButton)
+
+        scanBtn.setOnClickListener(){
+            val intent = Intent(this, BarcodeScannerActivity::class.java)
+            startActivity(intent)
         }
 
-        topAppBar.setOnMenuItemClickListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.favorite -> {
-                    // Handle favorite icon press
-                    true
-                }
-
-                else -> false
-            }
-        }*/
     }
+
+
 
     private val sliderRunnable = Runnable {
         viewPager2.currentItem = viewPager2.currentItem + 1
@@ -148,4 +154,9 @@ class HomePageActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
+
+
+
+
 }
+

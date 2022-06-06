@@ -81,6 +81,14 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/fab_content_desc"
         app:srcCompat="@drawable/ic_add_24dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/fab_content_desc"
+        app:srcCompat="@drawable/ic_code"/>
 
 
     <com.google.android.material.appbar.MaterialToolbar
