@@ -84,7 +84,7 @@ class FavoriteActivity : AppCompatActivity() {
             val heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
             heart.setBackgroundResource(R.drawable.ic_favorite_red)
 
-            heart.setOnClickListener(){
+            heart.setOnClickListener {
                 val dialog = Dialog(this)
                 val userPid = intent.getStringExtra("EMAIL_PID")
 

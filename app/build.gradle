@@ -46,9 +46,14 @@ android {
 dependencies {
 
 
+
+
+
     implementation 'androidx.test:core-ktx:1.4.0'
     implementation 'junit:junit:4.12'
+
     def roomVersion = "2.4.2"
+
 
     implementation("androidx.room:room-runtime:$roomVersion")
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
@@ -91,6 +96,10 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
 
+    implementation("com.android.volley:volley:1.2.1")
+
+    //Coroutines & serialization (chapter 8)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
 
     implementation 'com.google.mlkit:barcode-scanning:17.0.2'
     // CameraX library
@@ -99,7 +108,7 @@ dependencies {
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
     implementation "androidx.camera:camera-view:1.0.0-alpha28"
 
-
+    implementation 'com.squareup.picasso:picasso:2.71828'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
 

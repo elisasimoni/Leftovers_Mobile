@@ -41,7 +41,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         tags  = intent.getStringArrayListExtra("choosenFilter")as ArrayList<String>
         ingredients = intent.getStringArrayListExtra("choosenIngredients")as ArrayList<String>
         val returnBack = findViewById<ImageView>(R.id.returnBack)
-        returnBack.setOnClickListener(){
+        returnBack.setOnClickListener {
             val intent = Intent(this, RecipeCreatorActivity::class.java)
             startActivity(intent)
         }
@@ -79,7 +79,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             val newCard = CardView(this)
             newCard.background = ContextCompat.getDrawable(this, R.drawable.trasparent2)
 
-            layoutInflater.inflate(R.layout.default_card, newCard);
+            layoutInflater.inflate(R.layout.default_card, newCard)
             val back: ImageView = newCard.findViewById(R.id.relativeBackground)
             val star: MaterialRatingBar = newCard.findViewById(R.id.ratingBar)
             star.rating = randomRating()
@@ -127,7 +127,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             var buttonState : Int = 0
             val heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
 
-            heart.setOnClickListener(){
+            heart.setOnClickListener {
                 val userPid = intent.getStringExtra("EMAIL_PID")
 
                 if(buttonState == 0){

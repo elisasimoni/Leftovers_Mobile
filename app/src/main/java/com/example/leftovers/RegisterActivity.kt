@@ -15,7 +15,7 @@ import java.util.logging.Level.INFO
 
 class RegisterActivity : AppCompatActivity() {
     var passwordShowing = false
-    val STRING_LENGTH = 5;
+    val STRING_LENGTH = 5
     private val TAG = "RegisterActivity"
 
 

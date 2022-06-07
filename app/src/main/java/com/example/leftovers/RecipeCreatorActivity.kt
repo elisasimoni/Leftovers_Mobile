@@ -52,7 +52,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
 
         val findBtn = findViewById<Button>(R.id.findRecipe)
         val userPid = intent.getStringExtra("EMAIL_PID")
-        findBtn.setOnClickListener(){
+        findBtn.setOnClickListener {
             val intent = Intent(this, RecipeDetailActivity::class.java)
             intent.putExtra("choosenFilter", filterListRecipe)
             intent.putExtra("choosenIngredients", foodListRecipe)

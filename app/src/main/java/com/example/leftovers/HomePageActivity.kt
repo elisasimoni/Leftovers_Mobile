@@ -111,14 +111,14 @@ class HomePageActivity : AppCompatActivity() {
 
 
 
-        plusRecipeBtn.setOnClickListener(){
+        plusRecipeBtn.setOnClickListener {
             if (userPid != null) {
                 goToRecipe(userPid)
             }
         }
         val scanBtn = findViewById<FloatingActionButton>(R.id.scanButton)
 
-        scanBtn.setOnClickListener(){
+        scanBtn.setOnClickListener {
             val intent = Intent(this, BarcodeScannerActivity::class.java)
             startActivity(intent)
         }
