@@ -25,10 +25,13 @@ interface UserDAO {
             "ELSE CAST(0 AS BIT) END")
     fun existUser(email: String, pw: String): Boolean
 
+    @Query("SELECT * FROM user WHERE email = :email")
+    fun getUser(email: String): User
 
     @Update
     fun updateUser(users: User)
 
     @Delete
     fun delete(user: User)
+
 }

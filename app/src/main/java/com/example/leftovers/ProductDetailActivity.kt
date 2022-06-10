@@ -107,7 +107,7 @@ class ProductDetailActivity : AppCompatActivity() {
                         "//"
                     },
                     if(response.getJSONObject("product").getJSONObject("nutriments").has("carbohydrates_unit")){
-                        response.getJSONObject("product").getJSONObject("nutriments").getDouble("carbohydrates_unit").toString()
+                        response.getJSONObject("product").getJSONObject("nutriments").getString("carbohydrates_unit")
                     }else{
                         "//"
                     },
@@ -123,7 +123,7 @@ class ProductDetailActivity : AppCompatActivity() {
                         "//"
                     },
                     if(response.getJSONObject("product").getJSONObject("nutriments").has("proteins_unit")){
-                        response.getJSONObject("product").getJSONObject("nutriments").getDouble("proteins_unit").toString()
+                        response.getJSONObject("product").getJSONObject("nutriments").getString("proteins_unit")
                     }else{
                         "//"
                     },
@@ -138,7 +138,7 @@ class ProductDetailActivity : AppCompatActivity() {
                         "//"
                     },
                     if(response.getJSONObject("product").getJSONObject("nutriments").has("fat_unit")){
-                        response.getJSONObject("product").getJSONObject("nutriments").getDouble("fat_unit").toString()
+                        response.getJSONObject("product").getJSONObject("nutriments").getString("fat_unit")
                     }else{
                         "//"
                     },
@@ -153,7 +153,7 @@ class ProductDetailActivity : AppCompatActivity() {
                         "//"
                     },
                     if(response.getJSONObject("product").getJSONObject("nutriments").has("saturated_fat_unit")){
-                        response.getJSONObject("product").getJSONObject("nutriments").getDouble("saturated_fat_unit").toString()
+                        response.getJSONObject("product").getJSONObject("nutriments").getString("saturated_fat_unit")
                     }else{
                         "//"
                     },
@@ -168,7 +168,7 @@ class ProductDetailActivity : AppCompatActivity() {
                         "//"
                     },
                     if(response.getJSONObject("product").getJSONObject("nutriments").has("fiber_unit")){
-                        response.getJSONObject("product").getJSONObject("nutriments").getDouble("fiber_unit").toString()
+                        response.getJSONObject("product").getJSONObject("nutriments").getString("fiber_unit")
                     }else{
                         "//"
                     },

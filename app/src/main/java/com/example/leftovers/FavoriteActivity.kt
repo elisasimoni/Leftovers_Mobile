@@ -77,7 +77,7 @@ class FavoriteActivity : AppCompatActivity() {
         for(i in favoriteRecipes){
             val newCard = CardView(this)
             newCard.background = ContextCompat.getDrawable(this, R.drawable.trasparent2)
-            layoutInflater.inflate(R.layout.default_card, newCard)
+            layoutInflater.inflate(R.layout.defaullt_card_favorite, newCard)
 
             val t: TextView = newCard.findViewById(R.id.title)
             val s: TextView = newCard.findViewById(R.id.servants)
