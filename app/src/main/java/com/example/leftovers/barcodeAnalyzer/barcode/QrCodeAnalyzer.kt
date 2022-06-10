@@ -62,8 +62,11 @@ class QrCodeAnalyzer(
                     if (barcodes.isNotEmpty()) {
                         for (barcode in barcodes) {
                             // Handle received barcodes...
+
                             val intent = Intent(context, ProductDetailActivity::class.java)
+
                             intent.putExtra("barcode", barcode.rawValue)
+
                             context.startActivity(intent)
 
                             // Update bounding rect

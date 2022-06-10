@@ -3,6 +3,7 @@ package com.example.leftovers
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
@@ -15,6 +16,7 @@ import androidx.core.content.ContextCompat
 import androidx.room.Room
 import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.StarredDAO
+import com.google.android.material.appbar.MaterialToolbar
 
 
 class FavoriteActivity : AppCompatActivity() {
@@ -25,6 +27,15 @@ class FavoriteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorite_recipe)
+        val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
+        val userPid = intent.getStringExtra("userPid")
+        topAppBar.setNavigationOnClickListener {
+            val intent = Intent(this@FavoriteActivity, HomePageActivity::class.java)
+            intent.putExtra("userPid", userPid)
+            startActivity(intent)
+        }
+
+
 
         val db = Room.databaseBuilder(
             applicationContext,
@@ -32,7 +43,7 @@ class FavoriteActivity : AppCompatActivity() {
         ).allowMainThreadQueries().fallbackToDestructiveMigration().build()
         recipeDAO = db.recipeDao()
         starredDAO = db.starredDao()
-        val userPid = intent.getStringExtra("EMAIL_PID")
+
         if (userPid != null) {
             Log.i("PID", userPid)
         }

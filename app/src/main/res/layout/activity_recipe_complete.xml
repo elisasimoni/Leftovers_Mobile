@@ -22,18 +22,6 @@
         app:title="Recipe"
         app:titleCentered="true"/>
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="257dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="recipe found"
-        android:textAllCaps="true"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topAppBar" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -41,8 +29,7 @@
         android:layout_height="515dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/cards"

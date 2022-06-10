@@ -135,7 +135,7 @@
         android:layout_marginTop="16dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
-        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -144,8 +144,8 @@
             android:layout_width="35dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
-            android:src="@drawable/dragonfruit_icon"
-            android:contentDescription="@string/dragonfruit_logo" />
+            android:contentDescription="@string/dragonfruit_logo"
+            android:src="@drawable/dragonfruit_icon" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -173,7 +173,7 @@
         android:layout_height="50dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/facebook">
@@ -182,8 +182,8 @@
             android:layout_width="39dp"
             android:layout_height="42dp"
             android:layout_gravity="center"
-            android:src="@drawable/salad"
-            android:contentDescription="@string/salad_logo" />
+            android:contentDescription="@string/salad_logo"
+            android:src="@drawable/salad" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -206,7 +206,7 @@
         android:layout_width="91dp"
         android:layout_height="27dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="110dp"
         android:fontFamily="@font/alata"
         android:text="@string/sign_up"
         android:textColor="#1A2C1A"

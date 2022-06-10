@@ -18,7 +18,8 @@ data class Recipe(
     @ColumnInfo(name = "Protein") val protein: String?,
     @ColumnInfo(name = "Instruction") val instruction: String?,
     @ColumnInfo(name = "Ingredients") val ingredients: ArrayList<String>,
-    @ColumnInfo(name = "Tags") val tags: ArrayList<String>?
+    @ColumnInfo(name = "Tags") val tags: ArrayList<String>?,
+
 
     )
 

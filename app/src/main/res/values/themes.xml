@@ -34,6 +34,9 @@
         <item name="colorControlNormal">#FFFFFF</item>
         <item name="colorControlActivated">@color/purple_700</item>
     </style>
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">4dp</item>
+    </style>
 
 
 </resources>

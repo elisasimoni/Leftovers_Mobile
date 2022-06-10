@@ -5,17 +5,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.transition.TransitionManager
 import android.util.Log
+import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
 import com.example.leftovers.database.FoodDAO
-import com.example.leftovers.database.RecipeDAO
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
-import org.json.JSONArray
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 
 
 class RecipeCreatorActivity : AppCompatActivity() {
@@ -36,6 +37,33 @@ class RecipeCreatorActivity : AppCompatActivity() {
         ).allowMainThreadQueries().fallbackToDestructiveMigration().build()
         foodDAO = db.foodDao()
 
+        val userPid = intent.getStringExtra("userPid")
+        val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
+
+        topAppBar.setNavigationOnClickListener {
+            val intent = Intent(this@RecipeCreatorActivity, HomePageActivity::class.java)
+            intent.putExtra("userPid", userPid)
+            startActivity(intent)
+        }
+
+        topAppBar.setOnMenuItemClickListener { item ->
+            when (item?.itemId) {
+                R.id.favoriteHeartButtonTopBar -> {
+                    val intent = Intent(this, FavoriteActivity::class.java)
+                    intent.putExtra("userPid", userPid)
+                    startActivity(intent)
+                }
+
+                R.id.profileButtonTopBar -> {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("userPid", userPid)
+                    startActivity(intent)
+                }
+
+
+            }
+            true
+        }
 
         ingredientsLoad()
         catchIngredients()
@@ -50,8 +78,8 @@ class RecipeCreatorActivity : AppCompatActivity() {
         catchFilters("Appetizer")
         catchFilters("Sauce")
 
-        val findBtn = findViewById<Button>(R.id.findRecipe)
-        val userPid = intent.getStringExtra("EMAIL_PID")
+        val findBtn = findViewById<ExtendedFloatingActionButton>(R.id.findRecipe)
+
         findBtn.setOnClickListener {
             val intent = Intent(this, RecipeDetailActivity::class.java)
             intent.putExtra("choosenFilter", filterListRecipe)

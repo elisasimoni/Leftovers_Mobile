@@ -30,7 +30,8 @@ class BarcodeScannerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val userPid = intent.getStringExtra("userPid")
+        intent.putExtra("userPid", userPid)
         cameraExecutor = Executors.newSingleThreadExecutor()
 
         barcodeBoxView = BarcodeBoxView(this)

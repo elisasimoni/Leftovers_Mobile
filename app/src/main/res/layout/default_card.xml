@@ -9,11 +9,13 @@
     app:cardCornerRadius="15dp"
     android:layout_margin="10dp"
     >
+
 <ImageView
     android:id="@+id/relativeBackground"
     android:layout_width="240dp"
     android:layout_height="300dp"
     android:layout_marginStart="120dp"
+    android:background="@drawable/generic_food"
     android:backgroundTint="@color/gray">
 
 </ImageView>
@@ -30,9 +32,9 @@
         android:id="@+id/favoriteHeart"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="295dp"
+        android:layout_marginLeft="295dp"
         android:layout_marginTop="27dp"
-        android:background="@drawable/drawable_bg_heart"/>
+        android:background="@drawable/ic_baseline_favorite_border_24"/>
 
     <LinearLayout
         android:layout_width="match_parent"

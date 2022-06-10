@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back_splashscreen">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_app_bar"
+        app:navigationIcon="@drawable/ic_baseline_arrow_circle_left_24"
+        app:title="Product Detail"
+        app:titleCentered="true"/>
     <ScrollView
         android:layout_width="417dp"
-        android:layout_height="700dp"
+        android:layout_height="685dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
         <LinearLayout
             android:layout_width="409dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="vertical">
-
             <ImageView
                 android:id="@+id/scanProductImage"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-60dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="parent" />
             <TextView
                 android:id="@+id/scanProductName"
@@ -45,18 +57,18 @@
                 android:layout_marginRight="10dp"
 
                 android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/scanProductQta"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:fontFamily="@font/alata"
-                            android:textColor="#000000"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="10dp"
-                            android:textSize="15sp"
-                            />
+                <TextView
+                    android:id="@+id/scanProductQta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/alata"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    />
                 <TextView
                     android:id="@+id/scanProductBrands"
                     android:layout_width="wrap_content"
@@ -69,8 +81,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
-                     />
-
+                    />
             </LinearLayout>
             <TextView
                 android:id="@+id/scanProductIngredients"
@@ -82,7 +93,12 @@
                 android:layout_marginRight="20dp"
                 android:textAlignment="center"
                 />
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="7dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="wrap_content">
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,17 +106,16 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-
+                android:divider="@color/black"
+                android:showDividers="middle"
                 android:clipToPadding="false"
                 android:padding="10dp"
 
                 >
-
                 <TableRow
                     android:id="@+id/row1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
 
                         android:layout_width="fill_parent"
@@ -110,7 +125,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
 
                         android:layout_width="fill_parent"
@@ -121,7 +135,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
 
                         android:layout_width="fill_parent"
@@ -132,14 +145,11 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
 
                         android:layout_width="fill_parent"
@@ -150,7 +160,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductCarb"
                         android:layout_width="fill_parent"
@@ -161,7 +170,6 @@
                         android:textSize="20sp"
 
                         />
-
                     <TextView
                         android:id="@+id/scanProductCarb100"
                         android:layout_width="fill_parent"
@@ -172,14 +180,11 @@
                         android:textSize="20sp"
 
                         />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -189,7 +194,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductSugar"
                         android:layout_width="fill_parent"
@@ -198,7 +202,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductSugar100"
                         android:layout_width="fill_parent"
@@ -207,14 +210,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row4"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -224,7 +224,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductProtein"
                         android:layout_width="fill_parent"
@@ -233,7 +232,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductProtein100"
                         android:layout_width="fill_parent"
@@ -242,14 +240,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row5"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -259,7 +254,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductFiber"
                         android:layout_width="fill_parent"
@@ -268,7 +262,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductFiber100"
                         android:layout_width="fill_parent"
@@ -277,14 +270,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row6"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -294,7 +284,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductSalt"
                         android:layout_width="fill_parent"
@@ -303,7 +292,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductSalt100"
                         android:layout_width="fill_parent"
@@ -312,14 +300,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row7"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -329,7 +314,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductFat"
                         android:layout_width="fill_parent"
@@ -338,7 +322,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductFat100"
                         android:layout_width="fill_parent"
@@ -347,14 +330,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row8"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -364,7 +344,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductSaturatedFat"
                         android:layout_width="fill_parent"
@@ -373,7 +352,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductSaturatedFat100"
                         android:layout_width="fill_parent"
@@ -382,14 +360,11 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/row9"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -399,7 +374,6 @@
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:id="@+id/scanProductCalories"
                         android:layout_width="fill_parent"
@@ -408,7 +382,6 @@
                         android:fontFamily="@font/alata"
                         android:textColor="#000000"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/scanProductCalories100"
                         android:layout_width="fill_parent"
@@ -418,10 +391,8 @@
                         android:textColor="#000000"
                         android:textSize="20sp" />
                 </TableRow>
-
-
             </TableLayout>
-
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
