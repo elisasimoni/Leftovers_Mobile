@@ -178,7 +178,7 @@ class RecipeDetailActivity : AppCompatActivity() {
                 val userPid = intent.getStringExtra("EMAIL_PID")
 
                 if(buttonState == 0){
-                    heart.setBackgroundResource(R.drawable.ic_favorite_red)
+                    heart.setBackgroundResource(R.drawable.ic_heart)
                     var starred = Starred(i.uid,userPid,i.uid)
                     starredDAO.insertStarred(starred)
                     buttonState = 1
