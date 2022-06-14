@@ -78,7 +78,9 @@ class RecipeDetailActivity : AppCompatActivity() {
 
 
 
-        getRecipeByTagsAndIngredients(tags,ingredients)
+        if (userPid != null) {
+            getRecipeByTagsAndIngredients(tags,ingredients,userPid)
+        }
 
         handleNumberOfRecipe()
 
@@ -101,7 +103,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     }
 
     @SuppressLint("WrongViewCast")
-    private fun getRecipeByTagsAndIngredients(tags: ArrayList<String>, ingredients: ArrayList<String>) {
+    private fun getRecipeByTagsAndIngredients(tags: ArrayList<String>, ingredients: ArrayList<String>, userPid: String) {
         val cards = findViewById<LinearLayoutCompat>(R.id.cards)
         var recipe = recipeDAO.getRecipeByTags(tags,ingredients)
         val intent = Intent(this, RecipeDetailCompleteActivity::class.java)
@@ -175,7 +177,7 @@ class RecipeDetailActivity : AppCompatActivity() {
 
 
             heart.setOnClickListener {
-                val userPid = intent.getStringExtra("EMAIL_PID")
+
 
                 if(buttonState == 0){
                     heart.setBackgroundResource(R.drawable.ic_heart)

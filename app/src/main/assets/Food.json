@@ -726,7 +726,7 @@
   },
   {
     "id": 30,
-    "name": "Common cabbage",
+    "name": "Cabbage",
     "name_scientific": "Brassica oleracea",
     "description": "Brassica oleracea is the species of plant that includes many common foods as cultivars, including cabbage, broccoli, cauliflower, kale, Brussels sprouts, savoy, and Chinese kale. In its uncultivated form it is known as wild cabbage. It is native to coastal southern and western Europe. Its tolerance of salt and lime and its intolerance of competition from other plants typically restrict its natural occurrence to limestone sea cliffs, like the chalk cliffs on both sides of the English Channel.\nB. oleracea has become established as an important human food crop plant, used because of its large food reserves, which are stored over the winter in its leaves. It is rich in essential nutrients including vitamin C. A diet rich in cruciferous vegetables (e.g., cabbage, broccoli, cauliflower) is linked to a reduced risk of several human cancers.",
     "itis_id": "23062",
@@ -1901,7 +1901,7 @@
   },
   {
     "id": 77,
-    "name": "Rocket salad (ssp.)",
+    "name": "Salad",
     "name_scientific": "Eruca vesicaria ssp. sativa",
     "description": "Eruca sativa (syn. E. vesicaria subsp. sativa (Miller) Thell., Brassica eruca L.) is an edible annual plant, commonly known as salad rocket, roquette, rucola, rugula, colewort, and, in the United States, arugula. It is sometimes conflated with Diplotaxis tenuifolia, the perennial wall rocket, another plant of the Brassicaceae family, which in the past was used in the same manner. Eruca sativa, which is widely popular as a salad vegetable, is a species of Eruca native to the Mediterranean region, from Morocco and Portugal in the west to Syria, Lebanon and Turkey in the east. The Latin adjective sativa in the plant's binomial is derived from satum, the supine of the verb sero, meaning \"to sow\", indicating that the seeds of the plant were sown in gardens. Eruca sativa differs from E. vesicaria in having early deciduous sepals. Some botanists consider it a subspecies of Eruca vesicaria: E. vesicaria subsp. sativa. Still others do not differentiate between the two.",
     "itis_id": "524057",
@@ -2101,7 +2101,7 @@
   },
   {
     "id": 85,
-    "name": "Soy bean",
+    "name": "Soy",
     "name_scientific": "Glycine max",
     "description": "The soybean (US) or soya bean (UK) (Glycine max) is a species of legume native to East Asia, widely grown for its edible bean which has numerous uses. The plant is classed as an oilseed rather than a pulse by the UN Food and Agricultural Organization (FAO). Fat-free (defatted) soybean meal is a significant and cheap source of protein for animal feeds and many prepackaged meals; soy vegetable oil is another product of processing the soybean crop. For example, soybean products such as textured vegetable protein (TVP) are ingredients in many meat and dairy analogues. Soybeans produce significantly more protein per acre than most other uses of land. Traditional nonfermented food uses of soybeans include soy milk, and from the latter tofu and tofu skin. Fermented foods include soy sauce, fermented bean paste, natto, and tempeh, among others. The oil is used in many industrial applications. The main producers of soy are the United States (35%), Brazil (27%), Argentina (19%), China (6%) and India (4%). The beans contain significant amounts of phytic acid, alpha-linolenic acid, and isoflavones.",
     "itis_id": "26716",
@@ -4251,7 +4251,7 @@
   },
   {
     "id": 171,
-    "name": "Garden tomato",
+    "name": "Tomato",
     "name_scientific": "Solanum lycopersicum",
     "description": "The tomato is the edible, often red fruit/berry of the nightshade Solanum lycopersicum, commonly known as a tomato plant. The species originated in the South American Andes and its use as a food originated in Mexico, and spread throughout the world following the Spanish colonization of the Americas. Its many varieties are now widely grown, sometimes in greenhouses in cooler climates.\nThe tomato is consumed in diverse ways, including raw, as an ingredient in many dishes, sauces, salads, and drinks. While it is botanically a fruit, it is considered a vegetable for culinary purposes (as well as under U.S. customs regulations, see Nix v. Hedden), which has caused some confusion. The fruit is rich in lycopene, which may have beneficial health effects.",
     "itis_id": "521671",
@@ -7601,7 +7601,7 @@
   },
   {
     "id": 308,
-    "name": "Northern bluefin tuna",
+    "name": "Tuna",
     "name_scientific": "Thunnus thynnus",
     "description": "The Atlantic bluefin tuna (Thunnus thynnus) is a species of tuna in the Scombridae family. It is variously known as the northern bluefin tuna (mainly when including Pacific bluefin as a subspecies), giant bluefin tuna (for individuals exceeding 150 kilograms or around 330 pounds) and formerly as the tunny. Atlantic bluefin are native to both the western and eastern Atlantic Ocean, as well as the Mediterranean Sea. Atlantic bluefin have become extinct in the Black Sea. The Atlantic bluefin tuna is a close relative of the other two bluefin tuna species—the Pacific bluefin tuna and the southern bluefin tuna. Atlantic bluefin tuna may exceed 450 kilograms in weight, and rival the black marlin, blue marlin and swordfish as the largest Perciformes. Throughout recorded history, the Atlantic bluefin tuna has been highly prized as a food fish. Besides their commercial value as food, the great size, speed, and power they display as apex predators has attracted the admiration of fishermen, writers, and scientists. The Atlantic bluefin tuna has been the foundation of one of the world's most lucrative commercial fisheries. Medium-sized and large individuals are heavily targeted for the Japanese raw fish market, where all bluefin species are highly prized for sushi and sashimi. This commercial importance has led to severe overfishing. The International Commission for the Conservation of Atlantic Tunas (ICCAT) affirmed in October 2009 that Atlantic bluefin tuna stocks have declined dramatically over the last 40 years, by 72% in the Eastern Atlantic, and by 82% in the Western Atlantic. On 16 October 2009, Monaco formally recommended Endangered Atlantic bluefin tuna for an Appendix I CITES listing and international trade ban. In early 2010, European officials, led by the French ecology minister, increased pressure to ban the commercial fishing of bluefin tuna internationally. European Union nations, who are responsible for most bluefin tuna overfishing, later abstained from voting to protect the species from international trade. Most Bluefin are captured commercially by professional fishermen using longlines; purse seines, assorted hook-and-line gear, heavy rod and reels, and harpoon. Recreationally, bluefin has been one of the most important big-game species sought by sports fishermen since the 1930s, particularly in the United States but also in Canada, Spain, France and Italy.",
     "itis_id": "172421",
@@ -8876,7 +8876,7 @@
   },
   {
     "id": 361,
-    "name": "Eastern oyster",
+    "name": "Extra-virgin oil",
     "name_scientific": "Crassostrea virginica",
     "description": "The eastern oyster (Crassostrea virginica) — also called Atlantic oyster or Virginia oyster — is a species of true oyster native to the eastern seaboard and Gulf of Mexico coast of North America. It is also farmed in Puget Sound, Washington, where it is known as the Totten Inlet Virginica. Eastern oysters are and have been very popular commercially. Today, less than 1% of the original 17th century population (when the original colonists arrived) is thought to remain in the Chesapeake Bay and its tributaries, although population estimates from any era are uncertain. The eastern oyster is the state shellfish of Connecticut, its shell is the state shell of Virginia and Mississippi, and its shell in cabochon form is the state gem of Louisiana.",
     "itis_id": "79872",
@@ -10676,7 +10676,7 @@
   },
   {
     "id": 436,
-    "name": "Pepper (C. frutescens)",
+    "name": "Black Pepper",
     "name_scientific": "Capsicum annuum var. annuum",
     "description": "Capsicum frutescens is a species of chili pepper that is sometimes considered to be part of the species Capsicum annuum. Pepper cultivars in Capsicum frutescens can be annual or short-lived perennial plants. Flowers are white with a greenish white or greenish yellow corolla, and are either insect- or self-pollinated. The plants' berries typically grow erect; ellipsoid-conical to lanceoloid shaped. They are usually very small and pungent, growing 10?20mm long and 3?7mm in diameter. Fruit typically grows a pale yellow and matures to a bright red, but can also be other colors. C. frutescens has a smaller variety of shapes compared to other Capsicum species, likely because of the lack of human selection. More recently, however, C. frutescens has been bred to produce ornamental strains, because of its large quantities of erect peppers growing in colorful ripening patterns.",
     "itis_id": "527044",
@@ -15451,7 +15451,7 @@
   },
   {
     "id": 633,
-    "name": "Eggs",
+    "name": "Egg",
     "name_scientific": null,
     "description": "An egg is the organic vessel containing the zygote, resulting from fertilization of the ovum, in which an animal embryo develops until it can survive on its own, at which point the animal hatches. Most arthropods, vertebrates, and mollusks lay eggs, although some do not, e.g. scorpions and most mammals.\nOviparous animals are those that lay eggs, with little or no other development within the mother. The study or collecting of eggs, particularly bird eggs, is called oology.\nThe term \"egg\" is used differently outside the animal kingdom. Reproductive structures similar to the egg in other kingdoms are termed \"spores,\" or in spermatophytes \"seeds,\" or in gametophytes \"egg cells\".",
     "itis_id": null,

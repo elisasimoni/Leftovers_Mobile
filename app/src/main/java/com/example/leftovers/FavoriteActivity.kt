@@ -29,6 +29,7 @@ class FavoriteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_favorite_recipe)
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
         val userPid = intent.getStringExtra("userPid")
+
         topAppBar.setNavigationOnClickListener {
             val intent = Intent(this@FavoriteActivity, HomePageActivity::class.java)
             intent.putExtra("userPid", userPid)
@@ -46,6 +47,8 @@ class FavoriteActivity : AppCompatActivity() {
 
         if (userPid != null) {
             Log.i("PID", userPid)
+        }else{
+            Log.i("PID", "null")
         }
 
 
@@ -73,7 +76,7 @@ class FavoriteActivity : AppCompatActivity() {
     }
     private fun showFavoriteRecipes(favoriteRecipes: ArrayList<Recipe>){
         val cards = findViewById<LinearLayout>(R.id.cards)
-
+        val intent = Intent(this, RecipeDetailCompleteActivity::class.java)
         for(i in favoriteRecipes){
             val newCard = CardView(this)
             newCard.background = ContextCompat.getDrawable(this, R.drawable.trasparent2)
@@ -93,7 +96,7 @@ class FavoriteActivity : AppCompatActivity() {
             }
             var buttonState : Int = 0
             val heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
-            heart.setBackgroundResource(R.drawable.ic_favorite_red)
+            heart.setBackgroundResource(R.drawable.ic_heart)
 
             heart.setOnClickListener {
                 val dialog = Dialog(this)
@@ -127,6 +130,22 @@ class FavoriteActivity : AppCompatActivity() {
 
             }
 
+            newCard.setOnClickListener(){
+
+
+
+
+                intent.putExtra("Title",i.name)
+                intent.putExtra("Serving",i.serving)
+                intent.putExtra("Calories",i.calories)
+                intent.putExtra("Ingredients",i.ingredients)
+
+                intent.putExtra("Instruction",i.instruction)
+
+
+                startActivity(intent)
+            }
+
             cards.addView(newCard)
 
         }
@@ -134,11 +153,6 @@ class FavoriteActivity : AppCompatActivity() {
 
     }
 
-    fun popupMessage()  {
-
-
-
-    }
 
     private fun showEmptyFavorite(){
         var text = findViewById<TextView>(R.id.noRecipeFound)

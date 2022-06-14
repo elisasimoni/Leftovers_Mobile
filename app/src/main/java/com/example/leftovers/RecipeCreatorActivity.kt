@@ -84,7 +84,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
             val intent = Intent(this, RecipeDetailActivity::class.java)
             intent.putExtra("choosenFilter", filterListRecipe)
             intent.putExtra("choosenIngredients", foodListRecipe)
-            intent.putExtra("EMAIL_PID", userPid)
+            intent.putExtra("userPid", userPid)
             startActivity(intent)
         }
 

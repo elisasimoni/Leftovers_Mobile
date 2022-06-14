@@ -8,6 +8,7 @@
     android:layout_centerHorizontal="true"
     app:cardCornerRadius="15dp"
     android:layout_margin="10dp"
+
     >
 
     <ImageView

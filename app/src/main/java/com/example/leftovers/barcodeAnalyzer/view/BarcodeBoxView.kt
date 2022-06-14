@@ -16,6 +16,7 @@ class BarcodeBoxView(
 
     private var mRect = RectF()
 
+
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
