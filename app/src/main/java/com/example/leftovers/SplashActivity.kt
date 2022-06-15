@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.room.Room
 import com.example.leftovers.database.FoodDAO
 import com.example.leftovers.database.RecipeDAO
@@ -14,6 +15,7 @@ class SplashActivity : AppCompatActivity() {
     private lateinit var recipeDAO: RecipeDAO
     lateinit var foodDAO: FoodDAO
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         startActivity(Intent(this, LoginActivity::class.java))
         finish()

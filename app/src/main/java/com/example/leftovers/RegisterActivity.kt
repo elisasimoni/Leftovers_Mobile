@@ -6,6 +6,7 @@ import android.util.Log
 import android.util.Log.INFO
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.core.graphics.red
 import androidx.room.Room
@@ -21,6 +22,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         var checkUser = false

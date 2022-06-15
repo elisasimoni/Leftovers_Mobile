@@ -19,7 +19,8 @@
         app:menu="@menu/top_app_bar"
         app:navigationIcon="@drawable/ic_baseline_arrow_circle_left_24"
         app:title="Recipe Search"
-        app:titleCentered="true"/>
+        app:titleCentered="true"
+        app:titleTextColor="@color/green_dark"/>
 
 
 
@@ -43,6 +44,7 @@
         android:layout_height="178dp"
         android:layout_marginTop="20dp"
         android:foregroundGravity="center"
+        android:layout_marginLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,10 +89,14 @@
             android:completionHint="Select a food"
             android:completionThreshold="1"
             android:hint="Select a food"
+            android:backgroundTint="@color/green_dark"
+            android:textColor="@color/green_dark"
             android:popupBackground="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchreci" />
+            app:layout_constraintTop_toBottomOf="@+id/searchreci"
+            style="@style/Autocomplete"
+            />
 
     <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroupFood"
@@ -118,6 +124,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/alata"
         android:textSize="20sp"
+        android:textColor="@color/green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

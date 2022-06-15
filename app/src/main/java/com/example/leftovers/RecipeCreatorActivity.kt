@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.room.Room
 import com.example.leftovers.database.FoodDAO
 import com.google.android.material.appbar.MaterialToolbar
@@ -27,7 +28,7 @@ class RecipeCreatorActivity : AppCompatActivity() {
     var filter = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe)

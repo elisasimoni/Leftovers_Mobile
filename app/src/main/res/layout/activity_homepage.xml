@@ -7,13 +7,6 @@
     android:background="@drawable/back_splashscreen"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="parent">
-
-    </com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -22,7 +15,7 @@
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="center"
         app:menu="@menu/top_app_bar"
-
+        app:titleTextColor="@color/green_dark"
         app:title="Homepage"
         app:titleCentered="true"
         />

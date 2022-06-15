@@ -55,6 +55,7 @@
             android:fontFamily="@font/roboto_thin"
             android:paddingStart="10dp"
             android:textSize="14sp"
+            android:textStyle="bold"
             android:background="#fff"
             android:cursorVisible="false"
             tools:ignore="LabelFor,RtlSymmetry"
@@ -97,6 +98,7 @@
             android:paddingStart="10dp"
             android:textSize="14sp"
             android:background="#fff"
+            android:textStyle="bold"
             android:cursorVisible="false"
             android:inputType="textPassword"
             android:autofillHints="password"
@@ -188,8 +190,8 @@
 
     <TextView
         android:id="@+id/dont"
-        android:layout_width="193dp"
-        android:layout_height="26dp"
+        android:layout_width="168dp"
+        android:layout_height="28dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/alata"
         android:text="@string/don_t_have_an_account_"
@@ -197,36 +199,40 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <TextView
         android:id="@+id/signdont"
-        android:layout_width="91dp"
+        android:layout_width="88dp"
         android:layout_height="27dp"
+
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="110dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/alata"
         android:text="@string/sign_up"
         android:textColor="#1A2C1A"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dont"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <TextView
         android:id="@+id/wrongEPText"
         android:layout_width="323dp"
         android:layout_height="63dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dont"
-        app:layout_constraintVertical_bias="0.285"
         android:text="Wrong email and password"
         android:textColor="#FF0000"
         android:textStyle="bold"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dont"
+        app:layout_constraintVertical_bias="0.22" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

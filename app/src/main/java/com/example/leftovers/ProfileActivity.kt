@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.room.Room
 import com.example.leftovers.database.UserDAO
@@ -15,6 +16,7 @@ class ProfileActivity : AppCompatActivity() {
     lateinit var userDao: UserDAO
     var user : User? = null
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 

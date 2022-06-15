@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
@@ -20,6 +21,7 @@ class ProductDetailActivity : AppCompatActivity() {
     var product:Product? = null
     var df: DecimalFormat = DecimalFormat("###.##")
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.product_detail_activity)
         val code = intent.getStringExtra("barcode")

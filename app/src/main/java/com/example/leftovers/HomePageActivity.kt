@@ -10,6 +10,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.leftovers.barcodeAnalyzer.view.BarcodeScannerActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -20,7 +21,9 @@ class HomePageActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_homepage)
         val username = intent.getStringExtra("Username")
         var userPid = intent.getStringExtra("userPid")

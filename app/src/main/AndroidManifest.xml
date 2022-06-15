@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" >
-    <!-- permission
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!-- permission-->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,24 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Leftovers">
         <activity android:name=".SplashActivity" android:theme="@style/SplashTheme"
-            android:exported="true">
+            android:exported="true" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".HomePageActivity"/>
-        <activity android:name=".RecipeCreatorActivity"/>
-        <activity android:name=".RecipeDetailActivity"/>
-        <activity android:name=".FavoriteActivity"/>
-        <activity android:name=".ProductDetailActivity"/>
-        <activity android:name=".RecipeDetailCompleteActivity"/>
-        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".HomePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeCreatorActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FavoriteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ProductDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeDetailCompleteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity" android:screenOrientation="portrait"/>
         <activity android:name=".barcodeAnalyzer.view.BarcodeScannerActivity"
-            android:hardwareAccelerated="true"/>
+            android:hardwareAccelerated="true" android:screenOrientation="portrait"/>
 
 
         <meta-data

@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.room.Room
@@ -25,6 +26,7 @@ class FavoriteActivity : AppCompatActivity() {
     var favoriteRecipesList : ArrayList<Recipe> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorite_recipe)
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)

@@ -19,6 +19,7 @@
         app:menu="@menu/top_app_bar"
         app:navigationIcon="@drawable/ic_baseline_arrow_circle_left_24"
         app:title="Product Detail"
+        app:titleTextColor="@color/green_dark"
         app:titleCentered="true"/>
 
     <ScrollView
