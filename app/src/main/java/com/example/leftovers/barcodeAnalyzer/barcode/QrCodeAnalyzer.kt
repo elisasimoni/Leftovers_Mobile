@@ -34,6 +34,7 @@ class QrCodeAnalyzer(
     private fun translateX(x: Float) = x * scaleX
     private fun translateY(y: Float) = y * scaleY
 
+
     private fun adjustBoundingRect(rect: Rect) = RectF(
         translateX(rect.left.toFloat()),
         translateY(rect.top.toFloat()),
