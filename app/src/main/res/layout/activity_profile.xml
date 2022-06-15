@@ -22,14 +22,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.077"
-
+            android:contentDescription="@string/logo_round"
             app:srcCompat="@drawable/round_logo_transparent" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="20dp"
             android:textAlignment="center"
-            android:text="Username"
+            android:text="@string/usernameR"
             android:fontFamily="@font/alata"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -58,7 +58,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="20dp"
             android:textAlignment="center"
-            android:text="E-mail"
+            android:text="@string/e_mailR"
             android:fontFamily="@font/alata"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -86,7 +86,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="20dp"
             android:textAlignment="center"
-            android:text="Password"
+            android:text="@string/passwordR"
             android:fontFamily="@font/alata"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -115,10 +115,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_remove_red_eye_24"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="300dp"
                 android:layout_marginBottom="10dp"
-
+                android:contentDescription="@string/eye_logo"
 
                 />
         </androidx.cardview.widget.CardView>
@@ -129,9 +129,10 @@
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_baseline_exit_to_app_24"
+            android:contentDescription="@string/logout_logo"
             />
         <TextView
-            android:text="Logout"
+            android:text="@string/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -139,10 +140,8 @@
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

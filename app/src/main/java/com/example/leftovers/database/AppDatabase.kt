@@ -1,11 +1,13 @@
-package com.example.leftovers
+package com.example.leftovers.database
 
 import android.content.Context
 import androidx.room.*
-import com.example.leftovers.database.FoodDAO
-import com.example.leftovers.database.RecipeDAO
-import com.example.leftovers.database.StarredDAO
-import com.example.leftovers.database.UserDAO
+import com.example.leftovers.Converters
+import com.example.leftovers.Food
+import com.example.leftovers.User
+import com.example.leftovers.Recipe
+import com.example.leftovers.Starred
+
 
 
 @Database(entities = [User::class, Food::class, Recipe::class, Starred::class], version = 7, exportSchema = false)
@@ -30,9 +32,9 @@ abstract  class AppDatabase : RoomDatabase(){
             return INSTANCE
         }
 
-        fun destroyInstance() {
+        /*fun destroyInstance() {
             INSTANCE = null
-        }
+        }*/
     }
 
 }

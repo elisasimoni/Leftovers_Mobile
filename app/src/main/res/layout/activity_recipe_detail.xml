@@ -29,7 +29,7 @@
         android:layout_height="63dp"
         android:layout_marginTop="12dp"
         android:gravity="center"
-        android:text="recipe found"
+        android:text="@string/recipe_found"
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,11 +39,12 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="405dp"
-        android:layout_height="515dp"
+        android:layout_height="561dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintVertical_bias="0.223">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/cards"

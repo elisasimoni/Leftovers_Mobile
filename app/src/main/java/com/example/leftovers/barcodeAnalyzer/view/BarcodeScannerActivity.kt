@@ -1,12 +1,12 @@
 package com.example.leftovers.barcodeAnalyzer.view
 
 import android.Manifest
-import android.app.Activity
+
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.Toast
+
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview

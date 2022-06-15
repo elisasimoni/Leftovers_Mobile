@@ -1,19 +1,21 @@
 package com.example.leftovers
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.FoodDAO
 import com.example.leftovers.database.RecipeDAO
 import org.json.JSONArray
 
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
     private lateinit var recipeDAO: RecipeDAO
-    lateinit var foodDAO: FoodDAO
+    private lateinit var foodDAO: FoodDAO
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
@@ -66,24 +68,24 @@ class SplashActivity : AppCompatActivity() {
             val jsonarr = JSONArray(json)
             for (i in 0 until jsonarr.length()) {
                 val jsonobj = jsonarr.getJSONObject(i)
-                var ingredients = jsonobj.getString("ingredients")
-                var ingredientsArr = ingredients.split(",")
+                val ingredients = jsonobj.getString("ingredients")
+                val ingredientsArr = ingredients.split(",")
 
-                var ingredientsList = ArrayList<String>()
-                for (j in 0 until ingredientsArr.size) {
+                val ingredientsList = ArrayList<String>()
+                for (element in ingredientsArr) {
 
-                    ingredientsList.add(ingredientsArr[j])
+                    ingredientsList.add(element)
 
                 }
 
 
 
 
-                var tags = jsonobj.getString("tags")
-                var tagsArr = tags.split(",")
-                var tagsList = ArrayList<String>()
-                for (j in 0 until tagsArr.size) {
-                    tagsList.add(tagsArr[j])
+                val tags = jsonobj.getString("tags")
+                val tagsArr = tags.split(",")
+                val tagsList = ArrayList<String>()
+                for (element in tagsArr) {
+                    tagsList.add(element)
                 }
 
 

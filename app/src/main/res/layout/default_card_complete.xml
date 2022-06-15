@@ -16,15 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/generic_food"
         android:backgroundTint="@color/gray"
-
-        ></ImageView>
-    <!--<ImageButton
-        android:id="@+id/favoriteHeart"
-        android:layout_width="65dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="298dp"
-        android:layout_marginTop="27dp"
-        android:background="@drawable/drawable_bg_heart" />-->
+        android:contentDescription="@string/backgroundcardtype"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,7 +32,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_gravity="top"
                     android:gravity="center"
-                    android:text="TITOLO"
+                    android:text="@string/titolo"
                     android:fontFamily="@font/alata"
                     android:textColor="@color/black"
                     android:textSize="22sp"
@@ -65,7 +57,7 @@
                         android:textColor="@color/black"
                         android:textSize="17sp"
                         android:textStyle="bold"
-                        android:text="Servants: "
+                        android:text="@string/servants"
                         tools:ignore="MissingConstraints"
                         tools:layout_editor_absoluteX="16dp"
                         tools:layout_editor_absoluteY="0dp" />
@@ -76,7 +68,7 @@
                         android:fontFamily="@font/alata"
                         android:textSize="17sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="-10dp"
+                        android:layout_marginStart="-10dp"
  />
                     <TextView
 
@@ -85,7 +77,7 @@
                         android:layout_margin="10dp"
                         android:fontFamily="@font/alata"
                         android:textColor="@color/black"
-                        android:text="KCAL: "
+                        android:text="@string/kcal"
                         android:textSize="17sp"
                         android:textStyle="bold" />
                     <TextView
@@ -94,7 +86,7 @@
                         android:layout_height="30dp"
                         android:fontFamily="@font/alata"
 
-android:layout_marginLeft="-10dp"
+                        android:layout_marginStart="-10dp"
                         android:textSize="17sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -105,7 +97,7 @@ android:layout_marginLeft="-10dp"
                         android:id="@+id/ing"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="INGREDIENTS"
+                        android:text="@string/ingredients"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:layout_marginTop="10dp"
@@ -120,9 +112,9 @@ android:layout_marginLeft="-10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     >
-                    <!-- Inserire qui ingredienti-->
+
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -130,7 +122,7 @@ android:layout_marginLeft="-10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="INSTRUCTION"
+                    android:text="@string/instruction"
                     android:textStyle="bold"
                     android:textSize="15sp"
                     android:fontFamily="@font/alata"
@@ -148,8 +140,9 @@ android:layout_marginLeft="-10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:fontFamily="@font/alata"
-                        android:text="INSTRUCTION"
-                        android:textColor="@color/black" />
+                        android:text="@string/instruction"
+                        android:textColor="@color/black"
+                        tools:ignore="ScrollViewSize" />
                 </ScrollView>
 
             </LinearLayout>
@@ -162,10 +155,10 @@ android:layout_marginLeft="-10dp"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RATE THIS RECIPE"
+                    android:text="@string/rate_this_recipe"
                     android:fontFamily="@font/alata"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
 
                     />
                 <me.zhanghai.android.materialratingbar.MaterialRatingBar

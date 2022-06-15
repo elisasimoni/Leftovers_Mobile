@@ -224,7 +224,7 @@
         android:id="@+id/wrongEPText"
         android:layout_width="323dp"
         android:layout_height="63dp"
-        android:text="Wrong email and password"
+        android:text="@string/errorEP"
         android:textColor="#FF0000"
         android:textStyle="bold"
         android:visibility="invisible"

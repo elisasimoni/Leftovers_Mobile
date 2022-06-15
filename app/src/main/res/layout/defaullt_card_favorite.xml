@@ -17,7 +17,8 @@
         android:layout_height="300dp"
         android:layout_marginStart="120dp"
         android:background="@drawable/generic_food"
-        android:backgroundTint="@color/gray">
+        android:backgroundTint="@color/gray"
+        android:contentDescription="@string/backgroundcardtype">
 
     </ImageView>
     <ImageView
@@ -25,17 +26,19 @@
         android:layout_width="wrap_content"
         android:layout_height="137dp"
         android:layout_marginTop="-20dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
         app:srcCompat="@drawable/bookmarks"
+        android:contentDescription="@string/book_marks"
 
         />
     <ImageButton
         android:id="@+id/favoriteHeart"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="298dp"
+        android:layout_marginStart="298dp"
         android:layout_marginTop="27dp"
-        android:background="@drawable/ic_baseline_favorite_border_24"/>
+        android:background="@drawable/ic_baseline_favorite_border_24"
+        android:contentDescription="@string/heartbtn"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,7 +67,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="-0dp"
             android:layout_marginTop="-17dp">
 
@@ -109,7 +111,7 @@
             android:id="@+id/ratingBar"
             android:layout_width="160dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="130dp"
             android:progressTint="@color/purple_700"/>

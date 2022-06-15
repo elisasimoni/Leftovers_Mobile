@@ -1,11 +1,7 @@
 package com.example.leftovers
 
-//import android.widget.Button
 
 
-
-
-import android.accounts.Account
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
@@ -26,7 +22,7 @@ class HomePageActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_homepage)
         val username = intent.getStringExtra("Username")
-        var userPid = intent.getStringExtra("userPid")
+        val userPid = intent.getStringExtra("userPid")
 
         handleUsername("Welcome, $username")
 
@@ -80,7 +76,7 @@ class HomePageActivity : AppCompatActivity() {
 
 
     private fun handleUsername(username: String) {
-        var text = findViewById<TextView>(R.id.usernameWelcome)
+        val text = findViewById<TextView>(R.id.usernameWelcome)
         text.text = username
 
     }

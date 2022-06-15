@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/alata"
-            android:text="Welcome, Userino"
+            android:text="@string/welcome_userino"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -53,17 +53,20 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/dragonfruit_icon"/>
+                android:src="@drawable/dragonfruit_icon"
+                android:contentDescription="@string/dragonfruit_logo"/>
             <ImageView
                 android:layout_width="70dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/hamburger_icon"/>
+                android:src="@drawable/hamburger_icon"
+                android:contentDescription="@string/hamburger_logo"/>
             <ImageView
                 android:layout_width="70dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/salad"/>
+                android:src="@drawable/salad"
+                android:contentDescription="@string/salad_logo"/>
         </LinearLayout>
 
         <TextView
@@ -74,7 +77,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="Leftovers is a simple app that helps you to find the best recipes for your next meal."
+            android:text="@string/presentation"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +103,7 @@
                 android:fontFamily="@font/alata"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:text="Click here to scan a product"
+                android:text="@string/scanBtn"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -117,14 +120,13 @@
             app:cardBackgroundColor="#AAE6D0"
             app:cardCornerRadius="60dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/whatIsThis">>
-
+            app:layout_constraintTop_toBottomOf="@+id/whatIsThis">
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/alata"
-                android:text="Click here to search a recipe"
+                android:text="@string/recipeBtn"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -139,25 +141,27 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="110dp"
-                android:layout_marginLeft="-10dp"
+                android:layout_marginStart="-10dp"
                 android:layout_marginTop="470dp"
                 android:layout_weight="1"
                 android:rotation="-70"
                 android:rotationX="180"
                 app:srcCompat="@drawable/arrow4"
-                app:tint="@color/black" />
+                app:tint="@color/black"
+                android:contentDescription="@string/arrow"/>
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="470dp"
-                android:layout_marginRight="-8dp"
+                android:layout_marginEnd="-8dp"
                 android:layout_marginBottom="50dp"
                 android:layout_weight="1"
                 android:rotation="-70"
                 android:rotationX="180"
                 android:rotationY="180"
                 app:srcCompat="@drawable/arrow4"
+                android:contentDescription="@string/arrow"
                 app:tint="@color/black" />
         </LinearLayout>
 
@@ -170,7 +174,8 @@
             android:contentDescription="@string/fab_content_desc"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_search_24dp" />
+            app:srcCompat="@drawable/ic_search_24dp"
+            tools:ignore="RtlHardcoded" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/scanButton"
@@ -181,7 +186,8 @@
             android:contentDescription="@string/fab_content_desc"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_code" />
+            app:srcCompat="@drawable/ic_code"
+            tools:ignore="RtlHardcoded" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

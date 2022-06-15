@@ -7,13 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.cardview.widget.CardView
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.UserDAO
 
 class ProfileActivity : AppCompatActivity() {
 
-    lateinit var userDao: UserDAO
+    private lateinit var userDao: UserDAO
     var user : User? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -37,7 +37,7 @@ class ProfileActivity : AppCompatActivity() {
         passwordtx.text = pass
         val eye = findViewById<ImageView>(R.id.eye)
         eye.setOnClickListener {
-            var password = user?.password ?: "No Password"
+            val password = user?.password ?: "No Password"
             if(pass == "*".repeat(password.length)){
                 pass = password
                 passwordtx.text = pass

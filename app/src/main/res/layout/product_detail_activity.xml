@@ -34,7 +34,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
 
             <ImageView
                 android:id="@+id/scanProductImage"
@@ -42,7 +43,8 @@
                 android:layout_height="180dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/product_image"/>
 
             <TextView
                 android:id="@+id/scanProductName"
@@ -68,9 +70,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="100dp"
+                    android:layout_marginStart="100dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:fontFamily="@font/alata"
                     android:gravity="center"
                     android:textColor="#000000"
@@ -94,9 +96,9 @@
                 android:id="@+id/scanProductIngredients"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/alata"
                 android:textAlignment="center" />
 
@@ -104,7 +106,7 @@
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
                 app:cardCornerRadius="20dp">
 
                 <TableLayout
@@ -142,7 +144,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="1 portion"
+                            android:text="@string/_1_portion"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -153,7 +155,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="100gg"
+                            android:text="@string/_100g"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -170,7 +172,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Carbohydrates"
+                            android:text="@string/carbohydrates"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -208,7 +210,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Sugars"
+                            android:text="@string/sugars"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -242,7 +244,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Protein"
+                            android:text="@string/protein"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -276,7 +278,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Fiber"
+                            android:text="@string/fiber"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -310,7 +312,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Salt"
+                            android:text="@string/salt"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -344,7 +346,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Fat"
+                            android:text="@string/fat"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -378,7 +380,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Saturated Fat"
+                            android:text="@string/saturated_fat"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -412,7 +414,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alata"
-                            android:text="Calories KCAL"
+                            android:text="@string/calories_kcal"
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />

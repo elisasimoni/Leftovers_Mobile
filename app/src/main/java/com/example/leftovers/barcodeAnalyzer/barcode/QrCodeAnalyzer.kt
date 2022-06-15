@@ -1,18 +1,18 @@
 package com.example.leftovers.barcodeAnalyzer.barcode
 
 import android.annotation.SuppressLint
-import android.app.Activity
+
 import android.content.Context
 import android.content.Intent
 import android.graphics.Rect
 import android.graphics.RectF
-import android.widget.Toast
+
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy
-import com.example.leftovers.HomePageActivity
+
 import com.example.leftovers.ProductDetailActivity
 import com.example.leftovers.barcodeAnalyzer.view.BarcodeBoxView
-import com.google.android.material.snackbar.Snackbar
+
 import com.google.mlkit.vision.barcode.BarcodeScannerOptions
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage

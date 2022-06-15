@@ -23,11 +23,10 @@ class RecipeDetailCompleteActivity : AppCompatActivity() {
         val ingredients = intent.getStringArrayListExtra("Ingredients")
         val instruction = intent.getStringExtra("Instruction")
 
-        val titleTV = findViewById<android.widget.TextView>(R.id.title)
-        val servingTV = findViewById<android.widget.TextView>(R.id.servants)
-        val kcalTV = findViewById<android.widget.TextView>(R.id.kcal)
-        val ingredientsTV = findViewById<android.widget.TextView>(R.id.ing)
-        val instructionTV = findViewById<android.widget.TextView>(R.id.instruction)
+        val titleTV = findViewById<TextView>(R.id.title)
+        val servingTV = findViewById<TextView>(R.id.servants)
+        val kcalTV = findViewById<TextView>(R.id.kcal)
+        val instructionTV = findViewById<TextView>(R.id.instruction)
 
         titleTV.text = title
         servingTV.text = serving

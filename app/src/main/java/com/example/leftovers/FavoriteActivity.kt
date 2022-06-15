@@ -1,12 +1,12 @@
 package com.example.leftovers
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.KeyEvent
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.StarredDAO
 import com.google.android.material.appbar.MaterialToolbar
@@ -66,16 +67,17 @@ class FavoriteActivity : AppCompatActivity() {
 
     private fun showFavorite() : ArrayList<Recipe>? {
 
-        if (favoriteRecipesList.isEmpty()) {
+        return if (favoriteRecipesList.isEmpty()) {
             showEmptyFavorite()
-            return null
+            null
         } else {
-            return favoriteRecipesList
+            favoriteRecipesList
         }
 
 
 
     }
+    @SuppressLint("SetTextI18n")
     private fun showFavoriteRecipes(favoriteRecipes: ArrayList<Recipe>){
         val cards = findViewById<LinearLayout>(R.id.cards)
         val intent = Intent(this, RecipeDetailCompleteActivity::class.java)
@@ -87,8 +89,31 @@ class FavoriteActivity : AppCompatActivity() {
             val t: TextView = newCard.findViewById(R.id.title)
             val s: TextView = newCard.findViewById(R.id.servants)
             val kcal: TextView = newCard.findViewById(R.id.kcal)
+            val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
+            val userPid = intent.getStringExtra("userPid")
+            topAppBar.setNavigationOnClickListener {
+                val intent = Intent(this@FavoriteActivity, HomePageActivity::class.java)
+                intent.putExtra("userPid", userPid)
+                startActivity(intent)
+            }
+            topAppBar.setOnMenuItemClickListener { item ->
+                when (item?.itemId) {
+                    R.id.favoriteHeartButtonTopBar -> {
+                        val intent = Intent(this, FavoriteActivity::class.java)
+                        intent.putExtra("userPid", userPid)
+                        startActivity(intent)
+                    }
+
+                    R.id.profileButtonTopBar -> {
+                        val intent = Intent(this, ProfileActivity::class.java)
+                        intent.putExtra("userPid", userPid)
+                        startActivity(intent)
+                    }
 
 
+                }
+                true
+            }
             t.text = "${i.name}"
             s.text ="Servings: ${i.serving}"
             if(i.calories!= "0") {
@@ -96,15 +121,15 @@ class FavoriteActivity : AppCompatActivity() {
             }else{
                 kcal.text = "KCal: //"
             }
-            var buttonState : Int = 0
+
             val heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
             heart.setBackgroundResource(R.drawable.ic_heart)
 
             heart.setOnClickListener {
-                val dialog = Dialog(this)
-                val userPid = intent.getStringExtra("EMAIL_PID")
+                Dialog(this)
 
-                var starred = Starred(i.uid,userPid,i.uid)
+
+                val starred = Starred(i.uid,userPid,i.uid)
                 val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
 
                 alertDialogBuilder.setMessage("DO YOU WANT TO REMOVE THIS RECIPE?")
@@ -113,7 +138,7 @@ class FavoriteActivity : AppCompatActivity() {
                         Log.d("REMOVE FAVORITE", "Ok btn pressed")
                         starredDAO.deleteStarred(starred)
                         Log.i("DELETE", starred.toString())
-                        buttonState = 0
+
                         cards.removeView(newCard)
                     })
                 alertDialogBuilder.setPositiveButton("NO",
@@ -132,10 +157,7 @@ class FavoriteActivity : AppCompatActivity() {
 
             }
 
-            newCard.setOnClickListener(){
-
-
-
+            newCard.setOnClickListener {
 
                 intent.putExtra("Title",i.name)
                 intent.putExtra("Serving",i.serving)
@@ -156,17 +178,18 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
 
+    @SuppressLint("SetTextI18n")
     private fun showEmptyFavorite(){
-        var text = findViewById<TextView>(R.id.noRecipeFound)
+        val text = findViewById<TextView>(R.id.noRecipeFound)
         text.text = "NO FAVORITE RECIPE YET :("
         text.visibility
     }
 
 
     private fun getFavoriteRecipes(userPid : String) : ArrayList<Recipe>{
-        var recipeCheck = starredDAO.getStarred(userPid) as ArrayList<Int>
+        val recipeCheck = starredDAO.getStarred(userPid) as ArrayList<Int>
         for(fr in recipeCheck){
-            var recipe = recipeDAO.getRecipeById(fr)
+            val recipe = recipeDAO.getRecipeById(fr)
             favoriteRecipesList.add(recipe)
         }
         return favoriteRecipesList

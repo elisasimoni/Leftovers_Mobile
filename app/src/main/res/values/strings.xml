@@ -98,6 +98,46 @@
     <string name="title" />
     <string name="secondary_text" />
     <string name="supporting_text" />
+    <string name="welcome_userino">Welcome, Userino</string>
+    <string name="dragonfruit">DragonFruit</string>
+    <string name="presentation">Leftovers is a simple app that helps you to find the best recipes for your next meal.</string>
+    <string name="scanBtn">Click here to scan a product</string>
+    <string name="recipeBtn">Click here to search a recipe</string>
+    <string name="arrow">arrow</string>
+    <string name="barcode">barcode</string>
+    <string name="errorEP">Wrong email and password</string>
+    <string name="usernameR">Username</string>
+    <string name="e_mailR">E-mail</string>
+    <string name="passwordR">Password</string>
+    <string name="logout_logo">logout_logo</string>
+    <string name="eye_logo">eye</string>
+    <string name="logout">Logout</string>
+    <string name="choose_the_filter">CHOOSE THE FILTER</string>
+    <string name="select_a_food">Select a food</string>
+    <string name="find_a_recipe">Find a recipe</string>
+    <string name="recipe_found">recipe found</string>
+    <string name="backgroundcardtype">backgroundCardType</string>
+    <string name="book_marks">book_marks</string>
+    <string name="heartbtn">heartbtn</string>
+    <string name="titolo">TITOLO</string>
+    <string name="servants">Servants:</string>
+    <string name="kcal">KCAL:</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="instruction">INSTRUCTION</string>
+    <string name="rate_this_recipe">RATE THIS RECIPE</string>
+    <string name="userlogo">userlogo</string>
+    <string name="la_mia_app">La mia APP</string>
+    <string name="product_image">product_image</string>
+    <string name="_1_portion">1 portion</string>
+    <string name="_100g">100g</string>
+    <string name="carbohydrates">Carbohydrates</string>
+    <string name="sugars">Sugars</string>
+    <string name="protein">Protein</string>
+    <string name="fiber">Fiber</string>
+    <string name="salt">Salt</string>
+    <string name="fat">Fat</string>
+    <string name="saturated_fat">Saturated Fat</string>
+    <string name="calories_kcal">Calories KCAL</string>
 
 
 </resources>

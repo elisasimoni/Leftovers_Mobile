@@ -47,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/usernameText">
         <EditText
             android:id="@+id/edit_username"
+            android:labelFor="@+id/edit_username"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/roboto_thin"
@@ -58,7 +59,7 @@
             android:autofillHints="username"
             android:inputType="textPersonName"
 
-            />
+            tools:ignore="RtlSymmetry" />
     </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/emailText"
@@ -97,7 +98,8 @@
             android:cursorVisible="false"
             android:textStyle="bold"
             android:autofillHints=""
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            tools:ignore="RtlSymmetry" />
     </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/passwordText"
@@ -136,7 +138,8 @@
             android:cursorVisible="false"
             android:textStyle="bold"
             android:autofillHints="password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
     </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/confirmText"
@@ -174,14 +177,15 @@
             android:inputType="textPassword"
             android:textStyle="bold"
             android:paddingStart="10dp"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/btn_signup"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginTop="18dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
         app:cardBackgroundColor="@color/purple_700"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"

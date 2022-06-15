@@ -3,22 +3,17 @@ package com.example.leftovers
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.content.res.ColorStateList
-import android.graphics.Color
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.transition.TransitionManager
 import android.util.Log
 import android.view.View
-import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
-import androidx.core.view.marginStart
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.RecipeDAO
 import com.example.leftovers.database.StarredDAO
 import com.google.android.material.appbar.MaterialToolbar
@@ -32,7 +27,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     var tags = arrayListOf<String>()
 
     var ingredients = arrayListOf<String>()
-    var numberOfRecipe : Int = 0
+    private var numberOfRecipe : Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -42,13 +37,11 @@ class RecipeDetailActivity : AppCompatActivity() {
         val userPid = intent.getStringExtra("userPid")
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
 
-        topAppBar.setNavigationOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                val intent = Intent(this@RecipeDetailActivity, RecipeCreatorActivity::class.java)
-                intent.putExtra("userPid", userPid)
-                startActivity(intent)
-            }
-        })
+        topAppBar.setNavigationOnClickListener {
+            val intent = Intent(this@RecipeDetailActivity, RecipeCreatorActivity::class.java)
+            intent.putExtra("userPid", userPid)
+            startActivity(intent)
+        }
 
         topAppBar.setOnMenuItemClickListener { item ->
             when (item?.itemId) {
@@ -104,10 +97,10 @@ class RecipeDetailActivity : AppCompatActivity() {
         return  list.random()
     }
 
-    @SuppressLint("WrongViewCast")
+    @SuppressLint("WrongViewCast", "UseCompatLoadingForDrawables", "SetTextI18n")
     private fun getRecipeByTagsAndIngredients(tags: ArrayList<String>, ingredients: ArrayList<String>, userPid: String) {
         val cards = findViewById<LinearLayoutCompat>(R.id.cards)
-        var recipe = recipeDAO.getRecipeByTags(tags,ingredients)
+        val recipe = recipeDAO.getRecipeByTags(tags,ingredients)
         val intent = Intent(this, RecipeDetailCompleteActivity::class.java)
         numberOfRecipe = recipe.size
         for(i in recipe){
@@ -171,8 +164,8 @@ class RecipeDetailActivity : AppCompatActivity() {
             }else{
                 kcal.text = "KCal: //"
             }
-            var buttonState : Int = 0
-            var heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
+            var buttonState = 0
+            val heart = newCard.findViewById<ImageButton>(R.id.favoriteHeart)
             heart.layout(296,27,0,0)
 
 
@@ -183,12 +176,12 @@ class RecipeDetailActivity : AppCompatActivity() {
 
                 if(buttonState == 0){
                     heart.setBackgroundResource(R.drawable.ic_heart)
-                    var starred = Starred(i.uid,userPid,i.uid)
+                    val starred = Starred(i.uid,userPid,i.uid)
                     starredDAO.insertStarred(starred)
                     buttonState = 1
                 }else{
                     heart.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24)
-                    var starred = Starred(i.uid,userPid,i.uid)
+                    val starred = Starred(i.uid,userPid,i.uid)
                     starredDAO.deleteStarred(starred)
                     Log.i("DELETE",starred.toString())
                     buttonState = 0
@@ -197,10 +190,7 @@ class RecipeDetailActivity : AppCompatActivity() {
 
 
 
-            newCard.setOnClickListener(){
-
-
-
+            newCard.setOnClickListener {
 
                 intent.putExtra("Title",i.name)
                 intent.putExtra("Serving",i.serving)

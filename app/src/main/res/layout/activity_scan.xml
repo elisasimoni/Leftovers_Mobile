@@ -26,7 +26,7 @@
         app:tint="@color/trasparent"
         android:alpha="0.5 "
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="barcode"/>
+        android:contentDescription="@string/barcode"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

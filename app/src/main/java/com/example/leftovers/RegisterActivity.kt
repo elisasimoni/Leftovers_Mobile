@@ -2,38 +2,33 @@ package com.example.leftovers
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.util.Log.INFO
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
-import androidx.core.graphics.red
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.UserDAO
-import java.util.logging.Level.INFO
+
 
 
 class RegisterActivity : AppCompatActivity() {
-    var passwordShowing = false
     val STRING_LENGTH = 5
-    private val TAG = "RegisterActivity"
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        var checkUser = false
+        var checkUser = false   //check if user already exists
         val username = findViewById<EditText>(R.id.edit_username)
         val email = findViewById<EditText>(R.id.edit_email)
         val password = findViewById<EditText>(R.id.edit_password)
         val confirmPassword = findViewById<EditText>(R.id.edit_confirm)
-        var usernameCARD = findViewById<CardView>(R.id.edit_username_CARD)
-        var emailCARD = findViewById<CardView>(R.id.edit_email_CARD)
-        var passwordCARD = findViewById<CardView>(R.id.edit_password_CARD)
-        var confirmPasswordCARD = findViewById<CardView>(R.id.edit_confirm_CARD)
+        val usernameCARD = findViewById<CardView>(R.id.edit_username_CARD)
+        val emailCARD = findViewById<CardView>(R.id.edit_email_CARD)
+        val passwordCARD = findViewById<CardView>(R.id.edit_password_CARD)
+        val confirmPasswordCARD = findViewById<CardView>(R.id.edit_confirm_CARD)
         val id = getRandomString(STRING_LENGTH)
         val signUpButton = findViewById<CardView>(R.id.btn_signup)
         var user: User

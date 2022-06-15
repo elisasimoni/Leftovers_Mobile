@@ -10,11 +10,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.UserDAO
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var userDao: UserDAO
+    private lateinit var userDao: UserDAO
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)

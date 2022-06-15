@@ -5,14 +5,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.transition.TransitionManager
 import android.util.Log
-import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.room.Room
+import com.example.leftovers.database.AppDatabase
 import com.example.leftovers.database.FoodDAO
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.chip.Chip
@@ -21,7 +20,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 
 
 class RecipeCreatorActivity : AppCompatActivity() {
-    lateinit var foodDAO: FoodDAO
+    private lateinit var foodDAO: FoodDAO
     val a = "%"
     var foodListRecipe = arrayListOf<String>()
     private var filterListRecipe = arrayListOf<String>()
